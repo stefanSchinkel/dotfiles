@@ -1,0 +1,10 @@
+#!/bin/sh
+# grep for the starred branch 
+G=""
+G=`git branch 2>&1 | sed -n '/\* /s///p'`
+
+if [ -z $G ]; then
+  echo ""
+else
+  echo ":$G"
+fi
