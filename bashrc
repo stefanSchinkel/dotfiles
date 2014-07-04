@@ -73,4 +73,4 @@ export TEXINPUTS=:/home/schinkel/texmf/:
 ##export PS1=\[$(ppwd)\]\u@\h:\w
 # show the current git branch in PS in bold yellow
 
-export PS1='\[$(ppwd)\]\u@\h:\w\[\e[1;33m\]`getGitBranch`\e[m\]>'
+export PS1='\[$(ppwd)\]\u@\h:\w`getGitBranch`>'

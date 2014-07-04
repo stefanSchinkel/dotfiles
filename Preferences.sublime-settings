@@ -1,18 +1,18 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
 	"draw_white_space": "all",
+	"enable_tab_scrolling": false,
 	"font_face": "Source Code Pro",
 	"font_size": 11,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"RestructuredText"
 	],
-	"rulers":[80],
-	"translate_tabs_to_spaces": true,
-    // Set to 0 to disable smooth scrolling. Set to a value between 0 and 1 to
-    // scroll slower, or set to larger than 1 to scroll faster
-    "scroll_speed": 0,
-	// Allows tabs to scroll left and right, instead of simply shrinking
-    "enable_tab_scrolling": false,
-
+	"rulers":
+	[
+		80
+	],
+	"scroll_speed": 0,
+	"translate_tabs_to_spaces": true
 }
