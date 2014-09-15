@@ -26,7 +26,9 @@
 #export PILOTRATE=115200
 
 test -s ~/.alias && . ~/.alias || true
-
+###############################################################################
+###                     FRIENDS FORTUNES                 
+##############################################################################
 # just for the fun of it
 if [ -t 1 ]; then  	# check iff we are on a tty, only then serve fortune 
 					# cookie - needed to make scp work properly
@@ -35,8 +37,12 @@ if [ -t 1 ]; then  	# check iff we are on a tty, only then serve fortune
         fi
 fi
 
-# fiddle with dircolor (dircolors -p >.colorsrc
-eval `dircolors ~/.coloursrc`
+
+
+################################################################################
+###		       ALIASES
+################################################################################
+# defaults
 alias ..="cd .."
 alias ll="ls -lh --color=auto"
 alias ls="ls --color=auto"
@@ -44,16 +50,22 @@ alias la="ls -lha --color=auto"
 alias quit="exit"
 
 
-# sshfs  to AIX for synched files
+# mounts and logins
 #alias mountAIX="sshfs -o workaround=rename schinkel@aix: net/aix/"
 alias mountSwipo="sshfs -o workaround=rename schinkel@aix:/data/swipo/  swipo/"
+alias cluster="ssh -Y schinkel@cluster"
 
+################################################################################
+###			  PATH CUSTOMIZATION
+################################################################################
+# QGIS lib paths
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/schinkel/apps/lib/ 
+#TEX 
+export TEXINPUTS=$TEXINPUTS:/home/schinkel/texmf/:
 
-
-# no annoying beeps
-xset b 0
-
-#PYTHON CUSTOMIZATION
+################################################################################
+###			  PYTHON CUSTOMIZATION
+################################################################################
 PYTHONSTARTUP=~/.pythonrc
 export PYTHONSTARTUP
 
@@ -66,11 +78,18 @@ export PYNGL_NCARG=/home/schinkel/lib/python2.7/site-packages/PyNGL/ncarg/
 
 # setup variable for QT designer to use matplotly
 export  PYQTDESIGNERPATH=/usr/lib64/qt4/plugins/designer/python/matplotlibplugin.py
-#TEX customization
-export TEXINPUTS=:/home/schinkel/texmf/:
 
-# defaut PS1
-##export PS1=\[$(ppwd)\]\u@\h:\w
-# show the current git branch in PS in bold yellow
 
+###############################################################################
+###			  PROMPT cUSTOMIZATION
+##############################################################################
+# default PS1 is: export PS1=\[$(ppwd)\]\u@\h:\w
+# now we add the current git branch in PS in bold yellow
 export PS1='\[$(ppwd)\]\u@\h:\w`getGitBranch`>'
+
+# fiddle with dircolor (dircolors -p >.colorsrc
+eval `dircolors ~/.coloursrc`
+
+# no annoying beeps
+xset b 0
+
