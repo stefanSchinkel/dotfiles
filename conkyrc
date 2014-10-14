@@ -20,7 +20,7 @@ font 8x13
 use_xft yes
 
 # Xft font when Xft is enabled
-xftfont Bitstream Vera Sans Mono:size=10
+xftfont Bitstream Vera Sans Mono:size=8
 
 own_window_transparent no
 own_window_colour hotpink
@@ -207,8 +207,8 @@ ${color white}${cpugraph 000000 5000a0}
 ${color lightgrey}CPU Usage:${color} ${cpu cpu0}% ${cpubar cpu0}
 ${color lightgrey}Core 1 :${color} ${cpu cpu1}% ${cpubar cpu1}
 ${color lightgrey}Core 2 :${color} ${cpu cpu2}% ${cpubar cpu2}
-${color lightgrey}Core 3 :${color} ${cpu cpu3}% ${cpubar cpu3}
-${color lightgrey}Core 4 :${color} ${cpu cpu4}% ${cpubar cpu4}
+#${color lightgrey}Core 3 :${color} ${cpu cpu3}% ${cpubar cpu3}
+#${color lightgrey}Core 4 :${color} ${cpu cpu4}% ${cpubar cpu4}
 ${color lightgrey}RAM Usage:$color $mem/$memmax - $memperc% $membar
 ${color lightgrey}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar}
 ${color lightgrey}Processes:$color $processes  ${color grey}Running:$color $running_processes
