@@ -1,0 +1,11 @@
+# devel
+zypper in git
+
+# system stuff
+zypper in htop conky
+# audio/video/multimedia
+# add packman repo before doing that
+zypper addrepo -f http://ftp.gwdg.de/pub/linux/packman/suse/13.1/ packman
+zypper addrepo -f http://opensuse-guide.org/repo/13.1/ dvd
+#zypper in vlc mplayer libxine2-codecs
+zypper install libxine2-codecs k3b-codecs ffmpeg lame gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ugly-orig-addon gstreamer-0_10-plugins-ffmpeg libdvdcss2  in vlc mplayer libxine2-codecs
