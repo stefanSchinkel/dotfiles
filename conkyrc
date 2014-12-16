@@ -203,7 +203,8 @@ TEXT
 $nodename - $kernel 
 $stippled_hr
 ${color lightgrey}Uptime:$color $uptime ${color lightgrey}- Load:$color $loadavg
-${color white}${cpugraph 000000 5000a0}
+#${color white}${cpugraph 000000 5000a0}
+${color lightgray}${cpugraph FFFF00 FF0000}
 ${color lightgrey}CPU Usage:${color} ${cpu cpu0}% ${cpubar cpu0}
 ${color lightgrey}Core 1 :${color} ${cpu cpu1}% ${cpubar cpu1}
 ${color lightgrey}Core 2 :${color} ${cpu cpu2}% ${cpubar cpu2}
