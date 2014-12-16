@@ -64,6 +64,11 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/schinkel/apps/lib/
 export TEXINPUTS=$TEXINPUTS:/home/schinkel/texmf/:
 
 ################################################################################
+###			  NODE CUSTOMIZATION
+################################################################################
+export NODE_PATH=/usr/lib/node_modules
+
+################################################################################
 ###			  PYTHON CUSTOMIZATION
 ################################################################################
 PYTHONSTARTUP=~/.pythonrc
@@ -78,7 +83,6 @@ export PYNGL_NCARG=/home/schinkel/lib/python2.7/site-packages/PyNGL/ncarg/
 
 # setup variable for QT designer to use matplotly
 export  PYQTDESIGNERPATH=/usr/lib64/qt4/plugins/designer/python/matplotlibplugin.py
-
 
 ###############################################################################
 ###			  PROMPT cUSTOMIZATION
