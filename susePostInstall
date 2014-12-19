@@ -1,11 +1,26 @@
 # devel
-zypper in git
+zypper in  git nodejs ipython 
+
+# server 
+zypper ar http://download.opensuse.org/repositories/server:/http/openSUSE_13.2/ HTTP
+zypper in nginx
 
 # system stuff
-zypper in htop conky
-# audio/video/multimedia
+zypper in htop conky mc tmux tilda rpmorphan tkdiff rox-files
+
+# helper
+zypper in google-chrome-stable okular
+
+#entertainment
+zypper ar http://dl.google.com/linux/chrome/rpm/stable/x86_64  google-chrome
+zypper in radioradiotray
+
+
+
+# audio/video/multimedia 
+# those were only needed on the EEE
 # add packman repo before doing that
-zypper addrepo -f http://ftp.gwdg.de/pub/linux/packman/suse/13.1/ packman
-zypper addrepo -f http://opensuse-guide.org/repo/13.1/ dvd
+#zypper addrepo -f http://ftp.gwdg.de/pub/linux/packman/suse/13.1/ packman
+#zypper addrepo -f http://opensuse-guide.org/repo/13.1/ dvd
 #zypper in vlc mplayer libxine2-codecs
-zypper install libxine2-codecs k3b-codecs ffmpeg lame gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ugly-orig-addon gstreamer-0_10-plugins-ffmpeg libdvdcss2  in vlc mplayer libxine2-codecs
+#zypper install libxine2-codecs k3b-codecs ffmpeg lame gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ugly-orig-addon gstreamer-0_10-plugins-ffmpeg libdvdcss2
