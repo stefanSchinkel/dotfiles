@@ -200,8 +200,9 @@ uppercase no
 #${font Grunge:size=12}${time %a  %b  %d}${alignr -25}${time %k:%M}
 
 TEXT
-$nodename - $kernel 
-$stippled_hr
+${font Bitstream Vera Sans:style=Bold:size=12}${alignc}${time %a %d %b %Y --  %k:%M:%S}
+${font}$nodeName - $sysname  $kernel on $machine${color white}
+${font}$stippled_hr
 ${color lightgrey}Uptime:$color $uptime ${color lightgrey}- Load:$color $loadavg
 #${color white}${cpugraph 000000 5000a0}
 ${color lightgray}${cpugraph FFFF00 FF0000}
@@ -216,7 +217,7 @@ ${color lightgrey}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar}
 ${color lightgrey}Processes:$color $processes  ${color grey}Running:$color $running_processes
 $color$stippled_hr
 ${color lightgrey}Networking: $color ${addr em1}
- Down:${color #FF00F0} ${downspeed em1} k/s${color lightgrey} ${offset 70}Up:${color #22ccff} ${upspeed em1} k/s
+ Down:${color #FF0} ${downspeed em1} ${color lightgrey} ${offset 70}Up:${color #22ccff} ${upspeed em1} k/s
 ${color black}${downspeedgraph em1 25,146 ff0000 0000ff} $alignr${color black}${upspeedgraph em1 25,146 0000ff ff0000}
 
 ${color}Name              PID     CPU%   MEM%
