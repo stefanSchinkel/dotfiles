@@ -1,6 +1,6 @@
 <bookmarks>
 <group name="root">
-    <group name="Store">
+    <group name="Dustpin">
         <group name="Jazz">
             <bookmark name="Smooth Jazz" url="http://smoothjazz.com/streams/smoothjazz_128.pls"/>
             <bookmark name="SKY.fm Piano Jazz" url="http://listen.sky.fm/public1/pianojazz.pls"/>
@@ -84,9 +84,8 @@
     </group>
         <bookmark name="Proton Radio" url="http://www.protonradio.com/proton.m3u"/>
         <bookmark name="1LIVE" url="http://www.wdr.de/wdrlive/media/einslive.m3u"/>
-        <bookmark name="News 89.4" url="http://edge.live.mp3.mdn.newmedia.nacamar.net/ps-news894/livestream.mp3"/>
-        <bookmark name="Rock Antenne" url="http://www.rockantenne.de/webradio/rockantenne.m3u"/>
         <bookmark name="Fritz" url="http://www.fritz.de/live.m3u"/>
         <bookmark name="Radio Paradise" url="http://stream-tx4.radioparadise.com:80/mp3-128"/>
+	<bookmark name="Minimal Radio" url="http://6mediaserver.de:8000/listen.pls"/>
     </group>
 </bookmarks>
