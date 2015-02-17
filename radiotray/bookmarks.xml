@@ -85,5 +85,5 @@
     <bookmark name="http://radio.lclhst.net/" url="http://85.17.222.50:1337"/><bookmark name="MINIMALRADIO.COM - DE" url="http://89.163.224.89:8000"/><bookmark name="Chillkyway.net" url="http://78.47.229.156:8000/"/><bookmark name="raute.fm" url="http://techhouse-high.rautemusik.fm"/><bookmark name="Electrosound.tv" url="http://144.76.8.42:8000/stream/3/"/></group><group name="incoming"/><bookmark name="Proton Radio" url="http://www.protonradio.com/proton.m3u"/>
         <bookmark name="1LIVE" url="http://www.wdr.de/wdrlive/media/einslive.m3u"/>
         <bookmark name="Fritz" url="http://www.fritz.de/live.m3u"/>
-        </group>
+        <bookmark name="Jump!" url="http://www.surfmusik.de/m3u/mdr-jump,1011.m3u"/></group>
 </bookmarks>
