@@ -84,12 +84,26 @@ export PYNGL_NCARG=/home/schinkel/lib/python2.7/site-packages/PyNGL/ncarg/
 # setup variable for QT designer to use matplotly
 export  PYQTDESIGNERPATH=/usr/lib64/qt4/plugins/designer/python/matplotlibplugin.py
 
+
 ###############################################################################
-###			  PROMPT cUSTOMIZATION
+###			  SHARED COMMAND HISTORY
+###############################################################################
+
+# avoid duplicates..
+export HISTCONTROL=ignoredups:erasedups
+
+# append history entries..
+shopt -s histappend
+
+# After each command, save and reload history
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+###############################################################################
+###			  PROMPT CUSTOMIZATION
 ##############################################################################
 # default PS1 is: export PS1=\[$(ppwd)\]\u@\h:\w
 # now we add the current git branch in PS in bold yellow
-export PS1='\[$(ppwd)\]\u@\h:\w`getGitBranch`>'
+export PS1='`getGitBranch`\[$(ppwd)\]\u@\h:\w>'
 
 # fiddle with dircolor (dircolors -p >.colorsrc
 eval `dircolors ~/.coloursrc`
