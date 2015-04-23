@@ -8,5 +8,6 @@ G=`git branch 2>&1 | sed -n '/\* /s///p'`
 if [ -z $G ]; then
   echo ""
 else
-  echo -e "${BYellow}:$G${txtrst}"
+  G="[ $G ]"
+  echo -e "${BYellow}$G\n${txtrst}"
 fi

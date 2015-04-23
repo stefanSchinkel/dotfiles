@@ -103,7 +103,7 @@ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 ##############################################################################
 # default PS1 is: export PS1=\[$(ppwd)\]\u@\h:\w
 # now we add the current git branch in PS in bold yellow
-export PS1='\[$(ppwd)\]\u@\h:\w`getGitBranch`>'
+export PS1='`getGitBranch`\[$(ppwd)\]\u@\h:\w>'
 
 # fiddle with dircolor (dircolors -p >.colorsrc
 eval `dircolors ~/.coloursrc`
