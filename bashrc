@@ -27,10 +27,10 @@
 
 test -s ~/.alias && . ~/.alias || true
 ###############################################################################
-###                     FRIENDS FORTUNES                 
+###                     FRIENDS FORTUNES
 ##############################################################################
 # just for the fun of it
-if [ -t 1 ]; then  	# check iff we are on a tty, only then serve fortune 
+if [ -t 1 ]; then  	# check iff we are on a tty, only then serve fortune
 					# cookie - needed to make scp work properly
         if [ -x /usr/bin/fortune ] ; then
                         /usr/bin/fortune ~/bin/fortune/friends
@@ -49,19 +49,15 @@ alias ls="ls --color=auto"
 alias la="ls -lha --color=auto"
 alias quit="exit"
 
-
-# mounts and logins
-#alias mountAIX="sshfs -o workaround=rename schinkel@aix: net/aix/"
-alias mountSwipo="sshfs -o workaround=rename schinkel@aix:/data/swipo/  swipo/"
 alias cluster="ssh -Y schinkel@cluster"
 
 ################################################################################
 ###			  PATH CUSTOMIZATION
 ################################################################################
 # QGIS lib paths
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/schinkel/apps/lib/ 
-#TEX 
-export TEXINPUTS=$TEXINPUTS:/home/schinkel/texmf/:
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/apps/lib/
+#TEX
+export TEXINPUTS=$TEXINPUTS:~/texmf/:
 
 ################################################################################
 ###			  NODE CUSTOMIZATION
@@ -74,12 +70,8 @@ export NODE_PATH=/usr/lib/node_modules
 PYTHONSTARTUP=~/.pythonrc
 export PYTHONSTARTUP
 
-PYTHONPATH=$PYTHONPATH:/home/schinkel/lib/python2.7/site-packages/
-PYTHONPATH=$PYTHONPATH:/home/schinkel/work/PIK/resnw/
+PYTHONPATH=$PYTHONPATH:~/lib/python2.7/site-packages/
 export PYTHONPATH
-
-# set the PYNGL_NCARG for PyNGL
-export PYNGL_NCARG=/home/schinkel/lib/python2.7/site-packages/PyNGL/ncarg/
 
 # setup variable for QT designer to use matplotly
 export  PYQTDESIGNERPATH=/usr/lib64/qt4/plugins/designer/python/matplotlibplugin.py
