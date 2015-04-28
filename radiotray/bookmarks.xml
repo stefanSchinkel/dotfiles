@@ -37,44 +37,43 @@
                 <bookmark name="SKY.fm Mostly Classical" url="http://listen.sky.fm/public1/classical.pls"/>
             </group>
         </group>
-        <group name="Techno / Electronic">
-        <bookmark name="Drone Zone" url="http://somafm.com/dronezone.pls"/>
-        <bookmark name="Space Station Soma" url="http://somafm.com/spacestation.pls"/>
-        <bookmark name="cliqhop idm" url="http://somafm.com/cliqhop.pls"/>
-        <bookmark name="Black Rock FM" url="http://somafm.com/brfm.pls"/>
-        <bookmark name="New Dance Radio" url="http://jbstream.net/tunein.php/blackoutworm/playlist.asx"/>
-       <bookmark name="Proton Radio" url="http://www.protonradio.com/proton.m3u"/>
-        </group>
-        <group name="Minimal">
-        <bookmark name="minimalmix" url="http://94.23.240.167:7756"/>
-        <bookmark name="Minimal Radio" url="http://6mediaserver.de:8000/listen.pls"/>
-        <bookmark name="http://radio.lclhst.net/" url="http://85.17.222.50:1337"/>
-        <bookmark name="MINIMALRADIO.COM - DE" url="http://89.163.224.89:8000"/>
-        <bookmark name="Chillkyway.net" url="http://78.47.229.156:8000/"/>
-        <bookmark name="raute.fm" url="http://techhouse-high.rautemusik.fm"/>
-        <bookmark name="Electrosound.tv" url="http://144.76.8.42:8000/stream/3/"/>
-        <bookmark name="GFM electro" url="http://streams.radio-gfm.net:8000/electro.ogg"/>
-        <bookmark name="Radio lclhst" url="http://radio.lclhst.net/listen.m3u"/>
-        <bookmark name="Digitally Imported" url="http://pub9am.di.fm:80/di_oldschoolelectronica"/>
-        <bookmark name="MTHN minimal electro" url="http://electro.mthn.net:8400"/>
-        <bookmark name="Afterhour FM" url="http://ca.ah.fm:443"/>
-        </group>
 
-        <group name="Computer">
-            <bookmark name="Slay Radio" url="http://www.slayradio.org/tune_in.php/128kbps/slayradio.128.m3u"/>
+        <group name="Techno / Electronic">
+            <group name="Computer">
+                <bookmark name="Slay Radio" url="http://www.slayradio.org/tune_in.php/128kbps/slayradio.128.m3u"/>
+            </group>
+            <group name="Minimal">
+                <bookmark name="minimalmix" url="http://94.23.240.167:7756"/>
+                <bookmark name="http://radio.lclhst.net/" url="http://85.17.222.50:1337"/>
+                <bookmark name="MINIMALRADIO.COM - DE" url="http://89.163.224.89:8000"/>
+                <bookmark name="raute.fm" url="http://techhouse-high.rautemusik.fm"/>
+                <bookmark name="Electrosound.tv" url="http://144.76.8.42:8000/stream/3/"/>
+                <bookmark name="GFM electro" url="http://streams.radio-gfm.net:8000/electro.ogg"/>
+                <bookmark name="Radio lclhst" url="http://radio.lclhst.net/listen.m3u"/>
+                <bookmark name="Digitally Imported" url="http://pub9am.di.fm:80/di_oldschoolelectronica"/>
+                <bookmark name="MTHN minimal electro" url="http://electro.mthn.net:8400"/>
+                <bookmark name="Afterhour FM" url="http://ca.ah.fm:443"/>
+            </group>
+            <bookmark name="Drone Zone" url="http://somafm.com/dronezone.pls"/>
+            <bookmark name="Space Station Soma" url="http://somafm.com/spacestation.pls"/>
+            <bookmark name="cliqhop idm" url="http://somafm.com/cliqhop.pls"/>
+            <bookmark name="Black Rock FM" url="http://somafm.com/brfm.pls"/>
+            <bookmark name="New Dance Radio" url="http://jbstream.net/tunein.php/blackoutworm/playlist.asx"/>
+            <bookmark name="Proton Radio" url="http://www.protonradio.com/proton.m3u"/>
+            <bookmark name="TechnoMania" url="http://83.137.145.141:14240"/>
         </group>
         <group name="BBC">
-        <bookmark name="BBC Radio 1" url="http://www.radiofeeds.co.uk/bbcradio1.pls"/>
-        <bookmark name="BBC Radio 2" url="http://www.radiofeeds.co.uk/bbcradio2.pls"/>
-        <bookmark name="BBC Radio 4xtra" url="http://www.radiofeeds.co.uk/bbcradio4extra.pls"/>
-        <bookmark name="BBC Radio 1xtra" url="http://www.radiofeeds.co.uk/bbc1xtra.pls"/>
+            <bookmark name="BBC Radio 1" url="http://www.radiofeeds.co.uk/bbcradio1.pls"/>
+            <bookmark name="BBC Radio 2" url="http://www.radiofeeds.co.uk/bbcradio2.pls"/>
+            <bookmark name="BBC Radio 4xtra" url="http://www.radiofeeds.co.uk/bbcradio4extra.pls"/>
+        1   <bookmark name="BBC Radio 1xtra" url="http://www.radiofeeds.co.uk/bbc1xtra.pls"/>
         </group>
         <group name="Dudelfunk">
-       <bookmark name="1LIVE" url="http://www.wdr.de/wdrlive/media/einslive.m3u"/>
-       <bookmark name="Fritz" url="http://www.fritz.de/live.m3u"/>
-       <bookmark name="Jump!" url="http://www.surfmusik.de/m3u/mdr-jump,1011.m3u"/>
-       <bookmark name="Sputnik" url="http://www.sputnik.de/m3u/live.hi.m3u"/>
+            <bookmark name="1LIVE" url="http://www.wdr.de/wdrlive/media/einslive.m3u"/>
+            <bookmark name="Fritz" url="http://www.fritz.de/live.m3u"/>
+            <bookmark name="Jump!" url="http://www.surfmusik.de/m3u/mdr-jump,1011.m3u"/>
+            <bookmark name="Sputnik" url="http://www.sputnik.de/m3u/live.hi.m3u"/>
         </group>
 
-<bookmark name="detektor (musik)" url="http://detektor.fm/stream/mp3/musik/"/></group>
+    <bookmark name="detektor (musik)" url="http://detektor.fm/stream/mp3/musik/"/></group>
 </bookmarks>
