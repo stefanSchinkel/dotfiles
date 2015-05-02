@@ -1,20 +1,18 @@
 # devel
-zypper in  git nodejs ipython 
+zypper in git nodejs ipython texlive
+
+# python
+zypper in python-pyside python-pip python-Cython python-numpy python-pyflakes python-pep8 python-matplotlib
 
 # server 
-zypper ar http://download.opensuse.org/repositories/server:/http/openSUSE_13.2/ HTTP
+zypper ar http://download.opensuse.org/repositories/server:/http/openSUSE_13.1/ HTTP
 zypper in nginx
 
 # system stuff
-zypper in htop conky mc tmux tilda rpmorphan tkdiff rox-files
+zypper in htop conky mc tmux tilda rpmorphan tkdiff rox-filer meld 
 
-# helper
-zypper in google-chrome-stable okular
-
-#entertainment
-zypper ar http://dl.google.com/linux/chrome/rpm/stable/x86_64  google-chrome
-zypper in radioradiotray
-
+# other/entertainment
+zypper in google-chrome-stable chromium okular gimp radioradiotray
 
 
 # audio/video/multimedia 
