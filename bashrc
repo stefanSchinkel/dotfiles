@@ -49,6 +49,10 @@ alias ls="ls --color=auto"
 alias la="ls -lha --color=auto"
 alias quit="exit"
 
+# to that tmux looks better w/ vim colorschemes
+alias tmux="TERM=screen-256color-bce tmux"
+
+
 alias cluster="ssh -Y schinkel@cluster"
 
 ################################################################################
