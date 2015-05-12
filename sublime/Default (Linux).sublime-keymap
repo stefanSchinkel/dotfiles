@@ -1,0 +1,4 @@
+[
+    { "keys": ["ctrl+f11"], "command": "toggle_full_screen" },
+    { "keys": ["alt+d"], "command": "goto_definition" }
+]

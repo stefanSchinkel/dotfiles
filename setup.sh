@@ -9,5 +9,8 @@ ln -fsv ~/dotfiles/bookmarks.xml ~/.local/share/radiotray/bookmarks.xml
 ln -fsv ~/dotfiles/jshintrc .jshintrc
 ln -fsv ~/dotfiles/jslintrc .jslintrc
 
+ln -fsv ~/dotfiles/sublime/Default\ \(Linux\).sublime-keymap ~/.config/sublime-text-3/Packages/User/Default\ \(Linux\).sublime-keymapln -s
+
+
 cp -uv ~/dotfiles/bin/getGitBranch ~/bin/getGitBranch
 cp -uvR ~/dotfiles/bin/fortune ~/bin/
