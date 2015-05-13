@@ -1,6 +1,3 @@
-bin/* -> ~/bin/
-radiotray/bookmarks.xml -> ~/.local/share/radiotray/bookmarks.xml
-Preferences.sublime-settings -> /.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 WMaker/autostart -> ~/GNUstep/Library/WindowMaker/autostart 
 WMaker/Styles/* -> ~/GNUstep/Library/WindowMaker/Styles/
 WMaker/Themes/* -> ~/GNUstep/Library/WindowMaker/Themes
