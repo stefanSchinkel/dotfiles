@@ -27,7 +27,6 @@ own_window_colour hotpink
 # Text alpha when using Xft
 xftalpha 0.8
 
-on_bottom yes
 
 # mail spool
 mail_spool $MAIL
@@ -58,7 +57,8 @@ draw_borders yes
 stippled_borders 8
 
 # border margins
-border_margin 4
+border_inner_margin 8
+border_outer_margin 2
 
 # border width
 border_width 1
@@ -81,7 +81,7 @@ alignment top_right
 # Gap between borders of screen and text
 
 # Add spaces to keep things from moving about?  This only affects certain objects.
-use_spacer no
+use_spacer none
 
 # Subtract file system buffers from used memory?
 no_buffers yes
@@ -201,7 +201,7 @@ uppercase no
 
 TEXT
 ${font Bitstream Vera Sans:style=Bold:size=12}${alignc}${time %a %d %b %Y}
-${font}$nodeName - $sysname  $kernel on $machine${color white}
+${font}${alignc}$nodeName - $sysname  on $machine${color white}
 ${font}$stippled_hr
 ${color lightgrey}Uptime:$color $uptime ${color lightgrey}- Load:$color $loadavg
 #${color white}${cpugraph 000000 5000a0}
