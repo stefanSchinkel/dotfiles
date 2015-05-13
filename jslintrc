@@ -1,6 +1,6 @@
 {
 	"node" : true,
-	"maxerr" : 50,
+	"maxerr" : 20,
 	"indent" : 2
 
 }

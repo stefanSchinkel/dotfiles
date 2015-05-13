@@ -21,18 +21,12 @@ xset b 0
 #check iff conky is running -> kill
 if [ -n `pgrep conky` ];then 
 	killall conky;
+	conky&
 fi
-#restart
-conky &
-##check iff kmixer is running -> kill
-#if [ -n `pgrep kmix` ];then 
-#	killall kmix;
-#fi
-##restart
-#kmix&
-#check iff fbpanel is running -> kill
+#check for panel
 if [ -n `pgrep lxpanel` ];then 
 	killall lxpanel;
+	lxpanel&
 fi
-#restart
-lxpanel &
+
+radiotray&
