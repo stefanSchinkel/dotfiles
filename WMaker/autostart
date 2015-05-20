@@ -18,15 +18,9 @@ xset m 22/10 4
 
 #stop annoying beeps
 xset b 0
-#check iff conky is running -> kill
-if [ -n `pgrep conky` ];then 
-	killall conky;
-	conky&
-fi
-#check for panel
-if [ -n `pgrep lxpanel` ];then 
-	killall lxpanel;
-	lxpanel&
-fi
 
-radiotray&
+# restart desktop apps
+killall conky && conky&
+killall lxpanel && lxpanel&
+killall radiotray && radiotray&
+killall xeyes && xeyes&
