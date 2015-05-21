@@ -19,6 +19,7 @@ ln -fvs ~/dotfiles/sublime/Preferences.sublime-settings ~/.config/sublime-text-3
 # binaries
 cp -uv ~/dotfiles/bin/getGitBranch ~/bin/getGitBranch
 cp -uvR ~/dotfiles/bin/fortune ~/bin/
+cp -uv ~/dotfiles/bin/matrix ~/bin/matrix
 
 # wMaker
 ln -fsv ~/dotfiles/WMaker/autostart -> ~/GNUstep/Library/WindowMaker/autostart 
