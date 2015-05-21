@@ -51,9 +51,10 @@ alias quit="exit"
 
 # to that tmux looks better w/ vim colorschemes
 alias tmux="TERM=screen-256color-bce tmux"
-
-
 alias cluster="ssh -Y schinkel@cluster"
+
+# matrix to the rescue
+alias neo=' xterm +sb -maximized -e "COLUMNS=540 LINES=90   matrix"'
 
 ################################################################################
 ###			  PATH CUSTOMIZATION
