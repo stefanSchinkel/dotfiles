@@ -1,3 +1,4 @@
+
 {
-    "cmd": ["/home/schinkel/bin/pytex", "$file"],
+    "cmd": ["pytex", "$file"],
 }
