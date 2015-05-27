@@ -18,7 +18,7 @@ ln -fvs ~/dotfiles/sublime/Preferences.sublime-settings ~/.config/sublime-text-3
 ln -sfv ~/dotfiles/sublime/latex.sublime-build ~/.config/sublime-text-3/Packages/User/latex.sublime-build
 # german lang in sublime
 mkdir -p ~/.config/sublime-text-3/Packages/User/German
-cp -uv  ~/dotfiles/sublime/German_de_DE.dic ~/.config/sublime-text-3/Packages/User/German  
+cp -uvR  ~/dotfiles/sublime/Language-German/  ~/.config/sublime-text-3/Packages/User/
 
 # binaries
 cp -uv ~/dotfiles/bin/getGitBranch ~/bin/getGitBranch
