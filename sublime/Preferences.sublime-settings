@@ -4,6 +4,7 @@
 	"caret_extra_width": 2,
 	"caret_style": "solid",
 	"color_scheme": "Packages/User/Solarized (Light) (SL) (Flake8Lint).tmTheme",
+	"dictionary": "Packages/User/German/German_de_DE.dic",
 	"draw_white_space": "all",
 	"draw_white_spaces": "all",
 	"font_face": "Source Code Pro",
