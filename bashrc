@@ -53,6 +53,9 @@ alias quit="exit"
 alias tmux="TERM=screen-256color-bce tmux"
 alias cluster="ssh -Y schinkel@cluster"
 
+# collect history
+alias ref=="history -a; history -c; history -r"
+
 # matrix to the rescue
 alias neo=' xterm +sb -maximized -e "COLUMNS=540 LINES=90   matrix"'
 
