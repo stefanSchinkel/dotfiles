@@ -101,13 +101,13 @@ shopt -s histappend
 
 # After each command, save and reload history
 #export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
-
+export PROMPT_COMMAND=$PROMPT_COMMAND
 ###############################################################################
 ###			  PROMPT CUSTOMIZATION
 ##############################################################################
 # default PS1 is: export PS1=\[$(pwd)\]\u@\h:\w
 # now we add the current git branch in PS in bold yellow
-export PS1='`getGitBranch`\[$(pwd)\]\u@\h:\w>'
+export PS1='`getGitBranch`\[\u@\h:\w>'
 
 # fiddle with dircolor (dircolors -p >.colorsrc
 eval `dircolors ~/.coloursrc`
