@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # grep for the starred branch 
 BYellow='\e[1;33m'      # Yellow
 txtrst='\e[0m'    # Text Reset
@@ -9,5 +9,5 @@ if [ -z $G ]; then
   echo ""
 else
   G="[ $G ]"
-  echo -e "${BYellow}$G\n${txtrst}"
+  echo -e "$G\n${txtrst}"
 fi
