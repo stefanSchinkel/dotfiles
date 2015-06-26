@@ -9,5 +9,5 @@ if [ -z $G ]; then
   echo ""
 else
   G="[ $G ]"
-  echo -e "$G\n${txtrst}"
+  echo -e "${BYellow}$G\n${txtrst}"
 fi
