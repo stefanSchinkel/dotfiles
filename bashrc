@@ -105,9 +105,9 @@ shopt -s histappend
 ###############################################################################
 ###			  PROMPT CUSTOMIZATION
 ##############################################################################
-# default PS1 is: export PS1=\[$(ppwd)\]\u@\h:\w
+# default PS1 is: export PS1=\[$(pwd)\]\u@\h:\w
 # now we add the current git branch in PS in bold yellow
-export PS1='`getGitBranch`\[$(ppwd)\]\u@\h:\w>'
+export PS1='`getGitBranch`\[$(pwd)\]\u@\h:\w>'
 
 # fiddle with dircolor (dircolors -p >.colorsrc
 eval `dircolors ~/.coloursrc`
