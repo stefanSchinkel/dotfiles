@@ -109,9 +109,15 @@ export PROMPT_COMMAND=$PROMPT_COMMAND
 # now we add the current git branch in PS in bold yellow
 # yellow : '\[\e[1;33m\]'
 # reset : ' \[\e[0\]'
-export PS1='\[\e[1;33m\]`getGitBranch`\[\e[0m\]\n\u@\h:\w>'
 
 
+# red for root
+if [ $(id -u) -eq 0 ];then
+  PS1='\[\e[0;31m\]\u@\h:\w>\[\e[0m\]'
+else # normal
+  PS1='\[\e[1;33m\]`getGitBranch`\[\e[0m\]\n\u@\h:\w>'
+fi
+export PS1
 # fiddle with dircolor (dircolors -p >.colorsrc
 eval `dircolors ~/.coloursrc`
 
