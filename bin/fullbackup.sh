@@ -1,3 +1,6 @@
 #!/bin/sh
 # full backup of homedir 
-tar -cpf /pik/cluster/backup/HOME.tar --directory=$HOME .
+
+tar -cpf /pik/cluster/backup/TMP.tar --directory=$HOME . 2>  /dev/null
+mv /pik/cluster/backup/TMP.tar /pik/cluster/backup/HOME.tar
+#pbzip2 -9 /pik/cluster/backup/HOME.tar
