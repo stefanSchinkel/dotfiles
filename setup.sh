@@ -26,6 +26,9 @@ cp -uvR  ~/dotfiles/sublime/Language-German/  ~/.config/sublime-text-3/Packages/
 cp -uv ~/dotfiles/bin/getGitBranch ~/bin/getGitBranch
 cp -uvR ~/dotfiles/bin/fortune ~/bin/
 cp -uv ~/dotfiles/bin/matrix ~/bin/matrix
+cp -uv ~/dotfiles/bin/fullbackup.sh ~/bin/fullbackup.sh
+
+
 
 # wMaker
 ln -fsv ~/dotfiles/WMaker/autostart -> ~/GNUstep/Library/WindowMaker/autostart
