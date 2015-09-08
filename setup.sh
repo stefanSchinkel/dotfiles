@@ -5,9 +5,9 @@ ln -fsv ~/dotfiles/bashrc ~/.bashrc
 ln -fsv ~/dotfiles/coloursrc ~/.coloursrc
 ln -fsv ~/dotfiles/vimrc ~/.vimrc
 ln -fsv ~/dotfiles/tmux.conf ~/.tmux.conf
-ln -fsv ~/dotfiles/jshintrc .jshintrc
-ln -fsv ~/dotfiles/jslintrc .jslintrc
-
+ln -fsv ~/dotfiles/jshintrc ~/.jshintrc
+ln -fsv ~/dotfiles/jslintrc ~/.jslintrc
+ln -fsv ~/dotfiles/lxpanel ~/.config/lxpanel/default/panels/panel
 # radios
 
 ln -fsv ~/dotfiles/bookmarks.xml ~/.local/share/radiotray/bookmarks.xml
