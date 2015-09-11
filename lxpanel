@@ -59,21 +59,6 @@ Plugin {
 }
 
 Plugin {
-    type = launchbar
-    Config {
-        Button {
-            id=/usr/share/applications/nedit.desktop
-        }
-        Button {
-            id=/usr/share/applications/beaver.desktop
-        }
-        Button {
-            id=/usr/share/applications/lxterminal.desktop
-        }
-    }
-}
-
-Plugin {
     type = space
     Config {
         Size=4
