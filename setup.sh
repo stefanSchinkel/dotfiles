@@ -32,6 +32,8 @@ cp -uv ~/dotfiles/bin/fullbackup.sh ~/bin/fullbackup.sh
 
 # wMaker
 ln -fsv ~/dotfiles/WMaker/autostart -> ~/GNUstep/Library/WindowMaker/autostart
+ln -fsv ~/dotfiles/WMaker/WMWindowAttributes WMWindowAttributes
+
 # need it?
 #WMaker/Styles/* -> ~/GNUstep/Library/WindowMaker/Styles/
 #WMaker/Themes/* -> ~/GNUstep/Library/WindowMaker/Themes
