@@ -35,6 +35,7 @@ ln -fsv ~/dotfiles/WMaker/autostart -> ~/GNUstep/Library/WindowMaker/autostart
 ln -fsv ~/dotfiles/WMaker/WMWindowAttributes WMWindowAttributes
 
 # ipython (qt console only, for now)
+ln -fsv ~/dotfiles/ipython/ipython_config.py ~/.ipython/profile_default/ipython_config.py
 ln -fvs ~/dotfiles/ipython/ipython_qtconsole_config.py  ~/.ipython/profile_default/ipython_qtconsole_config.py
 
 # need it?
