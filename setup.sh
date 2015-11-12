@@ -34,6 +34,9 @@ cp -uv ~/dotfiles/bin/fullbackup.sh ~/bin/fullbackup.sh
 ln -fsv ~/dotfiles/WMaker/autostart -> ~/GNUstep/Library/WindowMaker/autostart
 ln -fsv ~/dotfiles/WMaker/WMWindowAttributes WMWindowAttributes
 
+# ipython (qt console only, for now)
+ln -fvs ~/dotfiles/ipython/ipython_qtconsole_config.py  ~/.ipython/profile_default/ipython_qtconsole_config.py
+
 # need it?
 #WMaker/Styles/* -> ~/GNUstep/Library/WindowMaker/Styles/
 #WMaker/Themes/* -> ~/GNUstep/Library/WindowMaker/Themes
