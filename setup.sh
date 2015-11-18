@@ -8,8 +8,8 @@ ln -fsv ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -fsv ~/dotfiles/jshintrc ~/.jshintrc
 ln -fsv ~/dotfiles/jslintrc ~/.jslintrc
 ln -fsv ~/dotfiles/lxpanel ~/.config/lxpanel/default/panels/panel
-# radios
 
+# radios
 ln -fsv ~/dotfiles/bookmarks.xml ~/.local/share/radiotray/bookmarks.xml
 
 # sublime
@@ -28,11 +28,9 @@ cp -uvR ~/dotfiles/bin/fortune ~/bin/
 cp -uv ~/dotfiles/bin/matrix ~/bin/matrix
 cp -uv ~/dotfiles/bin/fullbackup.sh ~/bin/fullbackup.sh
 
-
-
 # wMaker
 ln -fsv ~/dotfiles/WMaker/autostart -> ~/GNUstep/Library/WindowMaker/autostart
-ln -fsv ~/dotfiles/WMaker/WMWindowAttributes WMWindowAttributes
+ln -fsv ~/dotfiles/WMaker/WMWindowAttributes ~/GNUstep/Defaults/WMWindowAttributes
 
 # ipython (qt console only, for now)
 ln -fsv ~/dotfiles/ipython/ipython_config.py ~/.ipython/profile_default/ipython_config.py
