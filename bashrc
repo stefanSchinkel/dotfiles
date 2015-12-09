@@ -107,11 +107,16 @@ export PROMPT_COMMAND=$PROMPT_COMMAND
 ##############################################################################
 # default PS1 is: export PS1=\[$(pwd)\]\u@\h:\w
 # now we add the current git branch in PS in bold yellow
-export PS1='`getGitBranch`\[\u@\h:\w>'
+if [ $(id -u) -eq 0 ];then
+  PS1='\[\e[0;31m\]\u@\h:\w>\[\e[0m\]'
+else # normal
+  PS1='\[\e[1;33m\]`getGitBranch`\[\e[0m\]\n\u@\h:\w>'
+fi
+export PS1
 
 # fiddle with dircolor (dircolors -p >.colorsrc
 eval `dircolors ~/.coloursrc`
 
-# no annoying beeps
-xset b 0
+# no speaker installed
+#xset b 0
 
