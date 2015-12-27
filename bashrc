@@ -120,3 +120,7 @@ eval `dircolors ~/.coloursrc`
 # no speaker installed
 #xset b 0
 
+# automatically (re) attach to screen on SSH login
+#if [ "$TERM" != "screen" ] && [ "$SSH_CONNECTION" != "" ]; then
+#   /usr/bin/screen -S sshscreen -r 
+#fi
