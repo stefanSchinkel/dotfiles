@@ -31,3 +31,6 @@ ln -fsv ~/dotfiles/WMaker/autostart -> ~/GNUstep/Library/WindowMaker/autostart
 #WMaker/Styles/* -> ~/GNUstep/Library/WindowMaker/Styles/
 #WMaker/Themes/* -> ~/GNUstep/Library/WindowMaker/Themes
 
+
+# raspberry specific
+ln -fsv ~/dotfiles/bin/hardwareStats.sh ~/bin/hardwareStats.sh
