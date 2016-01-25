@@ -3,10 +3,10 @@
 
 Global {
     edge=bottom
-    allign=left
+    allign=center
     margin=0
     widthtype=percent
-    width=60
+    width=41
     height=29
     transparent=0
     tintcolor=#000000
