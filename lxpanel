@@ -4,9 +4,9 @@
 Global {
     edge=bottom
     allign=center
-    margin=0
+    margin=1200
     widthtype=percent
-    width=41
+    width=39
     height=29
     transparent=0
     tintcolor=#000000
