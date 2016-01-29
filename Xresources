@@ -1,0 +1,4 @@
+XTerm*scrollBar: false
+XTerm*background: black
+XTerm*foreground: white
+Xterm*faceName:Inconsolata:style=Bold:size=10
