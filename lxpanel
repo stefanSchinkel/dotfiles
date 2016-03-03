@@ -3,8 +3,8 @@
 
 Global {
     edge=bottom
-    allign=right
-    margin=19
+    allign=left
+    margin=13
     widthtype=percent
     width=25
     height=28
@@ -98,7 +98,7 @@ Plugin {
         FlatButton=1
         MaxTaskWidth=150
         spacing=1
-        GroupedTasks=0
+        GroupedTasks=1
     }
 }
 
@@ -111,6 +111,17 @@ Plugin {
 
 Plugin {
     type = tray
+}
+
+Plugin {
+    type = dclock
+    Config {
+        ClockFmt=%R
+        TooltipFmt=%A %x
+        BoldFont=1
+        IconOnly=0
+        CenterText=0
+    }
 }
 
 Plugin {
@@ -133,13 +144,6 @@ Plugin {
 }
 
 Plugin {
-    type = dclock
-    Config {
-        ClockFmt=%R
-        TooltipFmt=%A %x
-        BoldFont=0
-        IconOnly=0
-        CenterText=0
-    }
+    type = cpu
 }
 
