@@ -6,7 +6,7 @@ Global {
     allign=left
     margin=13
     widthtype=percent
-    width=25
+    width=23
     height=28
     transparent=0
     tintcolor=#000000
@@ -21,7 +21,7 @@ Global {
     usefontsize=1
     background=0
     backgroundfile=/usr/share/lxpanel/images/background.png
-    iconsize=24
+    iconsize=25
     loglevel=2
 }
 
