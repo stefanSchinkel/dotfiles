@@ -4,10 +4,10 @@
 Global {
     edge=bottom
     allign=left
-    margin=13
+    margin=1024
     widthtype=percent
-    width=23
-    height=28
+    width=45
+    height=25
     transparent=0
     tintcolor=#000000
     alpha=0
@@ -91,7 +91,7 @@ Plugin {
     expand=1
     Config {
         tooltips=1
-        IconsOnly=1
+        IconsOnly=0
         ShowAllDesks=1
         UseMouseWheel=1
         UseUrgencyHint=1
@@ -111,17 +111,6 @@ Plugin {
 
 Plugin {
     type = tray
-}
-
-Plugin {
-    type = dclock
-    Config {
-        ClockFmt=%R
-        TooltipFmt=%A %x
-        BoldFont=1
-        IconOnly=0
-        CenterText=0
-    }
 }
 
 Plugin {
@@ -145,5 +134,16 @@ Plugin {
 
 Plugin {
     type = cpu
+}
+
+Plugin {
+    type = dclock
+    Config {
+        ClockFmt=%R
+        TooltipFmt=%A %x
+        BoldFont=1
+        IconOnly=0
+        CenterText=0
+    }
 }
 
