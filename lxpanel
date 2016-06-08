@@ -3,10 +3,10 @@
 
 Global {
     edge=bottom
-    allign=left
+    allign=center
     margin=1024
     widthtype=percent
-    width=45
+    width=38
     height=25
     transparent=0
     tintcolor=#000000
@@ -21,7 +21,7 @@ Global {
     usefontsize=1
     background=0
     backgroundfile=/usr/share/lxpanel/images/background.png
-    iconsize=25
+    iconsize=26
     loglevel=2
 }
 
@@ -128,7 +128,7 @@ Plugin {
         LayoutsList=us,de
         VariantsList=,nodeadkeys
         ToggleOpt=alt_caps_toggle
-        FlagSize=4
+        FlagSize=3
     }
 }
 
