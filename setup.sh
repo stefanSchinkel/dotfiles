@@ -8,7 +8,8 @@ ln -fsv ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -fsv ~/dotfiles/lxpanel ~/.config/lxpanel/default/panels/panel
 ln -fsv ~/dotfiles/conkyrc ~/.conkyrc
 ln -fsv ~/dotfiles/standard.sh ~/.screenlayout/standard.sh
-ls -fsv ~/dotfiles/Xresources ~/.Xresources
+ln -fsv ~/dotfiles/Xresources ~/.Xresources
+ln -fsv ~/dotfiles/standard.sh ~/.screenlayout/standard.sh
 
 # python and ipython (qtconsole)
 ln -fsv ~/dotfiles/pylintrc ~/.pylintrc
