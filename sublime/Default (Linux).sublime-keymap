@@ -3,5 +3,7 @@
     { "keys": ["alt+d"], "command": "goto_definition" },
     { "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
     { "keys": ["ctrl+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
-    { "keys": ["ctrl+shift+a"], "command": "select_all" }
+    { "keys": ["ctrl+shift+a"], "command": "select_all" },
+    // Refresh folder list with F5
+{ "keys": ["f5"], "command": "refresh_folder_list" }
 ]

@@ -22,6 +22,7 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"jQuery",
 		"Vintage"
 	],
 	"rulers":
