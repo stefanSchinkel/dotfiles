@@ -25,7 +25,7 @@ conky.config = {
 
     alignment="top_left",
     gap_y=20,
-    gap_x=2820,
+    gap_x=2860,
     maximum_width=320,
     use_spacer='right',
     no_buffers=true,
