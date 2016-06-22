@@ -1,5 +1,5 @@
 conky.config = {
-    background=true,
+    background=false,
     cpu_avg_samples=2,
     net_avg_samples=2,
     out_to_console=false,
@@ -9,7 +9,7 @@ conky.config = {
     xftalpha=0.8,
 
     update_interval=1,
-    own_window=false,
+    own_window=true,
     double_buffer=true,
 
     draw_shades=false,
@@ -19,6 +19,7 @@ conky.config = {
     border_inner_margin=10,
     border_outer_margin=4,
     border_width=1,
+    own_window_transparent=true,
     default_color="white",
     default_shade_color="white",
     default_outline_color="white",
