@@ -82,8 +82,8 @@ export NODE_PATH=/usr/lib/node_modules
 PYTHONSTARTUP=~/.pythonrc
 export PYTHONSTARTUP
 
-PYTHONPATH=$PYTHONPATH:~/lib/python2.7/site-packages/
-export PYTHONPATH
+## PYTHON
+export PYTHONPATH=/home/schinkel/work/zeean/refinement:$PYTHONPATH
 
 # setup variable for QT designer to use matplotly
 export  PYQTDESIGNERPATH=/usr/lib64/qt4/plugins/designer/python/matplotlibplugin.py

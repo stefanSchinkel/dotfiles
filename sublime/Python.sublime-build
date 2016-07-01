@@ -1,0 +1,10 @@
+{
+    "cmd": ["python", "-u", "$file"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.python",
+    "env":
+    {
+        "PYTHONPATH": "/home/schinkel/work/zeean/refinement/"
+    }
+}
+

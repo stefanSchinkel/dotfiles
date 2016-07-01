@@ -29,6 +29,8 @@ ln -fsv ~/dotfiles/sublime/Default\ \(Linux\).sublime-keymap ~/.config/sublime-t
 ln -fsv ~/dotfiles/sublime/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 ln -fsv ~/dotfiles/sublime/latex.sublime-build ~/.config/sublime-text-3/Packages/User/latex.sublime-build
 ln -fsv ~/dotfiles/sublime/Pylinter.sublime-settings ~/.config/sublime-text-3/Packages/Pylinter/Pylinter.sublime-settings
+ln -fsv ~/dotfiles/sublime/pythonTest.sublime-build pythonTest.sublime-build
+ln -fsv ~/dotfiles/sublime/Python.sublime-build Python.sublime-build
 
 # german lang in sublime
 mkdir -p ~/.config/sublime-text-3/Packages/User/German
