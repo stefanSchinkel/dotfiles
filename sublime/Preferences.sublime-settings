@@ -23,6 +23,7 @@
 	"ignored_packages":
 	[
 		"jQuery",
+		"sublime-text-2-buildview",
 		"Vintage"
 	],
 	"rulers":
