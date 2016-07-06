@@ -10,6 +10,7 @@ conky.config = {
 
     update_interval=1,
     own_window=true,
+    own_window_type=desktop,
     double_buffer=true,
 
     draw_shades=false,
