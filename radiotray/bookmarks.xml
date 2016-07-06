@@ -62,7 +62,7 @@
 			<bookmark name="Slay Radio" url="http://www.slayradio.org/tune_in.php/128kbps/slayradio.128.m3u"/>
 		</group>
 		<group name="Minimal">
-			<bookmark name="minimalradio.de" url="http://6mediaserver.de:8000/"/>
+			<bookmark name="minimalradio.de" url="http://2mediaserver.de:8000/"/>
 			<bookmark name="raute.fm" url="http://techhouse-high.rautemusik.fm"/>
 			<bookmark name="Radio lclhst" url="http://radio.lclhst.net/listen.m3u"/>
 			<bookmark name="MTHN minimal electro" url="http://electro.mthn.net:8400"/>
