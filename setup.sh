@@ -3,12 +3,17 @@
 # configs
 ln -fsv ~/dotfiles/bashrc ~/.bashrc
 ln -fsv ~/dotfiles/coloursrc ~/.coloursrc
-ln -fsv ~/dotfiles/vimrc ~/.vimrc
 ln -fsv ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -fsv ~/dotfiles/lxpanel ~/.config/lxpanel/default/panels/panel
 ln -fsv ~/dotfiles/conkyrc ~/.conkyrc
 ln -fsv ~/dotfiles/standard.sh ~/.screenlayout/standard.sh
 ln -fsv ~/dotfiles/Xresources ~/.Xresources
+
+#vim
+ln -fsv ~/dotfiles/vimrc ~/.vimrc
+mkdir ~/.vim/
+ln -fsv ~/dotfiles/vim/colors/ ~/.vim/colors
+
 
 # python and ipython (qtconsole)
 ln -fsv ~/dotfiles/pylintrc ~/.pylintrc
