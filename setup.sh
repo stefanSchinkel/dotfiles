@@ -47,7 +47,7 @@ cp -uv ~/dotfiles/bin/matrix ~/bin/matrix
 cp -uv ~/dotfiles/bin/fullbackup.sh ~/bin/fullbackup.sh
 
 # wMaker
-ln -fsv ~/dotfiles/WMaker/autostart -> ~/GNUstep/Library/WindowMaker/autostart
+ln -fsv ~/dotfiles/WMaker/autostart  ~/GNUstep/Library/WindowMaker/autostart
 ln -fsv ~/dotfiles/WMaker/WMWindowAttributes ~/GNUstep/Defaults/WMWindowAttributes
 # need it?
 #WMaker/Styles/* -> ~/GNUstep/Library/WindowMaker/Styles/
