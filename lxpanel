@@ -2,148 +2,142 @@
 # Use preference dialog in lxpanel to adjust config when you can.
 
 Global {
-    edge=bottom
-    allign=right
-    margin=1380
-    widthtype=percent
-    width=39
-    height=25
-    transparent=0
-    tintcolor=#000000
-    alpha=0
-    autohide=0
-    heightwhenhidden=2
-    setdocktype=1
-    setpartialstrut=1
-    usefontcolor=1
-    fontsize=10
-    fontcolor=#000000
-    usefontsize=1
-    background=0
-    backgroundfile=/usr/share/lxpanel/images/background.png
-    iconsize=26
-    loglevel=2
+  edge=bottom
+  allign=left
+  margin=0
+  widthtype=percent
+  width=100
+  height=26
+  transparent=0
+  tintcolor=#000000
+  alpha=0
+  setdocktype=1
+  setpartialstrut=1
+  usefontcolor=1
+  fontcolor=#000000
+  usefontsize=1
+  fontsize=10
+  background=0
+  backgroundfile=/usr/share/lxpanel/images/background.png
+  monitor=1
 }
-
 Plugin {
-    type = space
-    Config {
-        Size=2
+  type=space
+  Config {
+    Size=2
+  }
+}
+Plugin {
+  type=menu
+  Config {
+    image=/usr/share/lxpanel/images/my-computer.png
+    system {
     }
-}
-
-Plugin {
-    type = menu
-    Config {
-        image=/usr/share/lxpanel/images/my-computer.png
-        system {
-        }
-        separator {
-        }
-        item {
-            command=run
-        }
-        separator {
-        }
-        item {
-            image=gnome-logout
-            command=logout
-        }
+    separator {
     }
-}
-
-Plugin {
-    type = dirmenu
-    Config {
+    item {
+      command=run
     }
-}
-
-Plugin {
-    type = space
-    Config {
-        Size=4
+    separator {
     }
-}
-
-Plugin {
-    type = wincmd
-    Config {
-        image=window-manager
-        Button1=iconify
-        Button2=shade
-        Toggle=0
+    item {
+      image=gnome-logout
+      command=logout
     }
+  }
 }
-
 Plugin {
-    type = space
-    Config {
-        Size=4
+  type=space
+  Config {
+    Size=4
+  }
+}
+Plugin {
+  type=wincmd
+  Config {
+    Button1=iconify
+    Button2=shade
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=4
+  }
+}
+Plugin {
+  type=dirmenu
+  Config {
+    path=/home/sschinkel
+  }
+}
+Plugin {
+  type=launchbar
+  Config {
+    Button {
+      id=menu://applications/Development/sublime.desktop
     }
-}
-
-Plugin {
-    type = wnckpager
-}
-
-Plugin {
-    type = taskbar
-    expand=1
-    Config {
-        tooltips=1
-        IconsOnly=0
-        ShowAllDesks=1
-        UseMouseWheel=1
-        UseUrgencyHint=1
-        FlatButton=1
-        MaxTaskWidth=150
-        spacing=1
-        GroupedTasks=1
+    Button {
+      id=menu://applications/Internet/firefox-esr.desktop
     }
-}
-
-Plugin {
-    type = space
-    Config {
-        Size=4
+    Button {
+      id=menu://applications/Internet/chromium.desktop
     }
+  }
 }
-
 Plugin {
-    type = tray
+  type=pager
+  Config {
+  }
 }
-
 Plugin {
-    type = volumealsa
+  type=space
+  Config {
+    Size=4
+  }
 }
-
 Plugin {
-    type = xkb
-    Config {
-        DisplayType=0
-        PerWinLayout=0
-        NoResetOpt=0
-        KeepSysLayouts=0
-        Model=pc105
-        LayoutsList=us,de
-        VariantsList=,nodeadkeys
-        ToggleOpt=alt_caps_toggle
-        FlagSize=3
-    }
+  type=taskbar
+  Config {
+    FlatButton=1
+    GroupedTasks=1
+    IconsOnly=0
+  }
 }
-
 Plugin {
-    type = cpu
+  type=cpu
+  Config {
+  }
 }
-
 Plugin {
-    type = dclock
-    Config {
-        ClockFmt=%R
-        TooltipFmt=%A %x
-        BoldFont=1
-        IconOnly=0
-        CenterText=0
-    }
+  type=volumealsa
+  Config {
+  }
 }
-
+Plugin {
+  type=tray
+  Config {
+  }
+}
+Plugin {
+  type=xkb
+  Config {
+    Model=pc105
+    LayoutsList=us,de
+    VariantsList=,
+    ToggleOpt=grp:alt_caps_toggle
+    KeepSysLayouts=0
+    DisplayType=0
+    FlagSize=2
+  }
+}
+Plugin {
+  type=dclock
+  Config {
+    ClockFmt=%R
+    TooltipFmt=%A %x
+    BoldFont=0
+    IconOnly=0
+    CenterText=0
+  }
+}
