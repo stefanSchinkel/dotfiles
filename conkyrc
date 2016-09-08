@@ -200,7 +200,9 @@ uppercase no
 #${font Grunge:size=12}${time %a  %b  %d}${alignr -25}${time %k:%M}
 
 TEXT
-${font Bitstream Vera Sans:style=Bold:size=12}${alignc}${time %a %d %b %Y}
+${font Open Sans Light:pixelsize=30}${alignc}${time %H:%M - %a %d %b}${font}
+#${font Bitstream Vera Sans:style=Bold:size=12}${alignc}${time %a %d %b %Y}
+$hr
 ${font}${alignc}$nodeName - $sysname  on $machine${color white}
 ${font}$stippled_hr
 ${color lightgrey}Uptime:$color $uptime ${color lightgrey}- Load:$color $loadavg
