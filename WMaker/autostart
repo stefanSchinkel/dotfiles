@@ -14,13 +14,17 @@
 #
 # This file must be executable.
 #
+
+# mouse acceleration settings
 xset m 22/10 4
 
 #stop annoying beeps
 xset b 0
 
 # restart desktop apps
-killall conky && conky&
-killall lxpanel && lxpanel&
-killall radiotray && radiotray&
-killall xeyes && xeyes&
+conky&
+lxpanel&
+radiotray&
+pidgin&
+tilda&
+xscreensaver -no-splash &
