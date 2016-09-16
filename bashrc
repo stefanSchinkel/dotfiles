@@ -55,13 +55,15 @@ alias quit="exit"
 
 # to that tmux looks better w/ vim colorschemes
 alias tmux="TERM=screen-256color-bce tmux"
-alias cluster="ssh -Y schinkel@cluster"
 
 # collect history
 alias ref="history -a; history -c; history -r"
 
+# shorthands for virtual evens
+alias activateCommserver="source ~/.virtual_env/commserver/bin/activate"
+
 # matrix to the rescue
-alias neo=' xterm +sb -maximized -e "COLUMNS=540 LINES=90   matrix"'
+#alias neo=' xterm +sb -maximized -e "COLUMNS=540 LINES=90   matrix"'
 
 ################################################################################
 ###			  PATH CUSTOMIZATION
@@ -79,11 +81,11 @@ export NODE_PATH=/usr/lib/node_modules
 ################################################################################
 ###			  PYTHON CUSTOMIZATION
 ################################################################################
-PYTHONSTARTUP=~/.pythonrc
-export PYTHONSTARTUP
+# PYTHONSTARTUP=~/.pythonrc
+# export PYTHONSTARTUP
 
 ## PYTHON
-export PYTHONPATH=/home/schinkel/work/zeean/refinement:$PYTHONPATH
+export PYTHONPATH=/home/sschinkel/Projects/commserver/lib/
 
 # setup variable for QT designer to use matplotly
 export  PYQTDESIGNERPATH=/usr/lib64/qt4/plugins/designer/python/matplotlibplugin.py
