@@ -35,6 +35,8 @@ ln -fsv ~/dotfiles/sublime/latex.sublime-build ~/.config/sublime-text-3/Packages
 ln -fsv ~/dotfiles/sublime/Pylinter.sublime-settings ~/.config/sublime-text-3/Packages/Pylinter/Pylinter.sublime-settings
 ln -fsv ~/dotfiles/sublime/pythonTest.sublime-build ~/.config/sublime-text-3/Packages/User/pythonTest.sublime-build
 ln -fsv ~/dotfiles/sublime/Python.sublime-build ~/.config/sublime-text-3/Packages/User/Python.sublime-build
+ln -fsv ~/dotfiles/sublime/PythonConsoleLight.hidden-tmTheme ~/.config/sublime-text-3/Packages/Anaconda/
+ln -fsv ~/dotfiles/sublime/Anaconda.sublime-settings ~/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings
 
 # german lang in sublime
 mkdir -p ~/.config/sublime-text-3/Packages/User/German

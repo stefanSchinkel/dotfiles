@@ -1,0 +1,20 @@
+/*
+    Anaconda User settings
+*/
+{
+
+    "python_interpreter": "/home/sschinkel/.virtual_env/commserver/bin/python",
+    "anaconda_tooltip_theme": "light",  // possible options "light" or "dark"
+    "anaconda_linter_mark_style": "none",
+    "autoformat_ignore":
+    [
+        "E203",
+        "E309"
+    ],
+
+    /* By default the theme is PythonConsoleDark.hidden-tmTheme is used,
+    but the i prefer bright here
+    NOTE: The file specified here **MUST** exists in `Packages/Anaconda`
+    */
+    "test_runner_theme": "PythonConsoleLight.hidden-tmTheme",
+}
