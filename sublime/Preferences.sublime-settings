@@ -23,7 +23,9 @@
 	"ignored_packages":
 	[
 		"jQuery",
+		"Pylinter",
 		"sublime-text-2-buildview",
+		"SublimeCodeIntel",
 		"Vintage"
 	],
 	"rulers":
