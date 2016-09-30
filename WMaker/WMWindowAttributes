@@ -1,110 +1,90 @@
 {
+  "evolution-user-prompter.Evolution-user-prompter" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/evolution-user-prompter.Evolution-user-prompter.xpm";
+  };
+  wrapper.Wrapper = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/wrapper.Wrapper.xpm";
+  };
+  lxrandr.Lxrandr = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/lxrandr.Lxrandr.xpm";
+  };
+  sublime.Sublime = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sublime.Sublime.xpm";
+  };
+  shutter.Shutter = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/shutter.Shutter.xpm";
+  };
   drkonqi.Drkonqi = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/drkonqi.Drkonqi.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/drkonqi.Drkonqi.xpm";
   };
   klipper.Klipper = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/klipper.Klipper.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/klipper.Klipper.xpm";
   };
-  lxpanel.Lxpanel = {
-    NoAppIcon = Yes;
+  kioexec.Kioexec = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/kioexec.Kioexec.xpm";
   };
-  empathy.Empathy = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/empathy.Empathy.xpm";
-  };
-  lxmusic.Lxmusic = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/lxmusic.Lxmusic.xpm";
-  };
-  gcolor2.Gcolor2 = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gcolor2.Gcolor2.xpm";
-  };
-  abiword.Abiword = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/abiword.Abiword.xpm";
-  };
-  y2controlcenter.y2controlcenter = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/y2controlcenter.y2controlcenter.xpm";
-  };
-  lxinput.Lxinput = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/lxinput.Lxinput.xpm";
-  };
-  firefox.Firefox = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/firefox.Firefox.xpm";
-  };
-  pcmanfm.Pcmanfm = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/pcmanfm.Pcmanfm.xpm";
-  };
-  leafpad.Leafpad = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/leafpad.Leafpad.xpm";
-  };
-  Banshee.Banshee = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/Banshee.Banshee.xpm";
-  };
-  dolphin.Dolphin = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/dolphin.Dolphin.xpm";
+  konsole.Konsole = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/konsole.Konsole.xpm";
   };
   icedove.Icedove = {
     Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/icedove.Icedove.xpm";
   };
-  shutter.Shutter = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/shutter.Shutter.xpm";
+  dolphin.Dolphin = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/dolphin.Dolphin.xpm";
   };
-  sublime.Sublime = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sublime.Sublime.xpm";
+  Banshee.Banshee = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/Banshee.Banshee.xpm";
   };
-  lxrandr.Lxrandr = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/lxrandr.Lxrandr.xpm";
+  leafpad.Leafpad = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/leafpad.Leafpad.xpm";
   };
-  wrapper.Wrapper = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/wrapper.Wrapper.xpm";
+  pcmanfm.Pcmanfm = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/pcmanfm.Pcmanfm.xpm";
   };
-  "evolution-user-prompter.Evolution-user-prompter" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/evolution-user-prompter.Evolution-user-prompter.xpm";
+  firefox.Firefox = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/firefox.Firefox.xpm";
+  };
+  lxinput.Lxinput = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/lxinput.Lxinput.xpm";
+  };
+  y2controlcenter.y2controlcenter = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/y2controlcenter.y2controlcenter.xpm";
+  };
+  abiword.Abiword = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/abiword.Abiword.xpm";
+  };
+  gcolor2.Gcolor2 = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gcolor2.Gcolor2.xpm";
+  };
+  lxmusic.Lxmusic = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/lxmusic.Lxmusic.xpm";
+  };
+  empathy.Empathy = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/empathy.Empathy.xpm";
+  };
+  lxpanel.Lxpanel = {
+    NoAppIcon = Yes;
+  };
+  kdesudo.Kdesudo = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/kdesudo.Kdesudo.xpm";
   };
   kolourpaint.Kolourpaint = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/kolourpaint.Kolourpaint.xpm";
-  };
-  pavucontrol.Pavucontrol = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/pavucontrol.Pavucontrol.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/kolourpaint.Kolourpaint.xpm";
   };
   "gnome-contacts.Gnome-contacts" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gnome-contacts.Gnome-contacts.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gnome-contacts.Gnome-contacts.xpm";
   };
   glade.Glade = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/glade.Glade.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/glade.Glade.xpm";
   };
   KTerm = {
     Icon = GNUterm.tiff;
   };
-  tool_options.Gimp = {
-    AlwaysUserIcon = Yes;
-    Icon = "wmaker-gimp-tooloption.tif";
-  };
-  xterm.XTerm = {
-    NoBorder = Yes;
-    NoResizebar = Yes;
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/xterm.XTerm.xpm";
-    FullMaximize = Yes;
-  };
   "gnome-control-center.Gnome-control-center" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gnome-control-center.Gnome-control-center.xpm";
-  };
-  emacs = {
-    Icon = "wmaker-emacs.tif";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gnome-control-center.Gnome-control-center.xpm";
   };
   lxcc.Lxcc = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/lxcc.Lxcc.xpm";
-  };
-  "COM-ibm-storage-adsm-cadmin-clientgui-DDsmApplet.COM-ibm-storage-adsm-cadmin-clientgui-DDsmApplet" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/COM-ibm-storage-adsm-cadmin-clientgui-DDsmApplet.COM-ibm-storage-adsm-cadmin-clientgui-DDsmApplet.xpm";
-  };
-  toolbox.Gimp = {
-    NoAppIcon = Yes;
-    Icon = "wmaker-gimp2.tif";
-  };
-  WMSoundServer = {
-    Icon = Sound.tiff;
-  };
-  lxtask.Lxtask = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/lxtask.Lxtask.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/lxcc.Lxcc.xpm";
   };
   conky.conky = {
     SkipWindowList = Yes;
@@ -115,149 +95,59 @@
     KeepOnBottom = Yes;
     Omnipresent = Yes;
   };
-  evolution.Evolution = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/evolution.Evolution.xpm";
-  };
-  "system-config-printer.py." = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/system-config-printer.py..xpm";
-  };
-  "x-terminal-emulator.X-terminal-emulator" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/x-terminal-emulator.X-terminal-emulator.xpm";
-  };
-  "empathy-auth-client.Empathy-auth-client" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/empathy-auth-client.Empathy-auth-client.xpm";
-  };
-  patternselection.Gimp = {
-    AlwaysUserIcon = Yes;
-    Icon = "wmaker-gimp-patterns.tif";
-  };
   ark.Ark = {
     Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/ark.Ark.xpm";
   };
-  Rxvt = {
-    Icon = GNUterm.tiff;
+  bless.Bless = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/bless.Bless.xpm";
   };
   "libreoffice.LibreOffice 4.3" = {
     Icon = "libreoffice.LibreOffice 4.3.xpm";
   };
-  kwrite.Kwrite = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/kwrite.Kwrite.xpm";
-  };
-  yelp.Yelp = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/yelp.Yelp.xpm";
+  Rxvt = {
+    Icon = GNUterm.tiff;
   };
   "libreoffice.libreoffice-impress" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/libreoffice.libreoffice-impress.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/libreoffice.libreoffice-impress.xpm";
   };
   Tile.WMClip = {
     Icon = clip.tiff;
   };
-  "xfce4-mixer.Xfce4-mixer" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/xfce4-mixer.Xfce4-mixer.xpm";
-  };
-  "gov-nasa-giss-panoply-Panoply.gov-nasa-giss-panoply-Panoply" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gov-nasa-giss-panoply-Panoply.gov-nasa-giss-panoply-Panoply.xpm";
-  };
-  "Mozilla-bin" = {
-    Icon = "wmaker-nav.tif";
-  };
-  "VCLSalFrame.libreoffice-calc" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/VCLSalFrame.libreoffice-calc.xpm";
-  };
   "com-sun-deploy-panel-ControlPanel.com-sun-deploy-panel-ControlPanel" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/com-sun-deploy-panel-ControlPanel.com-sun-deploy-panel-ControlPanel.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/com-sun-deploy-panel-ControlPanel.com-sun-deploy-panel-ControlPanel.xpm";
   };
   owncloud.Owncloud = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/owncloud.Owncloud.xpm";
-  };
-  xeyes.XEyes = {
-    Unfocusable = Yes;
-    SkipWindowList = Yes;
-    NoTitlebar = Yes;
-    SkipSwitchPanel = Yes;
-    NoMiniaturizeButton = Yes;
-    NoBorder = Yes;
-    NoResizebar = Yes;
-    KeepOnTop = Yes;
-    Omnipresent = Yes;
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/owncloud.Owncloud.xpm";
   };
   "*" = {
     Icon = defaultAppIcon.tiff;
   };
-  kfontview.Kfontview = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/kfontview.Kfontview.xpm";
-  };
-  preferences.Gimp = {
-    AlwaysUserIcon = Yes;
-    Icon = "wmaker-gimp-prefs.tif";
-  };
   "VCLSalFrame.DocumentWindow.libreoffice-startcenter" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/VCLSalFrame.DocumentWindow.libreoffice-startcenter.xpm";
-  };
-  "nm-applet.Nm-applet" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/nm-applet.Nm-applet.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/VCLSalFrame.DocumentWindow.libreoffice-startcenter.xpm";
   };
   . = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/..xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/..xpm";
   };
   indexed_color_palette.Gimp = {
     AlwaysUserIcon = Yes;
     NoResizebar = Yes;
     Icon = "wmaker-gimp-palette.tif";
   };
-  "processing-app-Base.processing-app-Base" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/processing-app-Base.processing-app-Base.xpm";
-  };
-  winemine.exe.Wine = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/winemine.exe.Wine.xpm";
-  };
-  "script-fu.Script-fu" = {
-    Icon = "wmaker-gimp-script-fu.tif";
-  };
-  "VCLSalFrame.DocumentWindow.libreoffice-draw" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/VCLSalFrame.DocumentWindow.libreoffice-draw.xpm";
-  };
   "sun-awt-X11-XFramePeer.gui" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sun-awt-X11-XFramePeer.gui.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sun-awt-X11-XFramePeer.gui.xpm";
   };
   "firefox.Tor Browser" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/firefox.Tor Browser.xpm";
-  };
-  layers_and_channels.Gimp = {
-    AlwaysUserIcon = Yes;
-    Icon = "wmaker-gimp-layers.tif";
-  };
-  "empathy-chat.Empathy" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/empathy-chat.Empathy.xpm";
-  };
-  brushselection.Gimp = {
-    AlwaysUserIcon = Yes;
-    Icon = "wmaker-gimp-brushes.tif";
-  };
-  "file-pdf-load.File-pdf-load" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/file-pdf-load.File-pdf-load.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/firefox.Tor Browser.xpm";
   };
   gradient_editor.Gimp = {
     AlwaysUserIcon = Yes;
     Icon = "wmaker-gimp-gradient.tif";
   };
-  "evince-previewer.Evince-previewer" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/evince-previewer.Evince-previewer.xpm";
+  seahorse.Seahorse = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/seahorse.Seahorse.xpm";
   };
   wfica.Wfica = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/wfica.Wfica.xpm";
-  };
-  YaST2.YaST2 = {
-    Icon = yast.png;
-  };
-  okular.Okular = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/okular.Okular.xpm";
-  };
-  seahorse.Seahorse = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/seahorse.Seahorse.xpm";
-  };
-  "sun-awt-X11-XFramePeer.Histo" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sun-awt-X11-XFramePeer.Histo.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/wfica.Wfica.xpm";
   };
   panel.lxpanel = {
     SkipWindowList = Yes;
@@ -272,125 +162,58 @@
     NoCloseButton = Yes;
     Omnipresent = Yes;
   };
-  sublime_text.Sublime_text = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sublime_text.Sublime_text.xpm";
-  };
   NXTerm = {
     Icon = GNUterm.tiff;
   };
-  "sun-awt-X11-XFramePeer.sun-applet-PluginMain" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sun-awt-X11-XFramePeer.sun-applet-PluginMain.xpm";
-  };
   marble.Marble = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/marble.Marble.xpm";
-  };
-  designer.Designer = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/designer.Designer.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/marble.Marble.xpm";
   };
   beaver.Beaver = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/beaver.Beaver.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/beaver.Beaver.xpm";
   };
-  "exo-helper-1.Exo-helper-1" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/exo-helper-1.Exo-helper-1.xpm";
+  TeamViewer.TeamViewer = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/TeamViewer.TeamViewer.xpm";
   };
   "com-mathworks-util-PostVMInit.com-mathworks-util-PostVMInit" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/com-mathworks-util-PostVMInit.com-mathworks-util-PostVMInit.xpm";
-  };
-  chromium.Chromium = {
-    Icon = chromium.png;
-  };
-  tilda.Tilda = {
-    SkipWindowList = Yes;
-    NoTitlebar = Yes;
-    NoAppIcon = Yes;
-    NoMiniaturizeButton = Yes;
-    NoResizebar = Yes;
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/tilda.Tilda.xpm";
-    KeepOnBottom = Yes;
-    KeepOnTop = Yes;
-    NoCloseButton = Yes;
-    Omnipresent = Yes;
-  };
-  kded4.Kded4 = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/kded4.Kded4.xpm";
-  };
-  galculator.Galculator = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/galculator.Galculator.xpm";
-  };
-  atom.Atom = {
-    Icon = atom.png;
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/com-mathworks-util-PostVMInit.com-mathworks-util-PostVMInit.xpm";
   };
   notepad.exe.Wine = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/notepad.exe.Wine.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/notepad.exe.Wine.xpm";
   };
-  Gimp = {
-    AlwaysUserIcon = Yes;
-    Icon = "wmaker-gimp2.tif";
+  nedit.NEdit = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/nedit.NEdit.xpm";
   };
   xterm.UXTerm = {
     Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/xterm.UXTerm.xpm";
   };
-  nedit.NEdit = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/nedit.NEdit.xpm";
-  };
-  "sun-awt-X11-XFramePeer.COM-ibm-storage-adsm-cadmin-clientgui-DDsmApplet" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sun-awt-X11-XFramePeer.COM-ibm-storage-adsm-cadmin-clientgui-DDsmApplet.xpm";
-  };
   "ch-fhnw-jbackpack-JBackpack.ch-fhnw-jbackpack-JBackpack" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/ch-fhnw-jbackpack-JBackpack.ch-fhnw-jbackpack-JBackpack.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/ch-fhnw-jbackpack-JBackpack.ch-fhnw-jbackpack-JBackpack.xpm";
   };
   color_palette.Gimp = {
     AlwaysUserIcon = Yes;
     NoResizebar = Yes;
     Icon = "wmaker-gimp-palette.tif";
   };
-  "libreoffice.libreoffice-calc" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/libreoffice.libreoffice-calc.xpm";
-  };
   "Navigator.Tor Browser" = {
     SkipWindowList = Yes;
   };
-  totem.Totem = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/totem.Totem.xpm";
-  };
   geany.Geany = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/geany.Geany.xpm";
-  };
-  inkscape.Inkscape = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/inkscape.Inkscape.xpm";
-  };
-  "nm-connection-editor.Nm-connection-editor" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/nm-connection-editor.Nm-connection-editor.xpm";
-  };
-  thunderbird.Thunderbird = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/thunderbird.Thunderbird.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/geany.Geany.xpm";
   };
   viewnior.Viewnior = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/viewnior.Viewnior.xpm";
-  };
-  Netscape = {
-    Icon = "wmaker-netscape.tif";
-  };
-  "y2controlcenter-gnome.Y2controlcenter-gnome" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/y2controlcenter-gnome.Y2controlcenter-gnome.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/viewnior.Viewnior.xpm";
   };
   WPrefs = {
     Icon = "/usr/share/lib/GNUstep/System/Applications/WPrefs.app/WPrefs.tiff";
   };
-  synaptiks.Synaptiks = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/synaptiks.Synaptiks.xpm";
-  };
   evince.Evince = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/evince.Evince.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/evince.Evince.xpm";
   };
-  "VCLSalFrame.libreoffice-writer" = {
-    Icon = "libreoffice-writer.png";
-  };
-  "sun-awt-X11-XFramePeer.jetbrains-pycharm" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sun-awt-X11-XFramePeer.jetbrains-pycharm.xpm";
+  synaptiks.Synaptiks = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/synaptiks.Synaptiks.xpm";
   };
   xchat.Xchat = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/xchat.Xchat.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/xchat.Xchat.xpm";
   };
   kmix.Kmix = {
     Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/kmix.Kmix.xpm";
@@ -402,23 +225,304 @@
     Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/x-www-browser.X-www-browser.xpm";
   };
   groupLeader.WPrefs = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/groupLeader.WPrefs.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/groupLeader.WPrefs.xpm";
   };
   control.exe.Wine = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/control.exe.Wine.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/control.exe.Wine.xpm";
+  };
+  Pidgin.Pidgin = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/Pidgin.Pidgin.xpm";
+  };
+  "jetbrains-pycharm.jetbrains-pycharm" = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/jetbrains-pycharm.jetbrains-pycharm.xpm";
+  };
+  kate.Kate = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/kate.Kate.xpm";
+  };
+  Logo.WMClip = {
+    Icon = clip.tiff;
+  };
+  xclock.XClock = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/xclock.XClock.xpm";
+  };
+  "empathy-accounts.Empathy-accounts" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/empathy-accounts.Empathy-accounts.xpm";
+  };
+  gimp.Gimp = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gimp.Gimp.xpm";
+  };
+  panel = {
+    NoAppIcon = Yes;
+  };
+  "sun-awt-X11-XFramePeer.ch-fhnw-jbackpack-JBackpack" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sun-awt-X11-XFramePeer.ch-fhnw-jbackpack-JBackpack.xpm";
+  };
+  "gimp-2.8.Gimp-2.8" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gimp-2.8.Gimp-2.8.xpm";
+  };
+  "mysql-workbench-bin.Mysql-workbench-bin" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/mysql-workbench-bin.Mysql-workbench-bin.xpm";
+  };
+  "Qt-subapplication.VirtualBox" = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/Qt-subapplication.VirtualBox.xpm";
+  };
+  "VCLSalFrame.DocumentWindow.libreoffice-calc" = {
+    Icon = "libreoffice-calc.png";
+  };
+  openshot.Openshot = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/openshot.Openshot.xpm";
+  };
+  nepomukcleaner.Nepomukcleaner = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/nepomukcleaner.Nepomukcleaner.xpm";
+  };
+  "VCLSalFrame.DocumentWindow.libreoffice-writer" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/VCLSalFrame.DocumentWindow.libreoffice-writer.xpm";
+  };
+  iexplore.exe.Wine = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/iexplore.exe.Wine.xpm";
+  };
+  gimp_startup.Gimp = {
+    NotClosable = Yes;
+    NoTitlebar = Yes;
+    NotMiniaturizable = Yes;
+    AlwaysUserIcon = Yes;
+    NoResizebar = Yes;
+    Icon = "wmaker-gimp2.tif";
+  };
+  "libreoffice.libreoffice-draw" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/libreoffice.libreoffice-draw.xpm";
+  };
+  lxappearance.Lxappearance = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/lxappearance.Lxappearance.xpm";
+  };
+  "sun-awt-X11-XFramePeer.com-mathworks-util-PostVMInit" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sun-awt-X11-XFramePeer.com-mathworks-util-PostVMInit.xpm";
+  };
+  "evolution-alarm-notify.Evolution-alarm-notify" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/evolution-alarm-notify.Evolution-alarm-notify.xpm";
+  };
+  radiotray.Radiotray = {
+    Icon = radiotray.png;
+  };
+  apper.Apper = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/apper.Apper.xpm";
+  };
+  Logo.WMDock = {
+    Icon = GNUstep.tiff;
+  };
+  "sun-awt-X11-XFramePeer.gov-nasa-giss-panoply-Panoply" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sun-awt-X11-XFramePeer.gov-nasa-giss-panoply-Panoply.xpm";
+  };
+  "xfce4-screenshooter.Xfce4-screenshooter" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/xfce4-screenshooter.Xfce4-screenshooter.xpm";
+  };
+  pavucontrol.Pavucontrol = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/pavucontrol.Pavucontrol.xpm";
+  };
+  tool_options.Gimp = {
+    AlwaysUserIcon = Yes;
+    Icon = "wmaker-gimp-tooloption.tif";
+  };
+  xterm.XTerm = {
+    NoBorder = Yes;
+    NoResizebar = Yes;
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/xterm.XTerm.xpm";
+    FullMaximize = Yes;
+  };
+  emacs = {
+    Icon = "wmaker-emacs.tif";
+  };
+  "COM-ibm-storage-adsm-cadmin-clientgui-DDsmApplet.COM-ibm-storage-adsm-cadmin-clientgui-DDsmApplet" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/COM-ibm-storage-adsm-cadmin-clientgui-DDsmApplet.COM-ibm-storage-adsm-cadmin-clientgui-DDsmApplet.xpm";
+  };
+  toolbox.Gimp = {
+    NoAppIcon = Yes;
+    Icon = "wmaker-gimp2.tif";
+  };
+  WMSoundServer = {
+    Icon = Sound.tiff;
+  };
+  lxtask.Lxtask = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/lxtask.Lxtask.xpm";
+  };
+  evolution.Evolution = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/evolution.Evolution.xpm";
+  };
+  "system-config-printer.py." = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/system-config-printer.py..xpm";
+  };
+  "x-terminal-emulator.X-terminal-emulator" = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/x-terminal-emulator.X-terminal-emulator.xpm";
+  };
+  "empathy-auth-client.Empathy-auth-client" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/empathy-auth-client.Empathy-auth-client.xpm";
+  };
+  patternselection.Gimp = {
+    AlwaysUserIcon = Yes;
+    Icon = "wmaker-gimp-patterns.tif";
+  };
+  kwrite.Kwrite = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/kwrite.Kwrite.xpm";
+  };
+  yelp.Yelp = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/yelp.Yelp.xpm";
+  };
+  "xfce4-mixer.Xfce4-mixer" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/xfce4-mixer.Xfce4-mixer.xpm";
+  };
+  "gov-nasa-giss-panoply-Panoply.gov-nasa-giss-panoply-Panoply" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gov-nasa-giss-panoply-Panoply.gov-nasa-giss-panoply-Panoply.xpm";
+  };
+  "Mozilla-bin" = {
+    Icon = "wmaker-nav.tif";
+  };
+  "VCLSalFrame.libreoffice-calc" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/VCLSalFrame.libreoffice-calc.xpm";
+  };
+  xeyes.XEyes = {
+    Unfocusable = Yes;
+    SkipWindowList = Yes;
+    NoTitlebar = Yes;
+    SkipSwitchPanel = Yes;
+    NoMiniaturizeButton = Yes;
+    NoBorder = Yes;
+    NoResizebar = Yes;
+    KeepOnTop = Yes;
+    Omnipresent = Yes;
+  };
+  kfontview.Kfontview = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/kfontview.Kfontview.xpm";
+  };
+  preferences.Gimp = {
+    AlwaysUserIcon = Yes;
+    Icon = "wmaker-gimp-prefs.tif";
+  };
+  "nm-applet.Nm-applet" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/nm-applet.Nm-applet.xpm";
+  };
+  winemine.exe.Wine = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/winemine.exe.Wine.xpm";
+  };
+  "processing-app-Base.processing-app-Base" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/processing-app-Base.processing-app-Base.xpm";
+  };
+  "script-fu.Script-fu" = {
+    Icon = "wmaker-gimp-script-fu.tif";
+  };
+  "VCLSalFrame.DocumentWindow.libreoffice-draw" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/VCLSalFrame.DocumentWindow.libreoffice-draw.xpm";
+  };
+  layers_and_channels.Gimp = {
+    AlwaysUserIcon = Yes;
+    Icon = "wmaker-gimp-layers.tif";
+  };
+  "empathy-chat.Empathy" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/empathy-chat.Empathy.xpm";
+  };
+  brushselection.Gimp = {
+    AlwaysUserIcon = Yes;
+    Icon = "wmaker-gimp-brushes.tif";
+  };
+  "file-pdf-load.File-pdf-load" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/file-pdf-load.File-pdf-load.xpm";
+  };
+  "evince-previewer.Evince-previewer" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/evince-previewer.Evince-previewer.xpm";
+  };
+  YaST2.YaST2 = {
+    Icon = yast.png;
+  };
+  okular.Okular = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/okular.Okular.xpm";
+  };
+  "sun-awt-X11-XFramePeer.Histo" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sun-awt-X11-XFramePeer.Histo.xpm";
+  };
+  sublime_text.Sublime_text = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sublime_text.Sublime_text.xpm";
+  };
+  synaptic.Synaptic = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/synaptic.Synaptic.xpm";
+  };
+  "sun-awt-X11-XFramePeer.sun-applet-PluginMain" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sun-awt-X11-XFramePeer.sun-applet-PluginMain.xpm";
+  };
+  designer.Designer = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/designer.Designer.xpm";
+  };
+  "exo-helper-1.Exo-helper-1" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/exo-helper-1.Exo-helper-1.xpm";
+  };
+  tilda.Tilda = {
+    SkipWindowList = Yes;
+    NoTitlebar = Yes;
+    NoAppIcon = Yes;
+    NoMiniaturizeButton = Yes;
+    NoResizebar = Yes;
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/tilda.Tilda.xpm";
+    KeepOnBottom = Yes;
+    KeepOnTop = Yes;
+    NoCloseButton = Yes;
+    Omnipresent = Yes;
+  };
+  chromium.Chromium = {
+    Icon = chromium.png;
+  };
+  kded4.Kded4 = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/kded4.Kded4.xpm";
+  };
+  atom.Atom = {
+    Icon = atom.png;
+  };
+  galculator.Galculator = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/galculator.Galculator.xpm";
+  };
+  Gimp = {
+    AlwaysUserIcon = Yes;
+    Icon = "wmaker-gimp2.tif";
+  };
+  "sun-awt-X11-XFramePeer.COM-ibm-storage-adsm-cadmin-clientgui-DDsmApplet" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sun-awt-X11-XFramePeer.COM-ibm-storage-adsm-cadmin-clientgui-DDsmApplet.xpm";
+  };
+  "libreoffice.libreoffice-calc" = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/libreoffice.libreoffice-calc.xpm";
+  };
+  inkscape.Inkscape = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/inkscape.Inkscape.xpm";
+  };
+  totem.Totem = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/totem.Totem.xpm";
+  };
+  "nm-connection-editor.Nm-connection-editor" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/nm-connection-editor.Nm-connection-editor.xpm";
+  };
+  thunderbird.Thunderbird = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/thunderbird.Thunderbird.xpm";
+  };
+  Netscape = {
+    Icon = "wmaker-netscape.tif";
+  };
+  "y2controlcenter-gnome.Y2controlcenter-gnome" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/y2controlcenter-gnome.Y2controlcenter-gnome.xpm";
+  };
+  "VCLSalFrame.libreoffice-writer" = {
+    Icon = "libreoffice-writer.png";
+  };
+  "sun-awt-X11-XFramePeer.jetbrains-pycharm" = {
+    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sun-awt-X11-XFramePeer.jetbrains-pycharm.xpm";
   };
   wineboot.exe.Wine = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/wineboot.exe.Wine.xpm";
-  };
-  "claws-mail.Claws-mail" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/claws-mail.Claws-mail.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/wineboot.exe.Wine.xpm";
   };
   image_window.Gimp = {
     AlwaysUserIcon = Yes;
     Icon = "wmaker-gimp-work.tif";
   };
+  "claws-mail.Claws-mail" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/claws-mail.Claws-mail.xpm";
+  };
   "VCLSalFrame.DocumentWindow.LibreOffice 4.1" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/VCLSalFrame.DocumentWindow.LibreOffice 4.1.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/VCLSalFrame.DocumentWindow.LibreOffice 4.1.xpm";
   };
   "Script-fu" = {
     Icon = "wmaker-gimp-script-fu.tif";
@@ -429,28 +533,22 @@
     Omnipresent = Yes;
   };
   vlc.Vlc = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/vlc.Vlc.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/vlc.Vlc.xpm";
   };
   selfservice.Selfservice = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/selfservice.Selfservice.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/selfservice.Selfservice.xpm";
   };
   gnumeric.Gnumeric = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gnumeric.Gnumeric.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gnumeric.Gnumeric.xpm";
+  };
+  "file-roller.File-roller" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/file-roller.File-roller.xpm";
   };
   "libreoffice.libreoffice-startcenter" = {
     Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/libreoffice.libreoffice-startcenter.xpm";
   };
-  Pidgin.Pidgin = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/Pidgin.Pidgin.xpm";
-  };
-  "file-roller.File-roller" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/file-roller.File-roller.xpm";
-  };
-  "jetbrains-pycharm.jetbrains-pycharm" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/jetbrains-pycharm.jetbrains-pycharm.xpm";
-  };
   "libreoffice.libreoffice-writer" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/libreoffice.libreoffice-writer.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/libreoffice.libreoffice-writer.xpm";
   };
   lxterminal.Lxterminal = {
     AlwaysUserIcon = No;
@@ -458,25 +556,16 @@
     FullMaximize = Yes;
   };
   kdiamond.Kdiamond = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/kdiamond.Kdiamond.xpm";
-  };
-  kate.Kate = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/kate.Kate.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/kdiamond.Kdiamond.xpm";
   };
   nepomukbackup.Nepomukbackup = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/nepomukbackup.Nepomukbackup.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/nepomukbackup.Nepomukbackup.xpm";
   };
   gwenview.Gwenview = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gwenview.Gwenview.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gwenview.Gwenview.xpm";
   };
   qtconsoleapp.pyc.Qtconsoleapp.pyc = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/qtconsoleapp.pyc.Qtconsoleapp.pyc.xpm";
-  };
-  Logo.WMClip = {
-    Icon = clip.tiff;
-  };
-  meld.Meld = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/meld.Meld.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/qtconsoleapp.pyc.Qtconsoleapp.pyc.xpm";
   };
   tip_of_the_day.Gimp = {
     NoMiniaturizeButton = Yes;
@@ -486,117 +575,52 @@
     KeepOnTop = Yes;
     NoCloseButton = Yes;
   };
-  "ROX-Filer.ROX-Filer" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/ROX-Filer.ROX-Filer.xpm";
+  meld.Meld = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/meld.Meld.xpm";
   };
-  "empathy-accounts.Empathy-accounts" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/empathy-accounts.Empathy-accounts.xpm";
+  "ROX-Filer.ROX-Filer" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/ROX-Filer.ROX-Filer.xpm";
   };
   "VCLSalFrame.LibreOffice 4.1" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/VCLSalFrame.LibreOffice 4.1.xpm";
-  };
-  gimp.Gimp = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gimp.Gimp.xpm";
-  };
-  "sun-awt-X11-XFramePeer.ch-fhnw-jbackpack-JBackpack" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sun-awt-X11-XFramePeer.ch-fhnw-jbackpack-JBackpack.xpm";
-  };
-  panel = {
-    NoAppIcon = Yes;
-  };
-  "gimp-2.8.Gimp-2.8" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gimp-2.8.Gimp-2.8.xpm";
-  };
-  "mysql-workbench-bin.Mysql-workbench-bin" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/mysql-workbench-bin.Mysql-workbench-bin.xpm";
-  };
-  "VCLSalFrame.DocumentWindow.libreoffice-impress" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/VCLSalFrame.DocumentWindow.libreoffice-impress.xpm";
-  };
-  "VCLSalFrame.DocumentWindow.libreoffice-calc" = {
-    Icon = "libreoffice-calc.png";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/VCLSalFrame.LibreOffice 4.1.xpm";
   };
   hdfViewer.py.HdfViewer.py = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/hdfViewer.py.HdfViewer.py.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/hdfViewer.py.HdfViewer.py.xpm";
   };
-  openshot.Openshot = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/openshot.Openshot.xpm";
-  };
-  nepomukcleaner.Nepomukcleaner = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/nepomukcleaner.Nepomukcleaner.xpm";
-  };
-  "VCLSalFrame.DocumentWindow.libreoffice-writer" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/VCLSalFrame.DocumentWindow.libreoffice-writer.xpm";
-  };
-  iexplore.exe.Wine = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/iexplore.exe.Wine.xpm";
+  "VCLSalFrame.DocumentWindow.libreoffice-impress" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/VCLSalFrame.DocumentWindow.libreoffice-impress.xpm";
   };
   "lxsession-edit.Lxsession-edit" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/lxsession-edit.Lxsession-edit.xpm";
-  };
-  gimp_startup.Gimp = {
-    NotClosable = Yes;
-    NoTitlebar = Yes;
-    NotMiniaturizable = Yes;
-    AlwaysUserIcon = Yes;
-    NoResizebar = Yes;
-    Icon = "wmaker-gimp2.tif";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/lxsession-edit.Lxsession-edit.xpm";
   };
   gitg.Gitg = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gitg.Gitg.xpm";
-  };
-  "libreoffice.libreoffice-draw" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/libreoffice.libreoffice-draw.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gitg.Gitg.xpm";
   };
   gpartedbin.Gpartedbin = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gpartedbin.Gpartedbin.xpm";
-  };
-  "xfce4-about.Xfce4-about" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/xfce4-about.Xfce4-about.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/gpartedbin.Gpartedbin.xpm";
   };
   Logo.WMPanel = {
     Icon = GNUstep.tiff;
   };
-  lxappearance.Lxappearance = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/lxappearance.Lxappearance.xpm";
+  "xfce4-about.Xfce4-about" = {
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/xfce4-about.Xfce4-about.xpm";
   };
   amarok.Amarok = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/amarok.Amarok.xpm";
-  };
-  "sun-awt-X11-XFramePeer.com-mathworks-util-PostVMInit" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sun-awt-X11-XFramePeer.com-mathworks-util-PostVMInit.xpm";
-  };
-  "evolution-alarm-notify.Evolution-alarm-notify" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/evolution-alarm-notify.Evolution-alarm-notify.xpm";
-  };
-  radiotray.Radiotray = {
-    Icon = radiotray.png;
-  };
-  apper.Apper = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/apper.Apper.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/amarok.Amarok.xpm";
   };
   XTerm = {
     Icon = GNUterm.tiff;
   };
   nautilus.Nautilus = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/nautilus.Nautilus.xpm";
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/nautilus.Nautilus.xpm";
   };
   kcmshell4.Kcmshell4 = {
     Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/kcmshell4.Kcmshell4.xpm";
   };
   assistant.Assistant = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/assistant.Assistant.xpm";
-  };
-  Logo.WMDock = {
-    Icon = GNUstep.tiff;
+    Icon = "/home/schinkel/GNUstep/Library/WindowMaker/CachedPixmaps/assistant.Assistant.xpm";
   };
   "google-chrome.Google-chrome" = {
     Icon = "/opt/google/chrome/product_logo_48.png";
-  };
-  "sun-awt-X11-XFramePeer.gov-nasa-giss-panoply-Panoply" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/sun-awt-X11-XFramePeer.gov-nasa-giss-panoply-Panoply.xpm";
-  };
-  "xfce4-screenshooter.Xfce4-screenshooter" = {
-    Icon = "/home/sschinkel/GNUstep/Library/WindowMaker/CachedPixmaps/xfce4-screenshooter.Xfce4-screenshooter.xpm";
   };
 }
