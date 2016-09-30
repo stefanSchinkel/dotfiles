@@ -20,6 +20,8 @@ Global {
   background=0
   backgroundfile=/usr/share/lxpanel/images/background.png
   monitor=1
+  autohide=0
+  heightwhenhidden=0
 }
 Plugin {
   type=space
@@ -83,6 +85,9 @@ Plugin {
     Button {
       id=menu://applications/Internet/chromium.desktop
     }
+    Button {
+      id=menu://applications/System/lxterminal.desktop
+    }
   }
 }
 Plugin {
@@ -117,6 +122,18 @@ Plugin {
 Plugin {
   type=tray
   Config {
+  }
+}
+Plugin {
+  type=thermal
+  Config {
+    NormalColor=#00ff00
+    Warning1Color=#fff000
+    Warning2Color=#ff0000
+    AutomaticLevels=1
+    Warning1Temp=93
+    Warning2Temp=98
+    AutomaticSensor=1
   }
 }
 Plugin {
