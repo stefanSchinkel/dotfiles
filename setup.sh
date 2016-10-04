@@ -6,10 +6,13 @@ ln -fsv ~/.dotfiles/coloursrc ~/.coloursrc
 ln -fsv ~/.dotfiles/tmux.conf ~/.tmux.conf
 ln -fsv ~/.dotfiles/lxpanel ~/.config/lxpanel/default/panels/panel
 ln -fsv ~/.dotfiles/conkyrc ~/.conkyrc
-ln -fsv ~/.dotfiles/standard.sh ~/.screenlayout/standard.sh
 ln -fsv ~/.dotfiles/Xresources ~/.Xresources
 
-#vim
+# screen layouts
+ln -fsv ~/.dotfiles/screenlayout/extern_primary.sh ~/.screenlayout/extern_primary.sh
+ln -fsv ~/.dotfiles/screenlayout/standard.sh ~/.screenlayout/standard.sh
+
+# vim
 ln -fsv ~/.dotfiles/vimrc ~/.vimrc
 mkdir ~/.vim/
 ln -fsv ~/.dotfiles/vim/colors/ ~/.vim/colors
