@@ -20,9 +20,9 @@ xset m 20/10 10
 #stop annoying beeps
 xset b 0
 # restart desktop apps
-conky&
-lxpanel&
-radiotray&
+killall conky && conky&
+killall lxpanel &&lxpanel&
+killall radiotray &&radiotray&
 pidgin&
 tilda&
 xscreensaver -no-splash &
