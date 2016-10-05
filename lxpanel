@@ -19,9 +19,19 @@ Global {
   fontsize=10
   background=0
   backgroundfile=/usr/share/lxpanel/images/background.png
-  monitor=1
+  monitor=0
   autohide=0
   heightwhenhidden=0
+}
+Plugin {
+  type=dclock
+  Config {
+    ClockFmt=%R
+    TooltipFmt=%A %x
+    BoldFont=1
+    IconOnly=0
+    CenterText=0
+  }
 }
 Plugin {
   type=space
@@ -146,15 +156,5 @@ Plugin {
     KeepSysLayouts=0
     DisplayType=0
     FlagSize=2
-  }
-}
-Plugin {
-  type=dclock
-  Config {
-    ClockFmt=%R
-    TooltipFmt=%A %x
-    BoldFont=0
-    IconOnly=0
-    CenterText=0
   }
 }
