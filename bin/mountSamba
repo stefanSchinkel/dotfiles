@@ -1,0 +1,14 @@
+#!/bin/sh
+
+#check iff input
+if [ -z $1 ];then
+    USER=`whoami`
+    echo "No user supplied defaulting to ${USER}"
+else
+    USER=${1}
+fi
+
+UID=`id -u ${USER}`
+GID=`id -u ${USER}`
+
+echo "sudo mount.cifs -ouser=${USER},uid=${UID},gid=${GID}  //192.168.18.102/share net/ebola/"
