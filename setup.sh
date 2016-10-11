@@ -17,12 +17,14 @@ ln -fsv ~/.dotfiles/vimrc ~/.vimrc
 mkdir ~/.vim/
 ln -fsv ~/.dotfiles/vim/colors/ ~/.vim/colors
 
+# mounts an shares
+ln -fsv ~/.dotfiles/bin/mountSamba ~/bin/mountSamba
 
 # python and ipython (qtconsole)
 ln -fsv ~/.dotfiles/pylintrc ~/.pylintrc
-ln -fSV ~/.dotfiles/pythonrc ~/.pythonrc
+ln -fsv ~/.dotfiles/pythonrc ~/.pythonrc
 ln -fsv ~/.dotfiles/ipython/ipython_config.py ~/.ipython/profile_default/ipython_config.py
-ln -fvs ~/.dotfiles/ipython/ipython_qtconsole_config.py  ~/.ipython/profile_default/ipython_qtconsole_config.py
+ln -fsv ~/.dotfiles/ipython/ipython_qtconsole_config.py  ~/.ipython/profile_default/ipython_qtconsole_config.py
 
 # JS
 ln -fsv ~/.dotfiles/jshintrc ~/.jshintrc
@@ -45,11 +47,13 @@ ln -fsv ~/.dotfiles/sublime/Anaconda.sublime-settings ~/.config/sublime-text-3/P
 mkdir -p ~/.config/sublime-text-3/Packages/User/German
 cp -uvR  ~/.dotfiles/sublime/Language-German/  ~/.config/sublime-text-3/Packages/User/
 
-# binaries
-cp -uv ~/.dotfiles/bin/getGitBranch ~/bin/getGitBranch
-cp -uvR ~/.dotfiles/bin/fortune ~/bin/
-cp -uv ~/.dotfiles/bin/matrix ~/bin/matrix
-cp -uv ~/.dotfiles/bin/fullbackup.sh ~/bin/fullbackup.sh
+# helper binaries
+ln -fsv ~/.dotfiles/bin/getGitBranch ~/bin/getGitBranch
+ln -fsv ~/.dotfiles/bin/fortune ~/bin/
+ln -fsv ~/.dotfiles/bin/matrix ~/bin/matrix
+ln -fsv ~/.dotfiles/bin/fullbackup.sh ~/bin/fullbackup.sh
+ln -fsv ~/.dotfiles/bin/rdiffBackup.sh ~/bin/rdiffBackup.sh
+
 
 # wMaker
 ln -fsv ~/.dotfiles/WMaker/autostart  ~/GNUstep/Library/WindowMaker/autostart
