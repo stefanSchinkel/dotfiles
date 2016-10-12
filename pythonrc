@@ -1,6 +1,4 @@
 import sys
 import os
-home = os.environ.get("HOME")
-sys.path.append(home+'/work/zeean/refinement/')
 
 

@@ -53,14 +53,15 @@ alias ls="ls --color=auto"
 alias la="ls -lha --color=auto"
 alias quit="exit"
 
-# to that tmux looks better w/ vim colorschemes
+# so that tmux looks better w/ vim colorschemes
 alias tmux="TERM=screen-256color-bce tmux"
 
 # collect history
-alias ref="history -a; history -c; history -r"
+#alias ref="history -a; history -c; history -r"
 
 # shorthands for virtual evens
-alias activateCommserver="source ~/.virtual_env/commserver/bin/activate"
+alias activateCS="export PYTHONPATH=~/Projects/commserver/lib/;source ~/.virtual_env/commserver/bin/activate"
+alias activateDC="export PYTHONPATH=~/Projects/diagconnector/lib/;source ~/.virtual_env/diagconnector/bin/activate"
 
 # matrix to the rescue
 #alias neo=' xterm +sb -maximized -e "COLUMNS=540 LINES=90   matrix"'
@@ -69,7 +70,8 @@ alias activateCommserver="source ~/.virtual_env/commserver/bin/activate"
 ###			  PATH CUSTOMIZATION
 ################################################################################
 # QGIS lib paths
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/apps/lib/
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/apps/lib/
+
 #TEX
 export TEXINPUTS=$TEXINPUTS:~/texmf/:
 
@@ -85,10 +87,11 @@ export NODE_PATH=/usr/lib/node_modules
 # export PYTHONSTARTUP
 
 ## PYTHON
-export PYTHONPATH=/home/sschinkel/Projects/commserver/lib/
+
+#export PYTHONPATH=/foobar/
 
 # setup variable for QT designer to use matplotly
-export  PYQTDESIGNERPATH=/usr/lib64/qt4/plugins/designer/python/matplotlibplugin.py
+#export  PYQTDESIGNERPATH=/usr/lib64/qt4/plugins/designer/python/matplotlibplugin.py
 
 
 ###############################################################################
@@ -104,6 +107,7 @@ shopt -s histappend
 # After each command, save and reload history
 #export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 export PROMPT_COMMAND=$PROMPT_COMMAND
+
 ###############################################################################
 ###			  PROMPT CUSTOMIZATION
 ##############################################################################
