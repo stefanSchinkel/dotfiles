@@ -3,7 +3,7 @@
 */
 {
 
-    "python_interpreter": "/home/sschinkel/.virtual_env/commserver/bin/python",
+    "auto_python_builder_enabled": false, // this will otherwise constantly change the project
     "anaconda_tooltip_theme": "light",  // possible options "light" or "dark"
     "anaconda_linter_mark_style": "none",
     "autoformat_ignore":
