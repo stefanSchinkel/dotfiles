@@ -11,6 +11,7 @@ ln -fsv ~/.dotfiles/Xresources ~/.Xresources
 # screen layouts
 ln -fsv ~/.dotfiles/screenlayout/extern_primary.sh ~/.screenlayout/extern_primary.sh
 ln -fsv ~/.dotfiles/screenlayout/standard.sh ~/.screenlayout/standard.sh
+ln -fsv ~/.dotfiles/screenlayout/extern_right.sh ~/.screenlayout/extern_right.sh
 
 # vim
 ln -fsv ~/.dotfiles/vimrc ~/.vimrc
