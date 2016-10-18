@@ -49,12 +49,14 @@ mkdir -p ~/.config/sublime-text-3/Packages/User/German
 cp -uvR  ~/.dotfiles/sublime/Language-German/  ~/.config/sublime-text-3/Packages/User/
 
 # helper binaries
-ln -fsv ~/.dotfiles/bin/getGitBranch ~/bin/getGitBranch
+# for $HELPER in bin; do foo; done
+ln -fsv ~/.dotfiles/bin/getGitBranch ~/bin/
 ln -fsv ~/.dotfiles/bin/fortune ~/bin/
-ln -fsv ~/.dotfiles/bin/matrix ~/bin/matrix
-ln -fsv ~/.dotfiles/bin/fullbackup.sh ~/bin/fullbackup.sh
-ln -fsv ~/.dotfiles/bin/rdiffBackup.sh ~/bin/rdiffBackup.sh
-
+ln -fsv ~/.dotfiles/bin/matrix ~/bin/
+ln -fsv ~/.dotfiles/bin/fullbackup.sh ~/bin/
+ln -fsv ~/.dotfiles/bin/rdiffBackup.sh ~/bin/
+ln -fsv ~/.dotfiles/bin/mountSamba ~/bin/
+ln -fsv ~/.dotfiles/bin/mountBackup ~/bin/
 
 # wMaker
 ln -fsv ~/.dotfiles/WMaker/autostart  ~/GNUstep/Library/WindowMaker/autostart
