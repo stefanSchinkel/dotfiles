@@ -8,6 +8,13 @@
 		"kundeneigen",
 		"kundeneigenen"
 	],
+	"auto_complete_triggers":
+	[
+		{
+			"characters": ".",
+			"selector": "source"
+		}
+	],
 	"auto_match_enabled": false,
 	"caret_extra_bottom": 0,
 	"caret_extra_top": 0,
@@ -34,6 +41,7 @@
 		100
 	],
 	"scroll_speed": 0,
+	"show_errors_inline": false,
 	"translate_tabs_to_spaces": true,
 	"wrap_width": 80
 }
