@@ -63,6 +63,9 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias activateCS="export PYTHONPATH=~/Projects/commserver/lib/;source ~/.virtual_env/commserver/bin/activate"
 alias activateDC="export PYTHONPATH=~/Projects/diagconnector/lib/;source ~/.virtual_env/diagconnector/bin/activate"
 
+# other helpers
+alias clearRAMFS="rm -fr ~/ramfs/*"
+
 # matrix to the rescue
 #alias neo=' xterm +sb -maximized -e "COLUMNS=540 LINES=90   matrix"'
 
