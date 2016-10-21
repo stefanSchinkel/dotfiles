@@ -28,7 +28,14 @@
                 <bookmark name="Groove Salad" url="http://somafm.com/groovesalad.pls"/>
                 <bookmark name="Illinois Street Lounge" url="http://somafm.com/illstreet.pls"/>
             </group>
-            <group name="Classical">
+            </group>
+        <group name="BBC">
+            <bookmark name="BBC Radio 1" url="http://www.radiofeeds.co.uk/bbcradio1.pls"/>
+            <bookmark name="BBC Radio 2" url="http://www.radiofeeds.co.uk/bbcradio2.pls"/>
+            <bookmark name="BBC Radio 4xtra" url="http://www.radiofeeds.co.uk/bbcradio4extra.pls"/>
+            <bookmark name="BBC Radio 1xtra" url="http://www.radiofeeds.co.uk/bbc1xtra.pls"/>
+        </group>
+        <group name="Classical">
                 <bookmark name="KDFC" url="http://provisioning.streamtheworld.com/pls/KDFCFM.pls"/>
                 <bookmark name="Classic FM" url="http://media-ice.musicradio.com/ClassicFMMP3.m3u"/>
                 <bookmark name="WCPE" url="http://www.ibiblio.org/wcpe/wcpe.pls"/>
@@ -36,8 +43,7 @@
                 <bookmark name="SKY.fm Soundtracks" url="http://listen.sky.fm/public1/soundtracks.pls"/>
                 <bookmark name="SKY.fm Mostly Classical" url="http://listen.sky.fm/public1/classical.pls"/>
             </group>
-        </group>
-        <group name="Techno / Electronic">
+        <group name="Techno">
             <bookmark name="Drone Zone" url="http://somafm.com/dronezone.pls"/>
             <bookmark name="Space Station Soma" url="http://somafm.com/spacestation.pls"/>
             <bookmark name="cliqhop idm" url="http://somafm.com/cliqhop.pls"/>
@@ -45,12 +51,6 @@
             <bookmark name="New Dance Radio" url="http://jbstream.net/tunein.php/blackoutworm/playlist.asx"/>
             <bookmark name="Proton Radio" url="http://www.protonradio.com/proton.m3u"/>
             <bookmark name="TechnoMania" url="http://83.137.145.141:14240"/>
-        </group>
-        <group name="BBC">
-            <bookmark name="BBC Radio 1" url="http://www.radiofeeds.co.uk/bbcradio1.pls"/>
-            <bookmark name="BBC Radio 2" url="http://www.radiofeeds.co.uk/bbcradio2.pls"/>
-            <bookmark name="BBC Radio 4xtra" url="http://www.radiofeeds.co.uk/bbcradio4extra.pls"/>
-            <bookmark name="BBC Radio 1xtra" url="http://www.radiofeeds.co.uk/bbc1xtra.pls"/>
         </group>
         <group name="Dudelfunk">
             <bookmark name="1LIVE" url="http://www.wdr.de/wdrlive/media/einslive.m3u"/>
@@ -75,5 +75,5 @@
 
         <bookmark name="detektor (musik)" url="http://detektor.fm/stream/mp3/musik/"/>
 
-    </group>
+    <bookmark name="#techhouse" url="http://techhouse-high.rautemusik.fm"/><bookmark name="#lounge" url="http://lounge-high.rautemusik.fm"/><bookmark name="#trance" url="http://trance-high.rautemusik.fm"/></group>
 </bookmarks>
