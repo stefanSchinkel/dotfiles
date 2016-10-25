@@ -19,10 +19,21 @@ xset m 20/10 10
 
 #stop annoying beeps
 xset b 0
-# restart desktop apps
+
+# force restart desktop apps, config likely to have changed
 killall conky && conky&
 killall lxpanel &&lxpanel&
-killall radiotray &&radiotray&
+
+# radiotray is a python app=> does not have "own" pid
+ps cax | grep radiotray > /dev/null
+if [ $? -ne 0 ]; then
+    radiotray&
+fi
+# tilda could have mulitple instances
+if [[ `pidof tilda` -ne 0 ]]; then
+    tilda&
+fi
+
+# those are smart enough to run only once (ie have demons)
 pidgin&
-tilda&
 xscreensaver -no-splash &
