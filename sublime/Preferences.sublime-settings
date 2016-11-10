@@ -32,7 +32,6 @@
 		"jQuery",
 		"Pylinter",
 		"sublime-text-2-buildview",
-		"SublimeCodeIntel",
 		"Vintage"
 	],
 	"rulers":
@@ -42,6 +41,7 @@
 	],
 	"scroll_speed": 0,
 	"show_errors_inline": false,
+	"spell_check": false,
 	"translate_tabs_to_spaces": true,
 	"wrap_width": 80
 }
