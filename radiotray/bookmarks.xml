@@ -20,15 +20,7 @@
                 <bookmark name="WNAR" url="http://live.wnar-am.com:8500/listen.pls"/>
                 <bookmark name="SKY.fm Oldies" url="http://listen.sky.fm/public1/oldies.pls"/>
             </group>
-            <group name="Chill">
-                <bookmark name="181.FM" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275050"/>
-                <bookmark name="Lounge Radio" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1288934"/>
-                <bookmark name="Beat Blender" url="http://somafm.com/beatblender.pls"/>
-                <bookmark name="Secret Agent" url="http://somafm.com/secretagent.pls"/>
-                <bookmark name="Groove Salad" url="http://somafm.com/groovesalad.pls"/>
-                <bookmark name="Illinois Street Lounge" url="http://somafm.com/illstreet.pls"/>
-            </group>
-            </group>
+        </group>
         <group name="BBC">
             <bookmark name="BBC Radio 1" url="http://www.radiofeeds.co.uk/bbcradio1.pls"/>
             <bookmark name="BBC Radio 2" url="http://www.radiofeeds.co.uk/bbcradio2.pls"/>
@@ -43,37 +35,59 @@
                 <bookmark name="SKY.fm Soundtracks" url="http://listen.sky.fm/public1/soundtracks.pls"/>
                 <bookmark name="SKY.fm Mostly Classical" url="http://listen.sky.fm/public1/classical.pls"/>
             </group>
-        <group name="Techno">
-            <bookmark name="Drone Zone" url="http://somafm.com/dronezone.pls"/>
-            <bookmark name="Space Station Soma" url="http://somafm.com/spacestation.pls"/>
-            <bookmark name="cliqhop idm" url="http://somafm.com/cliqhop.pls"/>
-            <bookmark name="Black Rock FM" url="http://somafm.com/brfm.pls"/>
-            <bookmark name="New Dance Radio" url="http://jbstream.net/tunein.php/blackoutworm/playlist.asx"/>
-            <bookmark name="Proton Radio" url="http://www.protonradio.com/proton.m3u"/>
-            <bookmark name="TechnoMania" url="http://83.137.145.141:14240"/>
+        <group name="electro">
+            <group name="Progressive">
+                <bookmark name="Hirschmilch Progressive" url="http://144.76.106.52:5000/progressive.aac"/>
+                <bookmark name="Hirschmilch Psytrance" url="http://144.76.106.52:7000/psytrance.aac" />
+                <bookmark name="Lugaradio" url="http://176.104.22.115:8000/8000/192.mp3"/>
+                <bookmark name="24/7 Radio" url="http://2.248.43.246:443/music.mp3"/>
+                <bookmark name="] Reboot Radio [" url="http://31.220.7.173:8000/stream/1" />
+            </group>
+            <group name="#musik">
+                <bookmark name="#techhouse" url="http://techhouse-high.rautemusik.fm"/>
+                <bookmark name="#lounge" url="http://lounge-high.rautemusik.fm"/>
+                <bookmark name="#trance" url="http://trance-high.rautemusik.fm"/>
+            </group>
+            <group name="Techno">
+                <bookmark name="Drone Zone" url="http://somafm.com/dronezone.pls"/>
+                <bookmark name="Space Station Soma" url="http://somafm.com/spacestation.pls"/>
+                <bookmark name="cliqhop idm" url="http://somafm.com/cliqhop.pls"/>
+                <bookmark name="Black Rock FM" url="http://somafm.com/brfm.pls"/>
+                <bookmark name="New Dance Radio" url="http://jbstream.net/tunein.php/blackoutworm/playlist.asx"/>
+                <bookmark name="Proton Radio" url="http://www.protonradio.com/proton.m3u"/>
+                <bookmark name="TechnoMania" url="http://83.137.145.141:14240"/>
+            </group>
+            <group name="Dudelfunk">
+                <bookmark name="1LIVE" url="http://www.wdr.de/wdrlive/media/einslive.m3u"/>
+                <bookmark name="Fritz" url="http://www.fritz.de/live.m3u"/>
+                <bookmark name="Jump!" url="http://www.surfmusik.de/m3u/mdr-jump,1011.m3u"/>
+                <bookmark name="Sputnik" url="http://www.sputnik.de/m3u/live.hi.m3u"/>
+            </group>
+            <group name="Computer">
+    			<bookmark name="Slay Radio" url="http://www.slayradio.org/tune_in.php/128kbps/slayradio.128.m3u"/>
+    		</group>
+    		<group name="Minimal">
+    			<bookmark name="minimalradio.de" url="http://2mediaserver.de:8000/"/>
+    			<bookmark name="raute.fm" url="http://techhouse-high.rautemusik.fm"/>
+    			<bookmark name="Radio lclhst" url="http://radio.lclhst.net/listen.m3u"/>
+    			<bookmark name="MTHN minimal electro" url="http://electro.mthn.net:8400"/>
+    			<bookmark name="Afterhour FM" url="http://ca.ah.fm:443"/>
+    		</group>
+            <group name="industrial/EBM">
+                <bookmark name="Rant Radio" url="http://broadcast.rantradio.com:8888"/>
+                <bookmark name="Real Industrial Radio" url="http://23.228.66.66:8000"/>
+                <bookmark name="Radio-Dunklemacht" url="http://84.39.97.114:8000"/>
+                <bookmark name="EBM www.utopiaone.net" url="http://81.7.16.167:8000"/>
+            </group>
+            <group name="Chill">
+                <bookmark name="181.FM" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275050"/>
+                <bookmark name="Lounge Radio" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1288934"/>
+                <bookmark name="Beat Blender" url="http://somafm.com/beatblender.pls"/>
+                <bookmark name="Secret Agent" url="http://somafm.com/secretagent.pls"/>
+                <bookmark name="Groove Salad" url="http://somafm.com/groovesalad.pls"/>
+                <bookmark name="Illinois Street Lounge" url="http://somafm.com/illstreet.pls"/>
+            </group>
         </group>
-        <group name="Dudelfunk">
-            <bookmark name="1LIVE" url="http://www.wdr.de/wdrlive/media/einslive.m3u"/>
-            <bookmark name="Fritz" url="http://www.fritz.de/live.m3u"/>
-            <bookmark name="Jump!" url="http://www.surfmusik.de/m3u/mdr-jump,1011.m3u"/>
-            <bookmark name="Sputnik" url="http://www.sputnik.de/m3u/live.hi.m3u"/>
-        </group>
-        <group name="Computer">
-			<bookmark name="Slay Radio" url="http://www.slayradio.org/tune_in.php/128kbps/slayradio.128.m3u"/>
-		</group>
-		<group name="Minimal">
-			<bookmark name="minimalradio.de" url="http://2mediaserver.de:8000/"/>
-			<bookmark name="raute.fm" url="http://techhouse-high.rautemusik.fm"/>
-			<bookmark name="Radio lclhst" url="http://radio.lclhst.net/listen.m3u"/>
-			<bookmark name="MTHN minimal electro" url="http://electro.mthn.net:8400"/>
-			<bookmark name="Afterhour FM" url="http://ca.ah.fm:443"/>
-		</group>
-        <group name="industrial/EBM">
-            <bookmark name="Rant Radio" url="http://broadcast.rantradio.com:8888"/>
-            <bookmark name="Real Industrial Radio" url="http://23.228.66.66:8000"/>
-            <bookmark name="Radio-Dunklemacht" url="http://84.39.97.114:8000"/><bookmark name="EBM www.utopiaone.net" url="http://81.7.16.167:8000"/></group>
-
         <bookmark name="detektor (musik)" url="http://detektor.fm/stream/mp3/musik/"/>
-
-    <bookmark name="#techhouse" url="http://techhouse-high.rautemusik.fm"/><bookmark name="#lounge" url="http://lounge-high.rautemusik.fm"/><bookmark name="#trance" url="http://trance-high.rautemusik.fm"/></group>
+    </group>
 </bookmarks>
