@@ -24,16 +24,6 @@ Global {
   heightwhenhidden=0
 }
 Plugin {
-  type=dclock
-  Config {
-    ClockFmt=%R
-    TooltipFmt=%A %x
-    BoldFont=1
-    IconOnly=0
-    CenterText=0
-  }
-}
-Plugin {
   type=space
   Config {
     Size=2
@@ -65,13 +55,6 @@ Plugin {
   }
 }
 Plugin {
-  type=wincmd
-  Config {
-    Button1=iconify
-    Button2=shade
-  }
-}
-Plugin {
   type=space
   Config {
     Size=4
@@ -90,6 +73,9 @@ Plugin {
       id=menu://applications/Development/sublime.desktop
     }
     Button {
+      id=menu://applications/Development/jetbrains-pycharm.desktop
+    }
+    Button {
       id=menu://applications/Internet/firefox-esr.desktop
     }
     Button {
@@ -101,8 +87,10 @@ Plugin {
   }
 }
 Plugin {
-  type=pager
+  type=wincmd
   Config {
+    Button1=iconify
+    Button2=shade
   }
 }
 Plugin {
@@ -112,21 +100,45 @@ Plugin {
   }
 }
 Plugin {
+  type=pager
+  Config {
+  }
+}
+Plugin {
   type=taskbar
   Config {
     FlatButton=1
     GroupedTasks=1
     IconsOnly=0
+    SameMonitorOnly=0
+    spacing=1
   }
 }
 Plugin {
-  type=cpu
+  type=space
   Config {
+    Size=2
   }
 }
 Plugin {
   type=volumealsa
   Config {
+  }
+}
+Plugin {
+  type=batt
+  Config {
+    BackgroundColor=black
+    ChargingColor1=#28f200
+    ChargingColor2=#22cc00
+    DischargingColor1=#ffee00
+    DischargingColor2=#d9ca00
+    HideIfNoBattery=0
+    AlarmCommand=xmessage Battery low
+    AlarmTime=5
+    BorderWidth=1
+    Size=8
+    ShowExtendedInformation=0
   }
 }
 Plugin {
@@ -156,5 +168,15 @@ Plugin {
     KeepSysLayouts=0
     DisplayType=0
     FlagSize=2
+  }
+}
+Plugin {
+  type=dclock
+  Config {
+    ClockFmt=%R
+    TooltipFmt=%A %x
+    BoldFont=1
+    IconOnly=0
+    CenterText=0
   }
 }
