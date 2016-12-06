@@ -11,4 +11,4 @@ fi
 UID=`id -u ${USER}`
 GID=`id -u ${USER}`
 
-sudo mount.cifs -ouser=${USER},uid=${UID},gid=${GID}  //ebola/share net/ebola/
+sudo mount.cifs -ouser=${USER},uid=${UID},gid=${GID}  //ebola/share ~/net/ebola/
