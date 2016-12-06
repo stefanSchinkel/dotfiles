@@ -11,9 +11,12 @@
         "E203",
         "E309"
     ],
-
+    "pep8_ignore":
+    [
+        "E501"
+    ],
     /* By default the theme is PythonConsoleDark.hidden-tmTheme is used,
-    but the i prefer bright here
+    but the I prefer bright here
     NOTE: The file specified here **MUST** exists in `Packages/Anaconda`
     */
     "test_runner_theme": "PythonConsoleLight.hidden-tmTheme",
