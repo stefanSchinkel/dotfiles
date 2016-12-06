@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Place applications to be executed when WindowMaker is started here.
 # This should only be used for non-X applications or applications that
@@ -14,23 +14,36 @@
 #
 # This file must be executable.
 #
+
+# start with assumed default layout
+sh ~/.screenlayout/extern_right.sh
+
 # mouse acceleration settings
 xset m 20/10 10
 
 #stop annoying beeps
 xset b 0
 
+
 # force restart desktop apps, config likely to have changed
-killall conky && conky&
-killall lxpanel &&lxpanel&
+ps cax | grep conky > /dev/null
+if [[ $? -ne 0 ]]; then
+    conky&
+fi
+
+ps cax | grep lxpanel > /dev/null
+if [[ $? -ne 0 ]]; then
+    lxpanel&
+fi
 
 # radiotray is a python app=> does not have "own" pid
 ps cax | grep radiotray > /dev/null
-if [ $? -ne 0 ]; then
+if [[ $? -ne 0 ]]; then
     radiotray&
 fi
-# tilda could have mulitple instances
-if [[ `pidof tilda` -ne 0 ]]; then
+# tilda
+ps cax | grep tilda > /dev/null
+if [[ $? -ne 0 ]]; then
     tilda&
 fi
 

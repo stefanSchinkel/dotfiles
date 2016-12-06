@@ -19,7 +19,7 @@ Global {
   fontsize=10
   background=0
   backgroundfile=/usr/share/lxpanel/images/background.png
-  monitor=0
+  monitor=1
   autohide=0
   heightwhenhidden=0
 }
@@ -67,26 +67,6 @@ Plugin {
   }
 }
 Plugin {
-  type=launchbar
-  Config {
-    Button {
-      id=menu://applications/Development/sublime.desktop
-    }
-    Button {
-      id=menu://applications/Development/jetbrains-pycharm.desktop
-    }
-    Button {
-      id=menu://applications/Internet/firefox-esr.desktop
-    }
-    Button {
-      id=menu://applications/Internet/chromium.desktop
-    }
-    Button {
-      id=menu://applications/System/lxterminal.desktop
-    }
-  }
-}
-Plugin {
   type=wincmd
   Config {
     Button1=iconify
@@ -97,6 +77,23 @@ Plugin {
   type=space
   Config {
     Size=4
+  }
+}
+Plugin {
+  type=launchbar
+  Config {
+    Button {
+      id=menu://applications/System/lxterminal.desktop
+    }
+    Button {
+      id=menu://applications/Development/jetbrains-pycharm.desktop
+    }
+    Button {
+      id=menu://applications/Internet/chromium.desktop
+    }
+    Button {
+      id=menu://applications/Graphics/kde4-okular.desktop
+    }
   }
 }
 Plugin {
