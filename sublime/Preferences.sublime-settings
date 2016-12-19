@@ -44,5 +44,6 @@
 	"spell_check": false,
 	"translate_tabs_to_spaces": true,
 	"word_wrap": "auto",
-	"wrap_width": 80
+	"wrap_width": 80,
+	"show_encoding": true
 }
