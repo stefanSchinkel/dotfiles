@@ -65,6 +65,8 @@ alias activateDC="export PYTHONPATH=~/Projects/diagconnector/lib/;source ~/.virt
 
 # other helpers
 alias clearRAMFS="rm -fr ~/ramfs/*"
+alias startRC="~/bin/node_modules/.bin/redis-commander -p 8888"
+
 
 # matrix to the rescue
 #alias neo=' xterm +sb -maximized -e "COLUMNS=540 LINES=90   matrix"'
