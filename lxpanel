@@ -19,7 +19,7 @@ Global {
   fontsize=10
   background=0
   backgroundfile=/usr/share/lxpanel/images/background.png
-  monitor=1
+  monitor=0
   autohide=0
   heightwhenhidden=0
 }
