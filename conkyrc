@@ -1,3 +1,4 @@
+
 # set to yes if you want Conky to be forked in the background
 background no
 
@@ -215,7 +216,8 @@ ${color lightgrey}RAM Usage:$color $mem/$memmax - $memperc% $membar
 ${color lightgrey}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar}
 ${color lightgrey}Processes:$color $processes  ${color grey}Running:$color $running_processes
 $color$stippled_hr
-${color lightgrey}Networking: $color ${addr eth0}
+${color lightgrey}LAN : $color ${addr enp0s20u3u1}
+${color lightgrey}WiFi: $color ${addr wlp2s0}
 Down:${color orange} ${downspeed em1} ${color} ${offset 70}Up:${color green} ${upspeed em1} k/s ${font}
 ${color black}${downspeedgraph em1 25,146 ff0000 0000ff} $alignr${color black}${upspeedgraph em1 25,146 0000ff ff0000}
 

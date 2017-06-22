@@ -7,7 +7,7 @@ Global {
   margin=0
   widthtype=percent
   width=100
-  height=26
+  height=25
   transparent=0
   tintcolor=#000000
   alpha=0
@@ -22,6 +22,8 @@ Global {
   monitor=0
   autohide=0
   heightwhenhidden=0
+  iconsize=24
+  align=left
 }
 Plugin {
   type=space
@@ -55,15 +57,9 @@ Plugin {
   }
 }
 Plugin {
-  type=space
-  Config {
-    Size=4
-  }
-}
-Plugin {
   type=dirmenu
   Config {
-    path=/home/sschinkel
+    path=/home/schinkel
   }
 }
 Plugin {
@@ -83,16 +79,16 @@ Plugin {
   type=launchbar
   Config {
     Button {
-      id=menu://applications/System/lxterminal.desktop
+      id=libreoffice-calc.desktop
     }
     Button {
-      id=menu://applications/Development/jetbrains-pycharm.desktop
+      id=seahorse.desktop
     }
     Button {
-      id=menu://applications/Internet/chromium.desktop
+      id=lxterminal.desktop
     }
     Button {
-      id=menu://applications/Graphics/kde4-okular.desktop
+      id=pcmanfm.desktop
     }
   }
 }
@@ -118,11 +114,6 @@ Plugin {
   }
 }
 Plugin {
-  type=volumealsa
-  Config {
-  }
-}
-Plugin {
   type=batt
   Config {
     BackgroundColor=black
@@ -139,7 +130,7 @@ Plugin {
   }
 }
 Plugin {
-  type=tray
+  type=volumealsa
   Config {
   }
 }
@@ -153,6 +144,11 @@ Plugin {
     Warning1Temp=93
     Warning2Temp=98
     AutomaticSensor=1
+  }
+}
+Plugin {
+  type=tray
+  Config {
   }
 }
 Plugin {

@@ -54,7 +54,7 @@ alias la="ls -lha --color=auto"
 alias quit="exit"
 
 # so that tmux looks better w/ vim colorschemes
-alias tmux="TERM=screen-256color-bce tmux"
+#alias tmux="TERM=screen-256color-bce tmux"
 
 # collect history
 #alias ref="history -a; history -c; history -r"
