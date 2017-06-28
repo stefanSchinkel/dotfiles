@@ -85,6 +85,8 @@ export TEXINPUTS=$TEXINPUTS:~/texmf/:
 ###############################################################################
 export GOPATH=$HOME/Projects/go
 export PATH=$PATH:$GOPATH/bin
+# and add custom go install
+export PATH=$HOME/go/bin:$PATH
 
 ################################################################################
 ###			  NODE CUSTOMIZATION
