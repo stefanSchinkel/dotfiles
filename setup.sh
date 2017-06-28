@@ -9,11 +9,7 @@ ln -fsv ~/.dotfiles/conkyrc ~/.conkyrc
 ln -fsv ~/.dotfiles/Xresources ~/.Xresources
 
 # screen layouts
-ln -fsv ~/.dotfiles/screenlayout/extern_primary.sh ~/.screenlayout/extern_primary.sh
-ln -fsv ~/.dotfiles/screenlayout/standard.sh ~/.screenlayout/standard.sh
-ln -fsv ~/.dotfiles/screenlayout/extern_right.sh ~/.screenlayout/extern_right.sh
-ln -fsv ~/.dotfiles/screenlayout/two_external.sh ~/.screenlayout/two_external.sh 
-
+ln -fsv ~/.dotfiles/screenlayout/ ~/.screenlayout
 # vim
 ln -fsv ~/.dotfiles/vimrc ~/.vimrc
 mkdir ~/.vim/
