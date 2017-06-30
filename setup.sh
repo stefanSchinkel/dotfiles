@@ -62,3 +62,8 @@ ln -fsv ~/.dotfiles/WMaker/Styles/Haiku.style ~/GNUstep/Library/WindowMaker/Styl
 #WMaker/Styles/* -> ~/GNUstep/Library/WindowMaker/Styles/
 #WMaker/Themes/* -> ~/GNUstep/Library/WindowMaker/Themes
 
+# keymap for swapping left alt & ctrl
+ln -fsv ~/.dotfiles/Xmodmap ~/.Xmodmap
+
+# desktop files
+ln -fsv ~/.dotfiles/ipython.desktop ~/.local/share/applications/ipython.desktop
