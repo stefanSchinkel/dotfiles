@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=IPython
+Exec=ipython3 qtconsole
+Type=Application
+Terminal=false
