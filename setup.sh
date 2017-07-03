@@ -62,8 +62,12 @@ ln -fsv ~/.dotfiles/WMaker/Styles/Haiku.style ~/GNUstep/Library/WindowMaker/Styl
 #WMaker/Styles/* -> ~/GNUstep/Library/WindowMaker/Styles/
 #WMaker/Themes/* -> ~/GNUstep/Library/WindowMaker/Themes
 
+# openbox/LXDE
+# keybindings
+ln -fsv ~/.dotfiles/openbox/lxde-rc.xml ~/.config/openbox/lxde-rc.xml
+
 # keymap for swapping left alt & ctrl
 ln -fsv ~/.dotfiles/Xmodmap ~/.Xmodmap
-
+ln -fsv ~/.dotfiles/bin/swap_altcrtl ~/bin/swap_altcrtl 
 # desktop files
 ln -fsv ~/.dotfiles/ipython.desktop ~/.local/share/applications/ipython.desktop
