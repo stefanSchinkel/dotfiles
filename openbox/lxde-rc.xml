@@ -10,7 +10,7 @@
     <focusNew>yes</focusNew>
     <!-- always try to focus new windows when they appear. other rules do
        apply -->
-    <followMouse>no</followMouse>
+    <followMouse>yes</followMouse>
     <!-- move focus to a window when you move the mouse into it -->
     <focusLast>yes</focusLast>
     <!-- focus the last used window when changing desktops, instead of the one
@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Clearlooks</name>
+    <name>Clearlooks-3.4</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -57,21 +57,21 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>sans</name>
+      <name>Sans</name>
       <size>8</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>sans</name>
+      <name>Sans</name>
       <size>8</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
@@ -120,7 +120,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>3</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>main</name>
@@ -133,7 +133,7 @@
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
   <resize>
-    <drawContents>yes</drawContents>
+    <drawContents>no</drawContents>
     <popupShow>Nonpixel</popupShow>
     <!-- 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
     <popupPosition>Center</popupPosition>
@@ -191,7 +191,7 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-<!--     <keybind key="C-A-Up">
+    <!--     <keybind key="C-A-Up">
       <action name="GoToDesktop">
         <to>up</to>
         <wrap>no</wrap>
@@ -203,7 +203,7 @@
         <wrap>no</wrap>
       </action>
     </keybind> -->
-<!--     <keybind key="S-A-Left">
+    <!--     <keybind key="S-A-Left">
       <action name="SendToDesktop">
         <to>left</to>
         <wrap>no</wrap>
@@ -251,7 +251,7 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-<!--     <keybind key="A-F4">
+    <!--     <keybind key="A-F4">
       <action name="Close"/>
     </keybind> -->
     <keybind key="C-Escape">
@@ -316,12 +316,19 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-     <keybind key="C-F2">
+    <keybind key="C-F2">
       <action name="Execute">
-        <execute><command>lxpanelctl run</command></execute>
+        <execute>
+          <command>lxpanelctl run</command>
+        </execute>
       </action>
     </keybind>
-    <keybind key="W-e">
+    <keybind key="C-A-L">
+      <action name="Execute">
+        <command>xscreensaver-command -lock</command>
+      </action>
+    </keybind>
+    <!--     <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -329,7 +336,7 @@
         </startupnotify>
         <command>kfmclient openProfile filemanagement</command>
       </action>
-    </keybind>
+    </keybind> -->
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
@@ -403,7 +410,7 @@
         <action name="Move"/>
       </mousebind>
       <mousebind button="Left" action="DoubleClick">
-        <action name="ToggleMaximize"/>
+        <action name="ToggleShade"/>
       </mousebind>
       <mousebind button="Up" action="Click">
         <action name="if">
