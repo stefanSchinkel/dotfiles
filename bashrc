@@ -135,10 +135,18 @@ if [ $(id -u) -eq 0 ];then
   PS1='\[\e[0;31m\]\u@\h:\w>\[\e[0m\]'
 else # normal
   PS1='\[\e[1;33m\]`getGitBranch`\[\e[0m\]\n\u@\h:\w>'
+  #PS1='\[\e[1;33m\]xxx\[\e[0m\]\n\u@\h:\w>'
 fi
 export PS1
 # fiddle with dircolor (dircolors -p >.colorsrc
 eval `dircolors ~/.coloursrc`
+
+#################################################################################
+### decent bash completion
+#################################################################################
+if [ -f /etc/bash_completion ]; then
+        . /etc/bash_completion
+    fi
 
 # no annoying beeps
 xset b 0
