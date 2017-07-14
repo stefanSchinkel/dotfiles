@@ -147,8 +147,16 @@ Plugin {
   }
 }
 Plugin {
-  type=tray
+  type=weather
   Config {
+    alias=potsdam
+    city=Potsdam
+    state=Brandenburg
+    country=Germany
+    woeid="685783"
+    units=c
+    interval=15
+    enabled=1
   }
 }
 Plugin {
