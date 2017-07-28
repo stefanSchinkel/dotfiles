@@ -83,7 +83,7 @@ export TEXINPUTS=$TEXINPUTS:~/texmf/:
 ###############################################################################
 ### GO lang
 ###############################################################################
-export GOPATH=$HOME/Projects/go
+export GOPATH=$HOME/Projects
 export PATH=$PATH:$GOPATH/bin
 # and add custom go install
 export PATH=$HOME/go/bin:$PATH
@@ -105,6 +105,16 @@ export NODE_PATH=/usr/lib/node_modules
 
 # setup variable for QT designer to use matplotly
 #export  PYQTDESIGNERPATH=/usr/lib64/qt4/plugins/designer/python/matplotlibplugin.py
+
+###############################################################################
+###           pyenv
+###############################################################################
+# Load pyenv automatically by adding
+# the following to ~/.bash_profile:
+
+export PATH="/home/schinkel/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 
 ###############################################################################
