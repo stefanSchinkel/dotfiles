@@ -50,3 +50,4 @@ fi
 # those are smart enough to run only once (ie have demons)
 pidgin&
 xscreensaver -no-splash &
+slack&
