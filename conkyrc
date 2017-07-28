@@ -37,7 +37,7 @@ conky.config = {
 	update_interval = 2,
 
 -- Create own window instead of using desktop (required in nautilus)
-	own_window = true,
+	own_window = false,
 
 -- Use double buffering (reduces flicker, may not work for everyone)
 	double_buffer = true,
@@ -73,8 +73,8 @@ conky.config = {
 -- Text alignment, other possible values are commented
 	alignment = 'top_left',
 --minimum_size 10 10
-	gap_x = 500,
-	gap_y = 250,
+	gap_x = 10,
+	gap_y = 10,
 
 
 -- Gap between borders of screen and text
@@ -219,7 +219,7 @@ ${color lightgrey}RAM Usage:$color $mem/$memmax - $memperc% $membar
 ${color lightgrey}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar}
 ${color lightgrey}Processes:$color $processes  ${color grey}Running:$color $running_processes
 $color$stippled_hr
-${color lightgrey}LAN : $color ${addr enp0s20u3u1}
+${color lightgrey}LAN : $color ${addr enx0050b6c71e73}
 ${color lightgrey}WiFi: $color ${addr wlp2s0}
 Down:${color orange} ${downspeed em1} ${color} ${offset 70}Up:${color green} ${upspeed em1} k/s ${font}
 ${color black}${downspeedgraph em1 25,146 ff0000 0000ff} $alignr${color black}${upspeedgraph em1 25,146 0000ff ff0000}
