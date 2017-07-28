@@ -4,6 +4,10 @@
 {
 
     "auto_python_builder_enabled": false, // this will otherwise constantly change the project
+
+    // hopefully this is less annoyting
+    // "complete_all_parameters": false,
+
     "anaconda_tooltip_theme": "light",  // possible options "light" or "dark"
     "anaconda_linter_mark_style": "none",
     "autoformat_ignore":
