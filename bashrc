@@ -54,8 +54,8 @@ alias la="ls -lha --color=auto"
 alias quit="exit"
 
 ### source job dependend aliases
-
-source aliases.local
+DOTFILES=$HOME/.dotfiles
+source $DOTFILES/aliases.local
 
 
 ###############################################################################
