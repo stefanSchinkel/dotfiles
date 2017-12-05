@@ -34,6 +34,7 @@
 	"show_encoding": true,
 	"show_errors_inline": false,
 	"spell_check": false,
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"word_wrap": "auto",
 	"wrap_width": 80
