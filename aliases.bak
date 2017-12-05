@@ -1,0 +1,22 @@
+alias activateCS="export PYTHONPATH=~/Projects/commserver/lib/;source ~/.virtual_env/commserver/bin/activate"
+alias activateDC="export PYTHONPATH=~/Projects/diagconnector/lib/;source ~/.virtual_env/diagconnector/bin/activate"
+
+# other helpers
+alias clearRAMFS="rm -fr ~/ramfs/*"
+alias startRC="~/bin/node_modules/.bin/redis-commander -p 8888"
+
+
+# matrix to the rescue
+#alias neo=' xterm +sb -maximized -e "COLUMNS=540 LINES=90   matrix"'
+
+################################################################################
+###           PATH CUSTOMIZATION
+################################################################################
+# QGIS lib paths
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/apps/lib/
+
+
+################################################################################
+###           NODE CUSTOMIZATION
+################################################################################
+export NODE_PATH=/usr/lib/node_modules

@@ -53,31 +53,14 @@ alias ls="ls --color=auto"
 alias la="ls -lha --color=auto"
 alias quit="exit"
 
-# so that tmux looks better w/ vim colorschemes
-#alias tmux="TERM=screen-256color-bce tmux"
+### source job dependend aliases
 
-# collect history
-#alias ref="history -a; history -c; history -r"
-
-# shorthands for virtual evens
-alias activateCS="export PYTHONPATH=~/Projects/commserver/lib/;source ~/.virtual_env/commserver/bin/activate"
-alias activateDC="export PYTHONPATH=~/Projects/diagconnector/lib/;source ~/.virtual_env/diagconnector/bin/activate"
-
-# other helpers
-alias clearRAMFS="rm -fr ~/ramfs/*"
-alias startRC="~/bin/node_modules/.bin/redis-commander -p 8888"
+source aliases.local
 
 
-# matrix to the rescue
-#alias neo=' xterm +sb -maximized -e "COLUMNS=540 LINES=90   matrix"'
-
-################################################################################
-###			  PATH CUSTOMIZATION
-################################################################################
-# QGIS lib paths
-#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/apps/lib/
-
-#TEX
+###############################################################################
+### Tex
+###############################################################################
 export TEXINPUTS=$TEXINPUTS:~/texmf/:
 
 ###############################################################################
@@ -85,26 +68,16 @@ export TEXINPUTS=$TEXINPUTS:~/texmf/:
 ###############################################################################
 export GOPATH=$HOME/Projects
 export PATH=$PATH:$GOPATH/bin
+
 # and add custom go install
 export PATH=$HOME/go/bin:$PATH
 
 ################################################################################
-###			  NODE CUSTOMIZATION
-################################################################################
-export NODE_PATH=/usr/lib/node_modules
-
-################################################################################
 ###			  PYTHON CUSTOMIZATION
 ################################################################################
-# PYTHONSTARTUP=~/.pythonrc
-# export PYTHONSTARTUP
+PYTHONSTARTUP=~/.pythonrc
+export PYTHONSTARTUP
 
-## PYTHON
-
-#export PYTHONPATH=/foobar/
-
-# setup variable for QT designer to use matplotly
-#export  PYQTDESIGNERPATH=/usr/lib64/qt4/plugins/designer/python/matplotlibplugin.py
 
 ###############################################################################
 ###           pyenv
