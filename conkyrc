@@ -220,9 +220,13 @@ ${color lightgrey}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar}
 ${color lightgrey}Processes:$color $processes  ${color grey}Running:$color $running_processes
 $color$stippled_hr
 ${color lightgrey}LAN : $color ${addr enx0050b6c71e73}
+Down:${color orange} ${downspeed enx0050b6c71e73} ${color} ${offset 70}Up:${color green} ${upspeed enx0050b6c71e73} k/s ${font}
+${color black}${downspeedgraph enx0050b6c71e73 25,146 ff0000 0000ff}$alignr${color black}${upspeedgraph enx0050b6c71e73 25,146 0000ff ff0000}
+$color$stippled_hr
 ${color lightgrey}WiFi: $color ${addr wlp2s0}
-Down:${color orange} ${downspeed em1} ${color} ${offset 70}Up:${color green} ${upspeed em1} k/s ${font}
-${color black}${downspeedgraph em1 25,146 ff0000 0000ff} $alignr${color black}${upspeedgraph em1 25,146 0000ff ff0000}
+Down:${color orange} ${downspeed wlp2s0} ${color} ${offset 70}Up:${color green} ${upspeed wlp2s0} k/s ${font}
+${color black}${downspeedgraph wlp2s0 25,146 ff0000 0000ff}$alignr${color black}${upspeedgraph wlp2s0 25,146 0000ff ff0000}
+
 
 ${color}Name              PID     CPU%   MEM%
 ${color #ddaa00} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
