@@ -75,8 +75,10 @@ export PATH=$HOME/go/bin:$PATH
 ################################################################################
 ###			  PYTHON CUSTOMIZATION
 ################################################################################
-PYTHONSTARTUP=~/.pythonrc
-export PYTHONSTARTUP
+export PATH=$PATH:$HOME/.local/bin/
+
+# PYTHONSTARTUP=~/.pythonrc
+# export PYTHONSTARTUP
 
 
 ###############################################################################
@@ -84,6 +86,8 @@ export PYTHONSTARTUP
 ###############################################################################
 # Load pyenv automatically by adding
 # the following to ~/.bash_profile:
+
+export PATH="/home/schinkel/.pyenv/bin:$PATH"
 
 export PATH="/home/schinkel/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
