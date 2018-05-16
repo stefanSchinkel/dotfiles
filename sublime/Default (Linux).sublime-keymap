@@ -2,6 +2,8 @@
     { "keys": ["ctrl+f11"], "command": "toggle_full_screen" },
     { "keys": ["alt+d"], "command": "goto_definition" },
     { "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+    { "keys": ["ctrl+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+    { "keys": ["ctrl+shift+a"], "command": "select_all" },
 
     // toggle word wrap by key bindingn
     { "keys": ["ctrl+t", "ctrl+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"}},
