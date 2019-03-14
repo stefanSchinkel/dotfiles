@@ -74,7 +74,7 @@ conky.config = {
 	alignment = 'top_left',
 --minimum_size 10 10
 	gap_x = 15,
-	gap_y = 1215,
+	gap_y = 15,
 
 
 -- Gap between borders of screen and text
@@ -219,9 +219,9 @@ ${color lightgrey}RAM Usage:$color $mem/$memmax - $memperc% $membar
 ${color lightgrey}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar}
 ${color lightgrey}Processes:$color $processes  ${color grey}Running:$color $running_processes
 $color$stippled_hr
-${color lightgrey}LAN : $color ${addr enx0050b6c71e73}
-Down:${color orange} ${downspeed enx0050b6c71e73} ${color} ${offset 70}Up:${color green} ${upspeed enx0050b6c71e73} k/s ${font}
-${color black}${downspeedgraph enx0050b6c71e73 25,146 ff0000 0000ff}$alignr${color black}${upspeedgraph enx0050b6c71e73 25,146 0000ff ff0000}
+${color lightgrey}LAN : $color ${addr enx0050b6c71f85}
+Down:${color orange} ${downspeed enx0050b6c71f85} ${color} ${offset 70}Up:${color green} ${upspeed enx0050b6c71f85} k/s ${font}
+${color black}${downspeedgraph enx0050b6c71f85 25,146 ff0000 0000ff}$alignr${color black}${upspeedgraph enx0050b6c71f85 25,146 0000ff ff0000}
 $color$stippled_hr
 ${color lightgrey}WiFi: $color ${addr wlp2s0}
 Down:${color orange} ${downspeed wlp2s0} ${color} ${offset 70}Up:${color green} ${upspeed wlp2s0} k/s ${font}
