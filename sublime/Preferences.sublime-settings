@@ -7,11 +7,12 @@
 		}
 	],
 	"auto_match_enabled": false,
+	"block_caret": true,
 	"caret_extra_bottom": 0,
 	"caret_extra_top": 0,
 	"caret_extra_width": 2,
-	"caret_style": "solid",
-	"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
+	"caret_style": "smooth",
+	"color_scheme": "Packages/Theme - Solarized Flat/Solarized Flat Light.tmTheme",
 	"dictionary": "Packages/User/Language-German/German_de_DE.dic",
 	"draw_white_space": "all",
 	"draw_white_spaces": "all",
@@ -20,6 +21,7 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"GitGutter",
 		"jQuery",
 		"Pylinter",
 		"sublime-text-2-buildview",
