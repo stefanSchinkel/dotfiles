@@ -262,3 +262,9 @@ int-import-graph=
 # Exceptions that will emit a warning when being caught. Defaults to
 # "Exception"
 overgeneral-exceptions=Exception
+
+[LOGGING]
+
+# Format style used to check logging format string. `old` means using %
+# # formatting, `new` is for `{}` formatting,and `fstr` is for f-strings.
+ logging-format-style=fstr
