@@ -32,18 +32,18 @@ ln -fsv ~/.dotfiles/jslintrc ~/.jslintrc
 ln -fsv ~/.dotfiles/radiotray/bookmarks.xml ~/.local/share/radiotray/bookmarks.xml
 
 # sublime
-ln -fsv ~/.dotfiles/sublime/Default\ \(Linux\).sublime-keymap ~/.config/sublime-text-3/Packages/User/Default\ \(Linux\).sublime-keymap
-ln -fsv ~/.dotfiles/sublime/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
-ln -fsv ~/.dotfiles/sublime/latex.sublime-build ~/.config/sublime-text-3/Packages/User/latex.sublime-build
-ln -fsv ~/.dotfiles/sublime/Pylinter.sublime-settings ~/.config/sublime-text-3/Packages/Pylinter/Pylinter.sublime-settings
-ln -fsv ~/.dotfiles/sublime/pythonTest.sublime-build ~/.config/sublime-text-3/Packages/User/pythonTest.sublime-build
-ln -fsv ~/.dotfiles/sublime/Python.sublime-build ~/.config/sublime-text-3/Packages/User/Python.sublime-build
-ln -fsv ~/.dotfiles/sublime/PythonConsoleLight.hidden-tmTheme ~/.config/sublime-text-3/Packages/Anaconda/
-ln -fsv ~/.dotfiles/sublime/Anaconda.sublime-settings ~/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings
+#ln -fsv ~/.dotfiles/sublime/Default\ \(Linux\).sublime-keymap ~/.config/sublime-text-3/Packages/User/Default\ \(Linux\).sublime-keymap
+#ln -fsv ~/.dotfiles/sublime/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+#ln -fsv ~/.dotfiles/sublime/latex.sublime-build ~/.config/sublime-text-3/Packages/User/latex.sublime-build
+#ln -fsv ~/.dotfiles/sublime/Pylinter.sublime-settings ~/.config/sublime-text-3/Packages/Pylinter/Pylinter.sublime-settings
+#ln -fsv ~/.dotfiles/sublime/pythonTest.sublime-build ~/.config/sublime-text-3/Packages/User/pythonTest.sublime-build
+#ln -fsv ~/.dotfiles/sublime/Python.sublime-build ~/.config/sublime-text-3/Packages/User/Python.sublime-build
+#ln -fsv ~/.dotfiles/sublime/PythonConsoleLight.hidden-tmTheme ~/.config/sublime-text-3/Packages/Anaconda/
+#ln -fsv ~/.dotfiles/sublime/Anaconda.sublime-settings ~/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings
 
 # german lang in sublime
-mkdir -p ~/.config/sublime-text-3/Packages/User/German
-cp -uvR  ~/.dotfiles/sublime/Language-German/  ~/.config/sublime-text-3/Packages/User/
+#mkdir -p ~/.config/sublime-text-3/Packages/User/German
+#cp -uvR  ~/.dotfiles/sublime/Language-German/  ~/.config/sublime-text-3/Packages/User/
 
 # helper binaries
 # for $HELPER in bin; do foo; done
