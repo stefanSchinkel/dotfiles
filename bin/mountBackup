@@ -1,9 +1,0 @@
-#!/bin/sh
-
-USER=`whoami`
-UID=`id -u ${USER}`
-GID=`id -u ${USER}`
-
-sudo mount.cifs -ouser=${USER},uid=${UID},gid=${GID}  //ebola/${USER} ~/net/backup
-
-
