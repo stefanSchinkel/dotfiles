@@ -1,7 +1,0 @@
-{
-	"node" : true,
-	"maxerr" : 20,
-	"indent" : 2,
-	"unparam" : true
-
-}

@@ -1,9 +1,0 @@
-{
-  "globals": { 
-	"$": true,
-	"console": true,
-	"require": true,
-	"it": true,
-	"describe" : true
-	}
-}
