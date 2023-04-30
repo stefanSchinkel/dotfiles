@@ -7,8 +7,7 @@ ln -fsv ~/.dotfiles/tmux.conf ~/.tmux.conf
 # screen layouts
 # vim
 ln -fsv ~/.dotfiles/vimrc ~/.vimrc
-mkdir ~/.vim/
-ln -fsv ~/.dotfiles/vim/colors/ ~/.vim/colors
+# ln -s ~/.vim/colors/zenburn.vim ~/.vim/bundle/Zenburn/colors/zenburn.vim
 
 
 # helper binaries
