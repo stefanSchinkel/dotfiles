@@ -3,6 +3,7 @@ set rnu
 set nu rnu
 " white space showing
 set list
+set encoding=utf-8 nobomb
 set listchars=tab:→\ ,trail:␣,precedes:«,extends:»,eol:⏎,space:.
 " trim trailing whitespaces
 autocmd BufWritePre * :%s/\s\+$//e
