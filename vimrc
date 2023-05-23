@@ -26,6 +26,12 @@ colors zenburn
 " pres tab to browse buffers
 set wildchar=<Tab> wildmenu wildmode=full
 
+" smaller tabs in Markdown
+au BufNewFile,BufRead *.md
+\ set tabstop=2 |
+\ set softtabstop=2 |
+\ set expandtab |
+
 " smart python indenting
 au BufNewFile,BufRead *.py
 \ set tabstop=4 |
@@ -73,6 +79,8 @@ Plugin 'scrooloose/nerdtree'
 " CTRLP
 Plugin 'kien/ctrlp.vim'
 
+" Easier commenting
+Plugin 'preservim/nerdcommenter'
 " Powerlines
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
