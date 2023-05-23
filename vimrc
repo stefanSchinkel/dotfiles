@@ -1,10 +1,14 @@
 " relative line numbers
 set rnu
 set nu rnu
+" backspace fix on mac
+set backspace=indent,eol,start
 " white space showing
 set list
 set encoding=utf-8 nobomb
-set listchars=tab:→\ ,trail:␣,precedes:«,extends:»,eol:⏎,space:.
+"set listchars=tab:→\ ,trail:␣,precedes:«,extends:»,eol:⏎,space:.
+set listchars=lead:.,leadmultispace:...\|,trail:␣
+
 " trim trailing whitespaces
 autocmd BufWritePre * :%s/\s\+$//e
 
@@ -93,6 +97,9 @@ Plugin 'prabirshrestha/asyncomplete-lsp.vim'
 Plugin 'mattn/vim-lsp-settings'
 Plugin 'dense-analysis/ale'
 Plugin 'rhysd/vim-lsp-ale'
+
+" commenting
+Plugin 'preservim/nerdcommenter'
 
 " code folding
 Plugin 'tmhedberg/SimpylFold'
