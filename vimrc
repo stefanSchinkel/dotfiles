@@ -6,8 +6,8 @@ set backspace=indent,eol,start
 " white space showing
 set list
 set encoding=utf-8 nobomb
-"set listchars=tab:→\ ,trail:␣,precedes:«,extends:»,eol:⏎,space:.
-set listchars=lead:.,leadmultispace:...\|,trail:␣
+"set listchars=lead:.,leadmultispace:...+,trail:
+set listchars=lead:.,multispace:...\+,trail:␣
 
 " trim trailing whitespaces
 autocmd BufWritePre * :%s/\s\+$//e
@@ -83,8 +83,6 @@ Plugin 'scrooloose/nerdtree'
 " CTRLP
 Plugin 'kien/ctrlp.vim'
 
-" Easier commenting
-Plugin 'preservim/nerdcommenter'
 " Powerlines
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
@@ -99,7 +97,7 @@ Plugin 'dense-analysis/ale'
 Plugin 'rhysd/vim-lsp-ale'
 
 " commenting
-Plugin 'preservim/nerdcommenter'
+ Plugin 'preservim/nerdcommenter'
 
 " code folding
 Plugin 'tmhedberg/SimpylFold'
