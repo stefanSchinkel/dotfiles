@@ -7,8 +7,8 @@ set backspace=indent,eol,start
 set list
 set encoding=utf-8 nobomb
 "set listchars=lead:.,leadmultispace:...+,trail:
-set listchars=lead:.,multispace:...\+,trail:␣
-
+"set listchars=lead:.,multispace:...\+,trail:␣
+set listchars=lead:.,multispace:...\+tab:→\ ,trail:␣,precedes:«,extends:»,eol:⏎
 " trim trailing whitespaces
 autocmd BufWritePre * :%s/\s\+$//e
 
