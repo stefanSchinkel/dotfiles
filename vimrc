@@ -1,3 +1,5 @@
+scriptencoding utf-8
+set encoding=utf-8 nobomb
 " relative line numbers
 set rnu
 set nu rnu
@@ -5,10 +7,11 @@ set nu rnu
 set backspace=indent,eol,start
 " white space showing
 set list
-set encoding=utf-8 nobomb
-"set listchars=lead:.,leadmultispace:...+,trail:
-"set listchars=lead:.,multispace:...\+,trail:␣
-set listchars=lead:.,multispace:...\+tab:→\ ,trail:␣,precedes:«,extends:»,eol:⏎
+"set listchars=tab:→\ ,lead:.,multispace:...+,trail:␣
+set listchars=tab:→\ ,multispace:...\+,lead:.,trail:␣
+"set listchars=tab:->,lead:.,multispace:...\+,trail:␣,precedes:«,extends:»,eol:⏎
+"set listchars=lead:.,multispace:...\+,tab:→,trail:␣,precedes:«,extends:»,eol:⏎
+
 " trim trailing whitespaces
 autocmd BufWritePre * :%s/\s\+$//e
 
@@ -35,6 +38,7 @@ au BufNewFile,BufRead *.md
 \ set tabstop=2 |
 \ set softtabstop=2 |
 \ set expandtab |
+\ set shiftwidth=2 |
 
 " smart python indenting
 au BufNewFile,BufRead *.py
