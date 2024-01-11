@@ -68,7 +68,10 @@ set foldlevel=99
 nnoremap <space> za
 
 " map leader>b to safe and run python file
-nmap <Leader>b :w \| vert ter python % <CR>
+nmap <Leader>b :w \| bel ter python % <CR>
+
+" make texlab behave and not randomly indent
+set nocindent
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
