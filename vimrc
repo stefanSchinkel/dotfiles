@@ -50,6 +50,13 @@ au BufNewFile,BufRead *.py
 \ set autoindent |
 \ set fileformat=unix |
 
+" black of save
+augroup black_on_save
+      autocmd!
+        autocmd BufWritePre *.py Black
+    augroup end
+
+
 " setup for NERDTree
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
