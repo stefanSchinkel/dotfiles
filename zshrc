@@ -109,7 +109,10 @@ MOZ_ENABLE_WAYLAND=1
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias scp="noglob scp"
-source $HOME/.aliases
+
+#source aliases if present
+[[ ! -f ~/.aliases ]] || source $HOME/.aliases
+
 # pyenv
 export VIRTUAL_ENV_DISABLE_PROMPT=
 export PYENV_ROOT="$HOME/.pyenv"
@@ -126,3 +129,4 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
