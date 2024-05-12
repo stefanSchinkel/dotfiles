@@ -79,7 +79,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose vi-mode)
+plugins=(git docker docker-compose vi-mode poetry)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,7 +109,7 @@ MOZ_ENABLE_WAYLAND=1
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias scp="noglob scp"
-
+source $HOME/.aliases
 # pyenv
 export VIRTUAL_ENV_DISABLE_PROMPT=
 export PYENV_ROOT="$HOME/.pyenv"
@@ -121,3 +121,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# add nvm
+export NVM_DIR=~/.nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+

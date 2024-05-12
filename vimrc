@@ -4,8 +4,7 @@ set encoding=utf-8 nobomb
 set rnu
 set nu rnu
 " backspace fix on mac
-set backspace=indent,eol,start
-" white space showing
+set backspace=indent,eol,start " white space showing
 set list
 set listchars=tab:→\ ,multispace:...\+,lead:.,trail:␣
 
@@ -13,7 +12,7 @@ set listchars=tab:→\ ,multispace:...\+,lead:.,trail:␣
 autocmd BufWritePre * :%s/\s\+$//e
 
 " setup ruler
-set colorcolumn=80
+set colorcolumn=79
 
 " set split right
 set splitright
@@ -29,6 +28,13 @@ colors zenburn
 
 " pres tab to browse buffers
 set wildchar=<Tab> wildmenu wildmode=full
+
+" map leader-b to browse buffers w/ CTRLP
+" nnoremap <silent> <C-y> :CtrlPBuffer<CR>
+
+" map leader-P/F to FZF files/ag
+nnoremap <silent> <C-p> :Files<CR>
+nnoremap <silent> <C-f> :Ag<CR>
 
 " smaller tabs in Markdown
 au BufNewFile,BufRead *.md
@@ -48,22 +54,41 @@ au BufNewFile,BufRead *.py
 \ set fileformat=unix |
 
 " black of save
-augroup black_on_save
-      autocmd!
-        autocmd BufWritePre *.py Black
-    augroup end
+augroup black_on_save autocmd!
+autocmd BufWritePre *.py Black
+augroup end
 
 
 " setup for NERDTree
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+"nnoremap <C-f> :NERDTreeFind<CR>
+
+" vim-lsp ---- {{{
+nnoremap gd :LspDefinition<CR>
+nnoremap pd :LspPeekDefinition<CR>
+nnoremap gs :LspDocumentSymbol<CR>
+nnoremap gS :LspWorkspaceSymbol<CR>
+nnoremap <leader>gr :LspReferences<CR>
+nnoremap gi :LspImplementation<CR>
+nnoremap <leader>gt :LspTypeDefinition<CR>
+nnoremap <leader>rn :LspRename<CR>
+nnoremap [g :LspPreviousDiagnostic<CR>
+nnoremap ]g :LspNextDiagnostic<CR>
+nnoremap K :LspHover<CR>
+" }}}
+
+" vim asyncomplete ---- {{{
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+" }}}
 
 " start w/ nerdtree open
 "autocmd VimEnter * NERDTree
 " close vim if only nerdtree is shown
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " make actual use of LSP w/ shortcutws
 if executable('pylsp')
@@ -126,8 +151,13 @@ Plugin 'gmarik/Vundle.vim'
 " used Bundle instead of Plugin)
 Plugin 'scrooloose/nerdtree'
 
+"fzf
+set rtp+=~/.fzf
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+
 " CTRLP
-Plugin 'kien/ctrlp.vim'
+"Plugin 'kien/ctrlp.vim'
 
 " Powerlines
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
