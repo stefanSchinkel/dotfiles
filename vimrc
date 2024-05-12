@@ -157,7 +157,7 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 
 " CTRLP
-"Plugin 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 
 " Powerlines
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
