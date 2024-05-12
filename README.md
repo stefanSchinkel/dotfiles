@@ -8,8 +8,7 @@ This describes _my_ setting up on Ubuntu/Debian. Works for me. Your milage may v
 
 :exclamation: Make sure to check/understand before pasting blindly :exclamation:
 
-### Batch install bare minimum
-#### from repo
+### from repo
 ```sh
 # refresh repos in case you didn't before
 # sudo apt-get update &&  sudo apt-get upgrade
@@ -19,8 +18,11 @@ sudo apt-get install git make build-essential zsh vim tmux plocate wget curl mc 
 
 # and some extras (if you need and use gnome that is)
 sudo apt-get install nextcloud-desktop keepassxc gnome-tweaks gnome-sushi guake chromium-browser
+
+# and all the fancy search/fuzzy finders
+sudo apt-get install silversearcher-ag fzf ripgrep
 ```
-#### from snap (optional)
+### from snap (optional)
 ```sh
 sudo snap install freetube
 ```
@@ -30,13 +32,13 @@ Only now clone repo (git is needed)
 git clone https://github.com/stefanSchinkel/dotfiles.git ~/.dotfiles
 ```
 
-### link dotfiles
+## link dotfiles
 ```sh
 ln -s .dotfiles/zshrc ~/.zshrc
 ln -s .dotfiles/vimrc ~/.vimrc
 ln -s .dotfiles/tmux.conf ~/.tmux.conf
 ```
-## Setup zsh
+## ZSH
 ### install zsh
 ohmyzsh more precisely
 
@@ -72,15 +74,15 @@ p10k configure
 
 ```
 
-## set up tmux
+## TMUX
 The tmux setup is fairly simple, but it needs tpm, so we get that:
 ```sh
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-## set up VIM
+## VIM
 ### vim for GIT
-First things first. Ditch nano.
+First things first. Ditch nano for commit msgs.
 
 ```
 git config --global core.editor vim
@@ -107,7 +109,7 @@ Also, you'll of course have to run :PluginInstall once.
 #### Note on MarkdownPreview
 For me MarkdownPreview occassionally fails. But there is a fix/issue for that see: https://github.com/iamcco/markdown-preview.nvim/issues/7
 
-## Install Codium (from repo)
+## VSCodium
 It's nice to have a GUI based editor too. Especially for the debugger.
 
 ```sh
@@ -119,7 +121,16 @@ echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https:/
  sudo apt update && sudo apt install codium
 
 ```
-## Setup Docker
+## DBeaver
+A decent graphical DB tool for ERM manipulations and fancy visuals
+```sh
+# we need to add a ppa for that
+sudo add-apt-repository ppa:serge-rider/dbeaver-ce
+sudo apt-get update
+sudo apt-get install dbeaver-ce
+```
+
+## Docker
 We're installing docker-ce stable from the repos, not .deb
 
 ### setup repository incl. GPG key adding
@@ -154,7 +165,7 @@ newgrp docker
 docker run hello-world
 ```
 
-## Install pyenv
+## Pyenv
 I (still) use pyenv, just because it works for me. Also the .zshrc already is aware the pyenv is being used. If it's not installed that my cause issues.
 
 ```sh
@@ -173,7 +184,7 @@ pyenv activate playground
 # you can also set the global python version once you're at it:
 #pyenv global 3.10.13
 ```
-## setup rust
+## Rust
 Rust is straighforward (of course with a Deppeninstaller). We install it after docker though, just to make sure that we can support multiarch builds
 
 ```sh
