@@ -109,6 +109,20 @@ Also, you'll of course have to run :PluginInstall once.
 #### Note on MarkdownPreview
 For me MarkdownPreview occassionally fails. But there is a fix/issue for that see: https://github.com/iamcco/markdown-preview.nvim/issues/7
 
+## Neovim
+### Install nvm
+For neovim we use pyright, which is easiest to run in node. Since Ubuntu ships w/ a dated version of node, we install nvm to get a more recent version.
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+The .zsh already is nvm aware but you'll have to `source ~/.zshrc` after installing it. Once done, pick a recent version of node eg.
+```shell
+nvm install v20.13.1
+```
+once it's installed, install pyright with
+```
+npm install -g pyright
+```
 ## VSCodium
 It's nice to have a GUI based editor too. Especially for the debugger.
 
