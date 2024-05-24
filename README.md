@@ -15,7 +15,8 @@ This describes _my_ setting up on Ubuntu/Debian. Works for me. Your milage may v
 
 # basics needed for developement
 sudo apt-get install git make build-essential zsh vim tmux plocate wget curl mc meld
-
+# I prefer to have poetry system-wide
+sudo apt-get install python3-poetry
 # and some extras (if you need and use gnome that is)
 sudo apt-get install nextcloud-desktop keepassxc gnome-tweaks gnome-sushi guake chromium-browser
 
