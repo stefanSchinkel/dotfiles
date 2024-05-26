@@ -69,10 +69,11 @@ wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20I
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
 # either manually install w/ Fonts or do this
 # cp to /usr/local/share/fonts and run sudo fc-cache -fv to update fonts cache
+# cp MesloGS ~/.local/share/fonts/
+# sudo fc-cache -fv
 # AFTER that:
 # set terminal to use fonts and run
 p10k configure
-
 ```
 
 ## TMUX
