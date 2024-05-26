@@ -124,6 +124,21 @@ once it's installed, install pyright with
 ```
 npm install -g pyright
 ```
+### Neovim Kickstart
+For a head start nice projects to configure neovim exist such as [Neovim Kickstart](https://github.com/nvim-lua/kickstart.nvim). You can just clone that or use mine:
+
+```sh
+git clone
+git clone git@github.com:stefanSchinkel/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+# or the https version
+# git clone https://github.com/stefanSchinkel/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```
+Since the neovim kickstart aims for really new versions, we'll also install neovim from ppa. 
+```sh 
+sudo add-apt-repository ppa:neovim-ppa/unstable -y
+sudo apt update
+sudo apt install neovim
+```
 ## VSCodium
 It's nice to have a GUI based editor too. Especially for the debugger.
 
