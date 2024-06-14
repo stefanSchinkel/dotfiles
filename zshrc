@@ -136,3 +136,7 @@ export NVM_DIR=~/.nvm
 # enable flux complition if flux is there
  command -v flux >/dev/null && . <(flux completion zsh)
 
+## exports
+export FZF_ALT_C_COMMAND='ag --hidden -l -g ""'
+export FZF_CTRL_T_COMMAND='ag -l  --hidden -g ""'
+export FZF_DEFAULT_COMMAND='ag --hidden -l -g ""'
