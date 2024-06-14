@@ -134,8 +134,8 @@ git clone git@github.com:stefanSchinkel/nvim.git "${XDG_CONFIG_HOME:-$HOME/.conf
 # or the https version
 # git clone https://github.com/stefanSchinkel/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
-Since the neovim kickstart aims for really new versions, we'll also install neovim from ppa. 
-```sh 
+Since the neovim kickstart aims for really new versions, we'll also install neovim from ppa.
+```sh
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt update
 sudo apt install neovim
@@ -195,6 +195,31 @@ sudo usermod -aG docker $USER
 newgrp docker
 docker run hello-world
 ```
+
+## kubernetes
+### kubectl
+
+We also need some tooling to manage k3s cluster. Those are only the mgmt tools - the cluter is supposed to be running somewhere else.
+
+```sh
+sudo apt-get update
+sudo apt-get install -y apt-transport-https ca-certificates curl gnupg
+url -fsSL https://pkgs.k8s.io/core:/stable:/v1.30/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+sudo chmod 644 /etc/apt/keyrings/kubernetes-apt-keyring.gpg # allow unprivileged APT programs to read this keyring
+echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.30/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+sudo chmod 644 /etc/apt/sources.list.d/kubernetes.list...# helps tools such as command-not-found to work correctly
+sudo apt-get update
+sudo apt-get install -y kubectl
+```
+
+This will intall the kubectl tooling. The zshrc already includes the kubectl plugins so quite some typing can be saved.
+
+### flux
+For gitops we also need flux. Available via Deppeninstaller
+```sh
+curl -s https://fluxcd.io/install.sh | sudo bash
+```
+The .zshrc already has completion for flux set up.
 
 ## Pyenv
 I (still) use pyenv, just because it works for me. Also the .zshrc already is aware the pyenv is being used. If it's not installed that my cause issues.
