@@ -213,7 +213,14 @@ sudo apt-get install -y kubectl
 ```
 
 This will intall the kubectl tooling. The zshrc already includes the kubectl plugins so quite some typing can be saved.
-
+### kubeseal
+For working w/ shared secrets we need `kubeseal`.
+```sh
+export KUBESEAL_VERSION='0.26.3' # latest as of 06/24
+curl -OL "https://github.com/bitnami-labs/sealed-secrets/releases/download/v${KUBESEAL_VERSION:?}/kubeseal-${KUBESEAL_VERSION:?}-linux-amd64.tar.gz"
+tar -xvzf kubeseal-${KUBESEAL_VERSION:?}-linux-amd64.tar.gz kubeseal
+sudo install -m 755 kubeseal /usr/local/bin/kubeseal
+```
 ### flux
 For gitops we also need flux. Available via Deppeninstaller
 ```sh
