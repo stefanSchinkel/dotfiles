@@ -25,7 +25,7 @@ sudo apt-get install silversearcher-ag fzf ripgrep
 ```
 ### from snap (optional)
 ```sh
-sudo snap install freetube
+sudo snap install freetube postman spotify firefox
 ```
 ## get dotfiles
 Only now clone repo (git is needed)
