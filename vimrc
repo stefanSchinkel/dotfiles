@@ -188,6 +188,9 @@ Plugin 'psf/black', { 'branch': 'stable' }
 " Markdown Preview
 Plugin 'iamcco/markdown-preview.nvim'
 
+" a floating terminal
+Plugin 'voldikss/vim-floaterm'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
