@@ -137,7 +137,7 @@ nmap <Leader>b :w \| bel ter python % <CR>
 " make texlab behave and not randomly indent
 set nocindent
 " floatterm config
-" needs to be remapped as zsh uses vim bindings to and caputures ESC
+" needs to be remapped as zsh uses vim bindings too and thus captures ESC
 nnoremap <silent> <Leader>t   :FloatermToggle<CR>
 tnoremap <silent> <Leader>t   <C-\><C-n>:FloatermToggle<CR>
 
