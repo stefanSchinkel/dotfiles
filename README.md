@@ -39,6 +39,15 @@ ln -s .dotfiles/zshrc ~/.zshrc
 ln -s .dotfiles/vimrc ~/.vimrc
 ln -s .dotfiles/tmux.conf ~/.tmux.conf
 ```
+## UFW
+
+First things first, shut down incoming traffic.
+```sh
+sudo ufw enable
+# and check w/
+sudo ufw status
+```
+
 ## ZSH
 ### install zsh
 ohmyzsh more precisely
