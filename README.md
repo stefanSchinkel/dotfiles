@@ -21,7 +21,7 @@ sudo apt-get install python3-poetry
 sudo apt-get install nextcloud-desktop keepassxc gnome-tweaks gnome-sushi guake chromium-browser
 
 # and all the fancy search/fuzzy finders
-sudo apt-get install silversearcher-ag fzf ripgrep
+sudo apt-get install silversearcher-ag fzf ripgrep goaccess
 ```
 ### from snap (optional)
 ```sh
