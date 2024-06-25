@@ -14,7 +14,8 @@ This describes _my_ setting up on Ubuntu/Debian. Works for me. Your milage may v
 # sudo apt-get update &&  sudo apt-get upgrade
 
 # basics needed for developement
-sudo apt-get install git make build-essential zsh vim tmux plocate wget curl mc meld
+# xclip is needed for vim to copy to systems clipboard (wl-clip does not seem to work)
+sudo apt-get install git make build-essential zsh vim tmux plocate wget curl mc meld xclip
 # I prefer to have poetry system-wide
 sudo apt-get install python3-poetry
 # and some extras (if you need and use gnome that is)
