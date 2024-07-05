@@ -79,7 +79,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose vi-mode poetry fzf kubectl)
+plugins=(git docker docker-compose vi-mode poetry fzf kubectl nvm ng)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -140,3 +140,5 @@ export NVM_DIR=~/.nvm
 export FZF_ALT_C_COMMAND='ag --hidden -l -g ""'
 export FZF_CTRL_T_COMMAND='ag -l  --hidden -g ""'
 export FZF_DEFAULT_COMMAND='ag --hidden -l -g ""'
+
+
