@@ -165,4 +165,3 @@ export FZF_ALT_C_COMMAND='ag --hidden -l -g ""'
 export FZF_CTRL_T_COMMAND='ag -l  --hidden -g ""'
 export FZF_DEFAULT_COMMAND='ag --hidden -l -g ""'
 
-
