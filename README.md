@@ -16,14 +16,20 @@ This describes _my_ setting up on Ubuntu/Debian. Works for me. Your milage may v
 # basics needed for developement
 # xclip is needed for vim to copy to systems clipboard (wl-clip does not seem to work)
 sudo apt-get install git make build-essential zsh vim tmux plocate wget curl mc meld xclip
+
 # I prefer to have poetry system-wide
 sudo apt-get install python3-poetry
-# and some extras (if you need and use gnome that is)
+
+# and some desktop extras (if you need and use gnome that is)
 sudo apt-get install nextcloud-desktop keepassxc gnome-tweaks gnome-sushi guake chromium-browser
 
 # and all the fancy search/fuzzy finders
-sudo apt-get install silversearcher-ag fzf ripgrep goaccess
+sudo apt-get install silversearcher-ag fzf ripgrep
+
+## and some tooling need for webstuff
+sudo apt-get install goaccess
 ```
+
 ### from snap (optional)
 ```sh
 sudo snap install freetube postman spotify firefox
