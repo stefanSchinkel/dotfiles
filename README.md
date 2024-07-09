@@ -135,7 +135,11 @@ once it's installed, install pyright with
 ```
 npm install -g pyright
 ```
+#### Note on nvm global vs local
+The supplied zshrc will automatically enable the requested node version *iff* an .nvmrc file is present. Othewise not. To always have a node version available you may have to specify one using `nvm alias default $NODEVERSION`
+
 ### Neovim Kickstart
+
 For a head start nice projects to configure neovim exist such as [Neovim Kickstart](https://github.com/nvim-lua/kickstart.nvim). You can just clone that or use mine:
 
 ```sh
