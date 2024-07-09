@@ -158,7 +158,7 @@ load-nvmrc
 
 ## flux
 # enable flux complition if flux is there
- command -v flux >/dev/null && . <(flux completion zsh)
+command -v flux >/dev/null && . <(flux completion zsh)
 
 ## exports
 export FZF_ALT_C_COMMAND='ag --hidden -l -g ""'
