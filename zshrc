@@ -131,10 +131,11 @@ export NVM_DIR=~/.nvm
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# place this after nvm initialization!
-autoload -U add-zsh-hook
 
 load-nvmrc() {
+  if ! type "nvm_find_nvmrc" > /dev/null; then
+    return
+  fi
   local nvmrc_path
   nvmrc_path="$(nvm_find_nvmrc)"
 
@@ -155,6 +156,9 @@ load-nvmrc() {
 
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+
+# place this after nvm initialization!
+autoload -U add-zsh-hook
 
 ## flux
 # enable flux complition if flux is there
