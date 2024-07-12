@@ -112,6 +112,10 @@ alias scp="noglob scp"
 
 #source aliases if present
 [[ ! -f ~/.aliases ]] || source $HOME/.aliases
+#
+#source zshenv  if present
+[[ ! -f ~/.zshenv ]] || source $HOME/.zshenv
+
 
 # pyenv
 export VIRTUAL_ENV_DISABLE_PROMPT=
