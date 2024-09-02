@@ -74,14 +74,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose vi-mode poetry fzf kubectl nvm ng)
 
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 MOZ_ENABLE_WAYLAND=1
@@ -173,3 +166,12 @@ export FZF_ALT_C_COMMAND='ag --hidden -l -g ""'
 export FZF_CTRL_T_COMMAND='ag -l  --hidden -g ""'
 export FZF_DEFAULT_COMMAND='ag --hidden -l -g ""'
 
+# kube sealing
+kss () {
+  kubeseal -o yaml --controller-namespace kube-system --controller-name sealed-secrets-controller < "$1" > "${1/-secret/-ssecret}"
+}
+
+# load plugins only AFTER all pyenv, nvm etc has been loaded
+plugins=(git docker docker-compose vi-mode poetry fzf kubectl nvm ng)
+
+source $ZSH/oh-my-zsh.sh
