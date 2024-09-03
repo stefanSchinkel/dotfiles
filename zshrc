@@ -157,6 +157,13 @@ load-nvmrc
 # place this after nvm initialization!
 autoload -U add-zsh-hook
 
+
+# load plugins only AFTER all pyenv, nvm etc has been loaded
+plugins=(git docker docker-compose vi-mode poetry fzf kubectl nvm ng)
+
+source $ZSH/oh-my-zsh.sh
+source ~/.oh-my-zsh/plugins/git/git.plugin.zsh
+
 ## flux
 # enable flux complition if flux is there
 command -v flux >/dev/null && . <(flux completion zsh)
@@ -171,7 +178,3 @@ kss () {
   kubeseal -o yaml --controller-namespace kube-system --controller-name sealed-secrets-controller < "$1" > "${1/-secret/-ssecret}"
 }
 
-# load plugins only AFTER all pyenv, nvm etc has been loaded
-plugins=(git docker docker-compose vi-mode poetry fzf kubectl nvm ng)
-
-source $ZSH/oh-my-zsh.sh
