@@ -151,11 +151,11 @@ load-nvmrc() {
   fi
 }
 
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
-
 # place this after nvm initialization!
 autoload -U add-zsh-hook
+
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
 
 
 # load plugins only AFTER all pyenv, nvm etc has been loaded
