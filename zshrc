@@ -178,3 +178,6 @@ kss () {
   kubeseal -o yaml --controller-namespace kube-system --controller-name sealed-secrets-controller < "$1" > "${1/-secret/-ssecret}"
 }
 
+# add krew plugin to path (for kubectl)
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
