@@ -170,7 +170,7 @@ command -v flux >/dev/null && . <(flux completion zsh)
 
 ## exports
 export FZF_ALT_C_COMMAND='ag --hidden -l -g ""'
-export FZF_CTRL_T_COMMAND='ag -l  --hidden -g ""'
+export FZF_CTRL_T_COMMAND='ag -l -g ""'
 export FZF_DEFAULT_COMMAND='ag --hidden -l -g ""'
 
 # kube sealing
