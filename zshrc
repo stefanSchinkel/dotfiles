@@ -128,35 +128,26 @@ export NVM_DIR=~/.nvm
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-
+autoload -U add-zsh-hook
 load-nvmrc() {
-  if ! type "nvm_find_nvmrc" > /dev/null; then
-    return
-  fi
-  local nvmrc_path
-  nvmrc_path="$(nvm_find_nvmrc)"
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
 
   if [ -n "$nvmrc_path" ]; then
-    local nvmrc_node_version
-    nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
 
     if [ "$nvmrc_node_version" = "N/A" ]; then
       nvm install
-    elif [ "$nvmrc_node_version" != "$(nvm version)" ]; then
+    elif [ "$nvmrc_node_version" != "$node_version" ]; then
       nvm use
     fi
-  elif [ -n "$(PWD=$OLDPWD nvm_find_nvmrc)" ] && [ "$(nvm version)" != "$(nvm version default)" ]; then
+  elif [ "$node_version" != "$(nvm version default)" ]; then
     echo "Reverting to nvm default version"
     nvm use default
   fi
 }
-
-# place this after nvm initialization!
-autoload -U add-zsh-hook
-
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
-
 
 # load plugins only AFTER all pyenv, nvm etc has been loaded
 plugins=(git docker docker-compose vi-mode poetry fzf kubectl nvm ng)
@@ -180,4 +171,8 @@ kss () {
 
 # add krew plugin to path (for kubectl)
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# add gem installed binaries to path
+GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
 
