@@ -17,7 +17,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="agnoster"
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -150,7 +150,7 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 # load plugins only AFTER all pyenv, nvm etc has been loaded
-plugins=(git docker docker-compose vi-mode poetry fzf kubectl nvm ng)
+plugins=(git docker docker-compose vi-mode fzf kubectl nvm ng)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/plugins/git/git.plugin.zsh
