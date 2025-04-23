@@ -115,6 +115,7 @@ export VIRTUAL_ENV_DISABLE_PROMPT=
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -175,4 +176,3 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 # add gem installed binaries to path
 GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
-
