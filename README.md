@@ -6,7 +6,7 @@ This describes _my_ setting up on Ubuntu/Debian. Works for me. Your milage may v
 
 ## Install needed pkgs
 
-:exclamation: Make sure to check/understand before pasting blindly :exclamation:
+:exclamation: Make sure to check/understand before pasting blindly :exclamation: (or don't, could be fun 😶)
 
 ### from repo
 ```sh
@@ -17,8 +17,8 @@ This describes _my_ setting up on Ubuntu/Debian. Works for me. Your milage may v
 # xclip is needed for vim to copy to systems clipboard (wl-clip does not seem to work)
 sudo apt-get install git make build-essential zsh vim tmux plocate wget curl mc meld xclip
 
-# I prefer to have poetry system-wide
-sudo apt-get install python3-poetry
+# pipx to install "system-wide" python deps (eg poetry)
+sudo apt-get install pipx
 
 # and some desktop extras (if you need and use gnome that is)
 sudo apt-get install nextcloud-desktop keepassxc gnome-tweaks gnome-sushi guake chromium-browser
@@ -248,17 +248,16 @@ curl -s https://fluxcd.io/install.sh | sudo bash
 ```
 The .zshrc already has completion for flux set up.
 
-## Pyenv
-I (still) use pyenv, just because it works for me. Also the .zshrc already is aware the pyenv is being used. If it's not installed that my cause issues.
+## Pyenv and poetry
+
+I like pyenv and poetry and they work together quite nicely. To install them "system-wide" we use pipx
 
 ```sh
-# install deps, some may already be there
-sudo apt install -y libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-openssl
-# and once more a Deppeninstaller
-curl https://pyenv.run | bash
+pipx install pyenv
+pipx install poetry
 ```
+
 Test if it works by installing eg the latest 3.10 and creating a playground env.
-Feel free to use any other version of choice.
 
 ```sh
 pyenv install 3.10.13
@@ -267,6 +266,12 @@ pyenv activate playground
 # you can also set the global python version once you're at it:
 #pyenv global 3.10.13
 ```
+### poetry <> pyenv
+Poetry will automatically use an existing virtualenv to install packages into. This should be the case.
+*IFF* an pyenv venv is activated, this works out of the box. Easiest is to have a `.python-version` in your project directory.
+If that contains the name of an existing pyenv venv it will be activated automagically\*.
+
+\* given you use the .zshrc supplied here and have the pyenv-virtualenv installed (it should come w/ pyenv). A caveat here is that powerlines will **always** show the venv in the prompt (even if it's not activated).
 ## Rust
 Rust is straighforward (of course with a Deppeninstaller). We install it after docker though, just to make sure that we can support multiarch builds
 
