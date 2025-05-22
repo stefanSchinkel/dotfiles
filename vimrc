@@ -164,7 +164,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'kien/ctrlp.vim'
 
 " Powerlines
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+" Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " python autocomplete
 "Plugin 'davidhalter/jedi-vim'
@@ -198,4 +198,3 @@ Plugin 'voldikss/vim-floaterm'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
