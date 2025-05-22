@@ -97,7 +97,7 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 # load plugins only AFTER all pyenv, nvm etc has been loaded
-plugins=(git docker docker-compose vi-mode poetry fzf kubectl nvm ng kube-ps1)
+plugins=(git docker docker-compose vi-mode poetry fzf kubectl nvm ng)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/plugins/git/git.plugin.zsh
@@ -123,10 +123,8 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
 
-PROMPT='$(kube_ps1)'$PROMPT
-eval "$(uv generate-shell-completion zsh)"
+# all things just
 #compdef just
-
 autoload -U is-at-least
 
 _just() {
