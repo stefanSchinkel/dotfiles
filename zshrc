@@ -115,6 +115,8 @@ export FZF_DEFAULT_COMMAND='ag --hidden -l -g ""'
 kss () {
   kubeseal -o yaml --controller-namespace kube-system --controller-name sealed-secrets-controller < "$1" > "${1/-secret/-ssecret}"
 }
+# selector for kubecfg
+alias kcfg='export KUBECONFIG=$(ls ~/.kube/*yaml | fzf)'
 
 # add krew plugin to path (for kubectl)
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
@@ -122,6 +124,7 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 # add gem installed binaries to path
 GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
+
 
 # all things just
 #compdef just
