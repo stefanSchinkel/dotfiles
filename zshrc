@@ -303,3 +303,6 @@ _just "$@"
 else
     compdef _just just
 fi
+
+
+eval "$(direnv hook zsh)"
