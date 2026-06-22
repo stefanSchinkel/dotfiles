@@ -57,11 +57,11 @@ alias scp="noglob scp"
 
 
 # pyenv
-export VIRTUAL_ENV_DISABLE_PROMPT=
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# export VIRTUAL_ENV_DISABLE_PROMPT=
+# export PYENV_ROOT="$HOME/.pyenv"
+# command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -97,7 +97,7 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 # load plugins only AFTER all pyenv, nvm etc has been loaded
-plugins=(git docker docker-compose vi-mode poetry fzf kubectl nvm ng)
+plugins=(git docker docker-compose vi-mode uv fzf kubectl nvm ng)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/plugins/git/git.plugin.zsh
@@ -306,3 +306,5 @@ fi
 
 
 eval "$(direnv hook zsh)"
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uv generate-shell-completion zsh)"
