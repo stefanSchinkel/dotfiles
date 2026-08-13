@@ -122,8 +122,8 @@ alias kcfg='export KUBECONFIG=$(ls ~/.kube/*yaml | fzf)'
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # add gem installed binaries to path
-GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
-export PATH="$PATH:$GEM_HOME/bin"
+#GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+#export PATH="$PATH:$GEM_HOME/bin"
 
 
 # all things just
