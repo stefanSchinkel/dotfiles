@@ -232,6 +232,23 @@ For good measure, we also install podman. And maybe we can ditch docker at some 
 ```sh
 sudo apt install podman
 ```
+## VirtualBox
+Some times you just need a whole VM
+
+```sh
+# get signing key
+wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg --dearmor
+# add to repos
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian resolute contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+# install the shit
+sudo apt-get update
+sudo apt-get install virtualbox-7.2 # or whatever you like
+# also, this is likely to break so we remedy w/
+sudo apt-get --fix-broken install       # this should get the tps needed
+
+
+
+
 ## kubernetes
 ### kubectl
 
