@@ -101,7 +101,11 @@ plugins=(git docker docker-compose vi-mode uv fzf kubectl nvm ng)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/plugins/git/git.plugin.zsh
-
+# kubecolor
+alias kubectl=kubecolor
+source <(kubectl completion zsh)
+#
+compdef kubecolor=kubectl
 ## flux
 # enable flux complition if flux is there
 command -v flux >/dev/null && . <(flux completion zsh)
