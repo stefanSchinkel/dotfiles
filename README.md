@@ -133,6 +133,11 @@ ln -s ~/.vim/colors/zenburn.vim ~/.vim/bundle/Zenburn/colors/zenburn.vim
 For me MarkdownPreview occassionally fails. But there is a fix/issue for that see: https://github.com/iamcco/markdown-preview.nvim/issues/7
 
 ## Neovim
+### pre-reqs
+for the clipboard to work with the system clipboard we'll need to install wl-clipboard
+```sh
+sudo apt install wl-clipboard
+```
 ### Install nvm
 For neovim we use pyright, which is easiest to run in node. Since Ubuntu ships w/ a dated version of node, we install nvm to get a more recent version.
 ```shell
@@ -169,7 +174,14 @@ sudo apt install neovim
 ## Python
 I've given up on all things pyenv, poetry, .... let's just use uv:
 curl -LsSf https://astral.sh/uv/install.sh | sh
-
+#### system deps for python
+We're gonna need it anyways at one point so get some deps right away:
+```sh
+# python def headers
+sudo apt-get install python3-dev
+# whenever we need a DB, this will be it anyways
+sudo apt-get install libpq-dev
+```
 ## VSCodium
 It's nice to have a GUI based editor too. Especially for the debugger.
 
