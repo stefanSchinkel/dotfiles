@@ -334,9 +334,10 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo -h
 ```
 ### just
-once we have cargo, we can also install just
+once we have cargo, we can also install some tools
 ```sh
 cargo install just
+cargo install bat
 ```
 ### Multiarch support/cross platform compilation
 ```sh
