@@ -19,7 +19,8 @@ sudo apt-get install git make build-essential zsh vim tmux plocate wget curl mc 
 
 
 # and some desktop extras (if you need and use gnome that is)
-sudo apt-get install nextcloud-desktop keepassxc guake direnv sqlitebrowser
+# NOTE: removed guake, gnome extension ddterm does the trick and works nicely w/ wayland
+sudo apt-get install nextcloud-desktop keepassxc  direnv sqlitebrowser
 # stuff to set up gnome a bit nice
 sudo apt-get install gnome-tweaks gnome-sushi gnome-shell-extension-manager gnome-browser-connector
 
