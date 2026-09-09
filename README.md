@@ -24,8 +24,8 @@ sudo apt-get install nextcloud-desktop keepassxc  direnv sqlitebrowser
 # stuff to set up gnome a bit nice
 sudo apt-get install gnome-tweaks gnome-sushi gnome-shell-extension-manager gnome-browser-connector
 
-# and all the fancy search/fuzzy finders
-sudo apt-get install silversearcher-ag fzf ripgrep
+# and all the fancy search/fuzzy finders (fd-find is use by telescope in nvim )
+sudo apt-get install silversearcher-ag fzf ripgrep fd-find
 
 ## and some tooling need for webstuff
 sudo apt-get install goaccess
