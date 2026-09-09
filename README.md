@@ -25,7 +25,10 @@ sudo apt-get install nextcloud-desktop keepassxc  direnv sqlitebrowser
 sudo apt-get install gnome-tweaks gnome-sushi gnome-shell-extension-manager gnome-browser-connector
 
 # and all the fancy search/fuzzy finders (fd-find is use by telescope in nvim )
-sudo apt-get install silversearcher-ag fzf ripgrep fd-find
+sudo apt-get install silversearcher-ag fzf ripgrep
+
+# those we need for neovim (0.13+) fd-find for telescope and treesitter CLI to install/updated parsers
+sudo apt-get install fd-find treesitter-cli
 
 ## and some tooling need for webstuff
 sudo apt-get install goaccess
