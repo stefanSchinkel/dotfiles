@@ -17,22 +17,30 @@ This describes _my_ setting up on Ubuntu/Debian. Works for me. Your milage may v
 # xclip is needed for vim to copy to systems clipboard (wl-clip does not seem to work)
 sudo apt-get install git make build-essential zsh vim tmux plocate wget curl mc meld xclip
 
-# pipx to install "system-wide" python deps (eg poetry)
-sudo apt-get install pipx
 
 # and some desktop extras (if you need and use gnome that is)
-sudo apt-get install nextcloud-desktop keepassxc gnome-tweaks gnome-sushi guake chromium-browser
+# NOTE: removed guake, gnome extension ddterm does the trick and works nicely w/ wayland
+sudo apt-get install nextcloud-desktop keepassxc  direnv sqlitebrowser
+# stuff to set up gnome a bit nice
+sudo apt-get install gnome-tweaks gnome-sushi gnome-shell-extension-manager gnome-browser-connector
 
-# and all the fancy search/fuzzy finders
+# and all the fancy search/fuzzy finders (fd-find is use by telescope in nvim )
 sudo apt-get install silversearcher-ag fzf ripgrep
+
+# those we need for neovim (0.13+) fd-find for telescope and treesitter CLI to install/updated parsers
+sudo apt-get install fd-find treesitter-cli
 
 ## and some tooling need for webstuff
 sudo apt-get install goaccess
+
+# Mental note:
+# manually to install (from pgk: freetube
 ```
 
 ### from snap (optional)
 ```sh
-sudo snap install freetube postman spotify firefox
+sudo snap install postman spotify
+
 ```
 ## get dotfiles
 Only now clone repo (git is needed)
@@ -97,7 +105,7 @@ The tmux setup is fairly simple, but it needs tpm, so we get that:
 ```sh
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
-
+Once this is cloned and you have the tmux.conf linked, you'll need to run `CTRL+B I` (capital I) to install the plugins.
 ## VIM
 ### vim for GIT
 First things first. Ditch nano for commit msgs.
@@ -105,8 +113,10 @@ First things first. Ditch nano for commit msgs.
 ```
 git config --global core.editor vim
 ```
+
 ### plugin manager
 For the vimrc here, vundle is used as a plugin manager. So this needs to be cloned too:
+
 ```sh
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
@@ -117,25 +127,31 @@ For the .vimrc to work, you'll need zenburn. Here's how to get it.
 # get scheme
 wget https://raw.githubusercontent.com/jnurmine/Zenburn/master/colors/zenburn.vim -O ~/.vim/colors/zenburn.vim
 # link
+mkdir -p ~/.vim/bundle/Zenburn/colors
 ln -s ~/.vim/colors/zenburn.vim ~/.vim/bundle/Zenburn/colors/zenburn.vim
 ```
-#### Note on black
-The vimrc defines :Black to run on save (for python). Therefore make sure to have it installed in the venv you use when firing up vim or have installed systemwide. Otherwise vim will complain when you start editing Python code.
 
-Also, you'll of course have to run :PluginInstall once.
+
 
 #### Note on MarkdownPreview
 For me MarkdownPreview occassionally fails. But there is a fix/issue for that see: https://github.com/iamcco/markdown-preview.nvim/issues/7
 
 ## Neovim
+### pre-reqs
+for the clipboard to work with the system clipboard we'll need to install wl-clipboard
+```sh
+sudo apt install wl-clipboard
+```
 ### Install nvm
 For neovim we use pyright, which is easiest to run in node. Since Ubuntu ships w/ a dated version of node, we install nvm to get a more recent version.
 ```shell
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.6/install.sh | bash
 ```
 The .zsh already is nvm aware but you'll have to `source ~/.zshrc` after installing it. Once done, pick a recent version of node eg.
 ```shell
-nvm install v20.13.1
+nvm install v24.19.0
+# and set as default
+ nvm alias default v24.19.0
 ```
 once it's installed, install pyright with
 ```
@@ -149,7 +165,6 @@ The supplied zshrc will automatically enable the requested node version *iff* an
 For a head start nice projects to configure neovim exist such as [Neovim Kickstart](https://github.com/nvim-lua/kickstart.nvim). You can just clone that or use mine:
 
 ```sh
-git clone
 git clone git@github.com:stefanSchinkel/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 # or the https version
 # git clone https://github.com/stefanSchinkel/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
@@ -159,6 +174,17 @@ Since the neovim kickstart aims for really new versions, we'll also install neov
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt update
 sudo apt install neovim
+```
+## Python
+I've given up on all things pyenv, poetry, .... let's just use uv:
+curl -LsSf https://astral.sh/uv/install.sh | sh
+#### system deps for python
+We're gonna need it anyways at one point so get some deps right away:
+```sh
+# python def headers
+sudo apt-get install python3-dev
+# whenever we need a DB, this will be it anyways
+sudo apt-get install libpq-dev
 ```
 ## VSCodium
 It's nice to have a GUI based editor too. Especially for the debugger.
@@ -216,6 +242,29 @@ newgrp docker
 docker run hello-world
 ```
 
+
+## Podman
+For good measure, we also install podman. And maybe we can ditch docker at some point
+```sh
+sudo apt install podman
+```
+## VirtualBox
+Some times you just need a whole VM
+
+```sh
+# get signing key
+wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg --dearmor
+# add to repos
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian resolute contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+# install the shit
+sudo apt-get update
+sudo apt-get install virtualbox-7.2 # or whatever you like
+# also, this is likely to break so we remedy w/
+sudo apt-get --fix-broken install       # this should get the tps needed
+
+
+
+
 ## kubernetes
 ### kubectl
 
@@ -233,13 +282,39 @@ sudo apt-get install -y kubectl
 ```
 
 This will intall the kubectl tooling. The zshrc already includes the kubectl plugins so quite some typing can be saved.
+### krew
+Krew comes in handy on non-macos devices (or anything w/out homebrew actually). Installation is via advance deppeninstaller
+Check https://krew.sigs.k8s.io/docs/user-guide/setup/install/ as well.
+```sh
+(
+  set -x; cd "$(mktemp -d)" &&
+  OS="$(uname | tr '[:upper:]' '[:lower:]')" &&
+  ARCH="$(uname -m | sed -e 's/x86_64/amd64/' -e 's/\(arm\)\(64\)\?.*/\1\2/' -e 's/aarch64$/arm64/')" &&
+  KREW="krew-${OS}_${ARCH}" &&
+  curl -fsSLO "https://github.com/kubernetes-sigs/krew/releases/latest/download/${KREW}.tar.gz" &&
+  tar zxvf "${KREW}.tar.gz" &&
+  ./"${KREW}" install krew
+)
+```
+#### krew plugins
+##### OIDC login
+As we do not want kubecfg that need to be protected, we use OIDC logins:
+```sh
+kubectl krew install oidc-login
+```
 ### kubeseal
 For working w/ shared secrets we need `kubeseal`.
 ```sh
-export KUBESEAL_VERSION='0.26.3' # latest as of 06/24
+export KUBESEAL_VERSION='0.38.4' # latest as of 07/26
 curl -OL "https://github.com/bitnami-labs/sealed-secrets/releases/download/v${KUBESEAL_VERSION:?}/kubeseal-${KUBESEAL_VERSION:?}-linux-amd64.tar.gz"
 tar -xvzf kubeseal-${KUBESEAL_VERSION:?}-linux-amd64.tar.gz kubeseal
 sudo install -m 755 kubeseal /usr/local/bin/kubeseal
+```
+### helm
+Which is obviously needed too.  Available via Deppeninstaller
+
+```sh
+curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 ```
 ### flux
 For gitops we also need flux. Available via Deppeninstaller
@@ -250,28 +325,8 @@ The .zshrc already has completion for flux set up.
 
 ## Pyenv and poetry
 
-I like pyenv and poetry and they work together quite nicely. To install them "system-wide" we use pipx
+See above. And just use uv :shrug:
 
-```sh
-pipx install pyenv
-pipx install poetry
-```
-
-Test if it works by installing eg the latest 3.10 and creating a playground env.
-
-```sh
-pyenv install 3.10.13
-pyenv virtualenv 3.10.13 playground
-pyenv activate playground
-# you can also set the global python version once you're at it:
-#pyenv global 3.10.13
-```
-### poetry <> pyenv
-Poetry will automatically use an existing virtualenv to install packages into. This should be the case.
-*IFF* an pyenv venv is activated, this works out of the box. Easiest is to have a `.python-version` in your project directory.
-If that contains the name of an existing pyenv venv it will be activated automagically\*.
-
-\* given you use the .zshrc supplied here and have the pyenv-virtualenv installed (it should come w/ pyenv). A caveat here is that powerlines will **always** show the venv in the prompt (even if it's not activated).
 ## Rust
 Rust is straighforward (of course with a Deppeninstaller). We install it after docker though, just to make sure that we can support multiarch builds
 
@@ -280,6 +335,12 @@ Rust is straighforward (of course with a Deppeninstaller). We install it after d
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # check
 cargo -h
+```
+### just
+once we have cargo, we can also install some tools
+```sh
+cargo install just
+cargo install bat
 ```
 ### Multiarch support/cross platform compilation
 ```sh
