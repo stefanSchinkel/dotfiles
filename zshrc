@@ -71,8 +71,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-zstyle ':omz:plugins:nvm' lazy yes
-zstyle ':omz:plugins:nvm' autoload yes
+# no more lazy loading (otherwhise uv run nvim cannot find node of LSPinstall)
+#zstyle ':omz:plugins:nvm' lazy yes
+#zstyle ':omz:plugins:nvm' autoload yes
 # load plugins only AFTER all pyenv, nvm etc has been loaded
 plugins=(git docker docker-compose vi-mode uv fzf kubectl nvm ng)
 
