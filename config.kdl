@@ -1,3 +1,65 @@
+// Vim-like pane navigation: Ctrl+hjkl moves between zellij panes.
+// When the focused pane is running Neovim, the keypress is forwarded to it
+// instead, and smart-splits.nvim hands control back to zellij once it hits
+// the edge of its own splits. Alt+hjkl resizes the same way.
+keybinds {
+    shared_except "locked" {
+        bind "Ctrl h" {
+            MessagePlugin "https://github.com/hiasr/vim-zellij-navigator/releases/download/0.3.0/vim-zellij-navigator.wasm" {
+                name "move_focus_or_tab"
+                payload "left"
+                move_mod "ctrl"
+            }
+        }
+        bind "Ctrl j" {
+            MessagePlugin "https://github.com/hiasr/vim-zellij-navigator/releases/download/0.3.0/vim-zellij-navigator.wasm" {
+                name "move_focus"
+                payload "down"
+                move_mod "ctrl"
+            }
+        }
+        bind "Ctrl k" {
+            MessagePlugin "https://github.com/hiasr/vim-zellij-navigator/releases/download/0.3.0/vim-zellij-navigator.wasm" {
+                name "move_focus"
+                payload "up"
+                move_mod "ctrl"
+            }
+        }
+        bind "Ctrl l" {
+            MessagePlugin "https://github.com/hiasr/vim-zellij-navigator/releases/download/0.3.0/vim-zellij-navigator.wasm" {
+                name "move_focus_or_tab"
+                payload "right"
+                move_mod "ctrl"
+            }
+        }
+    }
+    shared_except "locked" "move" {
+        bind "Alt m" { SwitchToMode "Move"; }
+    }
+    move {
+        bind "Alt m" { SwitchToMode "Normal"; }   // same key leaves the mode again
+    }
+    // Pane mode on Alt p, Ctrl p freed for the shell
+    shared_except "locked" "pane" {
+        unbind "Ctrl p"
+        bind "Alt p" { SwitchToMode "Pane"; }
+    }
+    pane {
+        unbind "Ctrl p"
+        bind "Alt p" { SwitchToMode "Normal"; }
+    }
+
+    // Tab mode on Alt t, Ctrl t freed for the shell
+    shared_except "locked" "tab" {
+        unbind "Ctrl t"
+        bind "Alt t" { SwitchToMode "Tab"; }
+    }
+    tab {
+        unbind "Ctrl t"
+        bind "Alt t" { SwitchToMode "Normal"; }
+    }
+}
+
 // Plugin aliases - can be used to change the implementation of Zellij
 // changing these requires a restart to take effect
 plugins {
@@ -8,7 +70,6 @@ plugins {
     configuration location="zellij:configuration"
     context-menu location="zellij:context-menu"
     filepicker location="zellij:strider" {
-        cwd "/"
     }
     plugin-manager location="zellij:plugin-manager"
     prompt location="zellij:prompt"
@@ -35,47 +96,8 @@ load_plugins {
 }
 web_client {
     font "monospace"
-    cursor_blink true
-    cursor_inactive_style "bar"
 }
-keybinds {
-    // drop the default Move-mode toggle
-    // unbind "Ctrl h"
 
-    shared_except "locked" {
-        bind "Ctrl h" { MoveFocusOrTab "Left"; }
-        bind "Ctrl l" { MoveFocusOrTab "Right"; }
-        bind "Ctrl j" { MoveFocus "Down"; }
-        bind "Ctrl k" { MoveFocus "Up"; }
-    }
-
-    // Alt m toggles Move mode from everywhere except locked and from move mode itself
-    shared_except "locked" "move" {
-        bind "Alt m" { SwitchToMode "Move"; }
-    }
-    move {
-        bind "Alt m" { SwitchToMode "Normal"; }   // same key leaves the mode again
-    }
-        // Pane mode on Alt p, Ctrl p freed for the shell
-    shared_except "locked" "pane" {
-        unbind "Ctrl p"
-        bind "Alt p" { SwitchToMode "Pane"; }
-    }
-    pane {
-        unbind "Ctrl p"
-        bind "Alt p" { SwitchToMode "Normal"; }
-    }
-
-    // Tab mode on Alt t, Ctrl t freed for the shell
-    shared_except "locked" "tab" {
-        unbind "Ctrl t"
-        bind "Alt t" { SwitchToMode "Tab"; }
-    }
-    tab {
-        unbind "Ctrl t"
-        bind "Alt t" { SwitchToMode "Normal"; }
-    }
-}
 // Use a simplified UI without special fonts (arrow glyphs)
 // Options:
 //   - true
@@ -221,7 +243,9 @@ copy_command "wl-copy"                    // wayland
 
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
-// scrollback_editor "/usr/bin/vim"
+// Must be nvim: zellij reports editor panes as "<scrollback_editor> <file>",
+// and vim-zellij-navigator only forwards Ctrl+hjkl when that starts with nvim/vim.
+scrollback_editor "nvim"
 
 // A fixed name to always give the Zellij session.
 // Consider also setting `attach_to_session true,`
@@ -457,6 +481,10 @@ copy_command "wl-copy"                    // wayland
 // can be useful for removing wrappers around commands
 // Note: be sure to escape backslashes and similar characters properly
 // post_command_discovery_hook "echo $RESURRECT_COMMAND | sed <your_regex_here>"
+//
+// Strip a leading "uv run [options]" so that `uv run nvim` is seen as `nvim`
+// and vim-zellij-navigator forwards Ctrl+hjkl to it.
+post_command_discovery_hook "echo \"$RESURRECT_COMMAND\" | sed -E 's/^uv +run +(--?[A-Za-z-]+( +[^- ][^ ]*)? +)*//'"
 
 // Number of background threads used by `zellij attach <url>` when it connects
 // from a terminal to a session on another machine. One set of threads is made
