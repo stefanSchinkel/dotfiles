@@ -84,19 +84,16 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 ```
 the .zshrc in the repo already has p10k set as default theme
 
-### setup fonts for p10k
+### setup a nerdfont
+We do need a nerdfont for powerlevel (and for devicons in nvim) and we go for the full set)
 ```sh
-cd ~/
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
-# either manually install w/ Fonts or do this
-# cp to /usr/local/share/fonts and run sudo fc-cache -fv to update fonts cache
-# cp MesloGS ~/.local/share/fonts/
-# sudo fc-cache -fv
-# AFTER that:
-# set terminal to use fonts and run
+mkdir -p ~/.local/share/fonts
+cd /tmp
+curl -LO https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Meslo.zip
+unzip -o Meslo.zip -d ~/.local/share/fonts/Meslo
+fc-cache -f
+
+#   set terminal to use the font fonts and run
 p10k configure
 ```
 
